@@ -1,6 +1,10 @@
 #!name = 广告联盟去广告
 #!desc = 移除快手联盟,优量汇,穿山甲广告
-#!openUrl = https://github.com/mist-whisper/mist-whisper.github.io/blob/main/Loon
+#!openUrl = https://github.com/mist-whisper/Loon/tree/master/Plugins
+#!author = app2smile
+#!homepage = https://github.com/app2smile/rules
+#!icon = 
+#!date = 2022-07-05 20:25:57
 
 [Mitm]
 hostname = api-access.pangolin-sdk-toutiao.com, mi.gdt.qq.com, open.e.kuaishou.com
