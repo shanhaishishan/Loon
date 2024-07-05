@@ -36,11 +36,14 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 * [Sub-Store](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Sub-Store.Loon.plugin)
 * [淘宝去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Taobao_remove_ads.plugin)
 * [腾讯视频去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Tencent_Video_remove_ads.plugin)
-* [航旅纵横去广告](https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/Umetrip_remove_ads.plugin)
-* [微博去广告](https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/Weibo_remove_ads.plugin)
-* [微信公众号去广告](https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/Wexin_Official_Accounts_remove_ads.plugin)
-* [YouTube去广告](https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/YouTube_remove_ads.plugin)
-* [知乎去广告](https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/Zhihu_remove_ads.plugin)
+* [TikTok解锁](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/TikTok_Redirect.plugin)
+* [航旅纵横去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Umetrip_remove_ads.plugin)
+* [微博去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Weibo_remove_ads.plugin)
+* [微信外部链接解锁](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Weixin_external_links_unlock.plugin)
+* [微信公众号去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Wexin_Official_Accounts_remove_ads.plugin)
+* [喜马拉雅去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Xmly_remove_ads.plugin)
+* [YouTube去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/YouTube_remove_ads.plugin)
+* [知乎去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Zhihu_remove_ads.plugin)
   
 **_点击下方链接,查看插件详情_**
 
@@ -287,11 +290,19 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
   </tr>
 </table>
 
+## TikTok解锁
+> 移除TikTok视频水印并自定义解锁地区，需要配置此插件至对应地区的节点。由于IOS17.4及以上系统已无需插件解锁，故此插件在此暂时归档，后续更新可移步至原作者仓库查看。建议升级系统体验。
+<table>
+  <tr>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/TikTok_Redirect.plugin</td>
+  </tr>
+</table>
+
 ## 航旅纵横去广告
 > 过滤航旅纵横广告
 <table>
   <tr>
-    <td>https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/Umetrip_remove_ads.plugin</td>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Umetrip_remove_ads.plugin</td>
   </tr>
 </table>
 
@@ -299,7 +310,15 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 > 过滤微博广告及去除各部分推广模块
 <table>
   <tr>
-    <td>https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/Weibo_remove_ads.plugin</td>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Weibo_remove_ads.plugin</td>
+  </tr>
+</table>
+
+## 微信外部链接解锁
+> 解锁微信外部链接访问限制，跳过中间界面。支付宝链接、被封禁链接进行通知弹窗跳转，在微信中用快照显示被封禁的链接（可选），在微信中进行强制重定向（可选），群聊及扫码均可使用，可选项可在脚本的2~3行更改，也可在BoxJs中更改。
+<table>
+  <tr>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Weixin_external_links_unlock.plugin</td>
   </tr>
 </table>
 
@@ -307,7 +326,15 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 > 过滤微信公众号广告
 <table>
   <tr>
-    <td>https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/Wexin_Official_Accounts_remove_ads.plugin</td>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Wexin_Official_Accounts_remove_ads.plugin</td>
+  </tr>
+</table>
+
+## 喜马拉雅去广告
+> 喜马拉雅去广告
+<table>
+  <tr>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Xmly_remove_ads.plugin</td>
   </tr>
 </table>
 
@@ -315,7 +342,7 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 > 移除YouTube视频、瀑布流、搜索和Shorts中的广告，移除底部的上传按钮，增加画中画及字幕翻译功能。移除YouTube Music底部的上传、选段和升级按钮，增加歌词翻译，支持二者的后台播放。此插件需要Loon版本为3.1.7(677)及以上，且需要启用QUIC回退保护。支持Premium订阅用户使用，不支持tvOS设备。
 <table>
   <tr>
-    <td>https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/YouTube_remove_ads.plugin</td>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/YouTube_remove_ads.plugin</td>
   </tr>
 </table>
 
@@ -323,7 +350,7 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 > 去除各部广告，建议卸载知乎重新安装。
 <table>
   <tr>
-    <td>https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/Zhihu_remove_ads.plugin</td>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Zhihu_remove_ads.plugin</td>
   </tr>
 </table>
 
