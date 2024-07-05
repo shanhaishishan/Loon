@@ -291,7 +291,7 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 </table>
 
 ## TikTok解锁
-> 移除TikTok视频水印并自定义解锁地区，需要配置此插件至对应地区的节点。由于IOS17.4及以上系统已无需插件解锁，故此插件在此暂时归档，后续更新可移步至原作者仓库查看。建议升级系统体验。
+> 移除TikTok视频水印并自定义解锁地区，需要配置此插件至对应地区的节点。
 <table>
   <tr>
     <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/TikTok_Redirect.plugin</td>
