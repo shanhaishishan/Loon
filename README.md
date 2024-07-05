@@ -23,12 +23,19 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 * [Line去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Line_remove_ads.plugin)
 * [流媒体解锁查询](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/MediaChecker.plugin)
 * [MyBlockAds](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/MyBlockAds.plugin)
-* [网易云音乐去广告](https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/NetEaseCloudMusic_remove_ads.plugin)
+* [网易云音乐去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/NetEaseCloudMusic_remove_ads.plugin)
+* [⚡️测试网络延迟](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Net_Speed.plugin)
+* [节点检测工具](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Node_detection_tool.plugin)
+* [DNS防泄露](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Prevent_DNS_Leaks.plugin)
+* [QQ链接解锁](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/QQ_Redirect.plugin)
 * [小红书去广告](https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/RedPaper_remove_ads.plugin)
-* [可莉广告过滤器](https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/Remove_ads_by_keli.plugin)
-* [Soul去广告](https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/Soul_remove_ads.plugin)
-* [APP启动页去广告](https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/Starting_remove_ads.plugin)
-* [淘宝去广告](https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/Taobao_remove_ads.plugin)
+* [可莉广告过滤器](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Remove_ads_by_keli.plugin)
+* [Script Hub](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Script-Hub.Loon.plugin)
+* [Soul去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Soul_remove_ads.plugin)
+* [APP启动页去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Starting_remove_ads.plugin)
+* [Sub-Store](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Sub-Store.Loon.plugin)
+* [淘宝去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Taobao_remove_ads.plugin)
+* [腾讯视频去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Tencent_Video_remove_ads.plugin)
 * [航旅纵横去广告](https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/Umetrip_remove_ads.plugin)
 * [微博去广告](https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/Weibo_remove_ads.plugin)
 * [微信公众号去广告](https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/Wexin_Official_Accounts_remove_ads.plugin)
@@ -184,6 +191,38 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
   </tr>
 </table>
 
+## ⚡️测试网络延迟
+> 测试网络速度和延迟
+<table>
+  <tr>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Net_Speed.plugin</td>
+  </tr>
+</table>
+
+## 节点检测工具
+> 适用于Loon的节点检测工具，可进行地理位置、节点解锁、节点网速等查询。请在所有节点页面选择一个节点长按，出现菜单后进行测试。
+<table>
+  <tr>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Node_detection_tool.plugin</td>
+  </tr>
+</table>
+
+## DNS防泄露
+> 专为小白设计的DNS防泄露
+<table>
+  <tr>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Prevent_DNS_Leaks.plugin</td>
+  </tr>
+</table>
+
+## QQ链接解锁
+> 解除QQ内访问非白名单之外的地址提示停止访问该页面的限制，并移除跟踪参数。此插件需要Loon 3.1.4(649)及以上版本方可使用，使用前需要清除QQ的缓存数据。
+<table>
+  <tr>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/QQ_Redirect.plugin</td>
+  </tr>
+</table>
+
 ## 小红书去广告
 > 过滤信息流推广，移除图片及视频水印，如有异常，请先清除缓存再尝试。
 <table>
@@ -196,7 +235,15 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 > 可莉自用的广告过滤器
 <table>
   <tr>
-    <td>https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/Remove_ads_by_keli.plugin</td>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Remove_ads_by_keli.plugin</td>
+  </tr>
+</table>
+
+## Script Hub
+> 重写&规则集转换
+<table>
+  <tr>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Script-Hub.Loon.plugin</td>
   </tr>
 </table>
 
@@ -204,7 +251,7 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 > 移除开屏广告、移除话题页面热Soul话题、移除评论区礼物榜、移除更新提示、移除青少年弹窗、移除我的页面推广、移除悬浮部件。
 <table>
   <tr>
-    <td>https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/Soul_remove_ads.plugin</td>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Soul_remove_ads.plugin</td>
   </tr>
 </table>
 
@@ -212,7 +259,15 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 > APP启动页去广告
 <table>
   <tr>
-    <td>https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/Starting_remove_ads.plugin</td>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Starting_remove_ads.plugin</td>
+  </tr>
+</table>
+
+## Sub Store
+> 高级订阅管理工具，使用前请在本插件的详情页面为[PROXY]项分配代理策略。
+<table>
+  <tr>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Sub-Store.Loon.plugin</td>
   </tr>
 </table>
 
@@ -220,7 +275,15 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 > 过滤淘宝开屏广告
 <table>
   <tr>
-    <td>https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/Taobao_remove_ads.plugin</td>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Taobao_remove_ads.plugin</td>
+  </tr>
+</table>
+
+## 腾讯视频去广告
+> 过滤腾讯视频客户端广告，如遇失效，则需要重新安装腾讯视频客户端。由于此插件不再维护，客户端版本高于8.9.40可能会导致此插件失效，请勿升级客户端。
+<table>
+  <tr>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Tencent_Video_remove_ads.plugin</td>
   </tr>
 </table>
 
