@@ -1,6 +1,6 @@
 #!name = DNS防泄露
 #!desc = 专为小白设计的DNS防泄露
-#!openUrl = 
+#!openUrl = https://github.com/mist-whisper/Loon/tree/master/Plugins
 #!author = 非正常人类研究中心
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/Prevent_DNS_Leaks.png
