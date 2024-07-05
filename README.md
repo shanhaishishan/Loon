@@ -6,10 +6,13 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 
 # 目录
 
-* [广告联盟](https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/Adsense.plugin)
-* [高德地图去广告](https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/Amap_remove_ads.plugin)
-* [百度网页去广告](https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/BaidusearchWebpage_remove_ads.plugin)
-* [菜鸟去广告](https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/Cainiao_remove_ads.plugin)
+<!-- * [广告联盟](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Adsense.plugin)  -->
+* [高德地图去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Amap_remove_ads.plugin)
+* [APP脚本合集-骨钉](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Appheji_Guding.plugin)
+* [百度网页去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/BaidusearchWebpage_remove_ads.plugin)
+* [菜鸟去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Cainiao_remove_ads.plugin)
+* [App解锁合集](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Collections.plugin)
+* [🍟 Fries: 🌐 DNS Enhanced](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/DNS_Enhanced.plugin)
 * [滴滴出行去广告](https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/DiDi_remove_ads.plugin)
 * [豆瓣去开屏广告](https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/DoubanStarting_remove_ads.plugin)
 * [网易云音乐去广告](https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/NetEaseCloudMusic_remove_ads.plugin)
@@ -24,21 +27,30 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 * [YouTube去广告](https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/YouTube_remove_ads.plugin)
 * [知乎去广告](https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/Zhihu_remove_ads.plugin)
   
-**_点击下方链接,查看去广告详情_**
-## 广告联盟
+**_点击下方链接,查看插件详情_**
+
+<!-- ## 广告联盟
 > 去除快手联盟,优量汇,穿山甲广告
 
 <table>
   <tr>
-    <td>https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/Adsense.plugin</td>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Adsense.plugin</td>
   </tr>
-</table>
+</table> -->
 
 ## 高德地图去广告
 > 过滤高德地图广告
 <table>
   <tr>
-    <td>https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/Amap_remove_ads.plugin</td>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Amap_remove_ads.plugin</td>
+  </tr>
+</table>
+
+## APP脚本合集-骨钉
+> 超200款APP脚本解锁合集，已解锁列表请见仓库说明，持续更新中，请关注TG频道获取更新通知
+<table>
+  <tr>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Appheji_Guding.plugin</td>
   </tr>
 </table>
 
@@ -46,7 +58,7 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 > 移除百度搜索移动端网页的首页广告信息流
 <table>
   <tr>
-    <td>https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/BaidusearchWebpage_remove_ads.plugin</td>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/BaidusearchWebpage_remove_ads.plugin</td>
   </tr>
 </table>
 
@@ -54,7 +66,25 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 > 过滤菜鸟广告
 <table>
   <tr>
-    <td>https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/Cainiao_remove_ads.plugin</td>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Cainiao_remove_ads.plugin</td>
+  </tr>
+</table>
+
+## App解锁合集
+> APP解锁合集，已解锁列表见仓库说明
+<table>
+  <tr>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Collections.plugin</td>
+  </tr>
+</table>
+
+## 🍟 Fries: 🌐 DNS Enhanced
+> 1.域名按所属DNS进行分流解析<br>
+2.路由器地址使用系统DNS进行解析<br>
+3.特殊地址使用规范DNS进行解析<br>
+<table>
+  <tr>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/DNS_Enhanced.plugin</td>
   </tr>
 </table>
 
