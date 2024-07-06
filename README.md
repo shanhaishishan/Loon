@@ -4,7 +4,7 @@
 https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 ```
 
-# 插件。
+# 插件
 
 <!-- * [广告联盟](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Adsense.plugin)  -->
 * [高德地图去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Amap_remove_ads.plugin)
