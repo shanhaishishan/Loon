@@ -34,7 +34,6 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 * [Script Hub](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Script-Hub.Loon.plugin)
 * [Soul去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Soul_remove_ads.plugin)
 * [APP启动页去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Starting_remove_ads.plugin)
-* [Sub-Store](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Sub-Store.Loon.plugin)
 * [淘宝去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Taobao_remove_ads.plugin)
 * [腾讯视频去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Tencent_Video_remove_ads.plugin)
 * [TikTok解锁](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/TikTok_Redirect.plugin)
@@ -272,14 +271,6 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 <table>
   <tr>
     <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Starting_remove_ads.plugin</td>
-  </tr>
-</table>
-
-## Sub Store
-> 高级订阅管理工具，使用前请在本插件的详情页面为[PROXY]项分配代理策略。
-<table>
-  <tr>
-    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Sub-Store.Loon.plugin</td>
   </tr>
 </table>
 
