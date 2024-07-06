@@ -28,7 +28,7 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 * [节点检测工具](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Node_detection_tool.plugin)
 * [DNS防泄露](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Prevent_DNS_Leaks.plugin)
 * [QQ链接解锁](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/QQ_Redirect.plugin)
-* [小红书去广告](https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/RedPaper_remove_ads.plugin)
+* [小红书去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/RedPaper_remove_ads.plugin)
 * [可莉广告过滤器](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Remove_ads_by_keli.plugin)
 * [Script Hub](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Script-Hub.Loon.plugin)
 * [Soul去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Soul_remove_ads.plugin)
@@ -230,7 +230,7 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 > 过滤信息流推广，移除图片及视频水印，如有异常，请先清除缓存再尝试。
 <table>
   <tr>
-    <td>https://raw.githubusercontent.com/mist-whisper/mist-whisper.github.io/main/Loon/Plugin/RedPaper_remove_ads.plugin</td>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/RedPaper_remove_ads.plugin</td>
   </tr>
 </table>
 
