@@ -1,0 +1,8 @@
+# NAME: Google Search
+# AUTHOR: blackmatrix7
+# HOMEPAGE: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Loon/GoogleSearch/GoogleSearch.list
+# UPDATED: 2024-07-03 16:16:59
+# DOMAIN-KEYWORD: 1
+# TOTAL: 1
+
+DOMAIN-KEYWORD,www.google.
