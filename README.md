@@ -10,6 +10,7 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 * [高德地图去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Amap_remove_ads.plugin)
 * [APP脚本合集-骨钉](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Appheji_Guding.plugin)
 * [百度网页去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/BaidusearchWebpage_remove_ads.plugin)
+* [Bilibili增强(白色B站)](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/BiliBiliWhite_remove_ads.plugin)
 * [菜鸟去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Cainiao_remove_ads.plugin)
 * [App解锁合集](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Collections.plugin)
 * [🍟 Fries: 🌐 DNS Enhanced](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/DNS_Enhanced.plugin)
@@ -77,6 +78,14 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 <table>
   <tr>
     <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/BaidusearchWebpage_remove_ads.plugin</td>
+  </tr>
+</table>
+
+## Bilibili增强(白色B站)
+> 拜托，没有广告的哔哩哔哩真的超酷的
+<table>
+  <tr>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/BiliBiliWhite_remove_ads.plugin</td>
   </tr>
 </table>
 
