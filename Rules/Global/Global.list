@@ -1,7 +1,7 @@
 # NAME: Global
 # AUTHOR: Sukka Edward
 #HOMEPAGE: https://ruleset.skk.moe/List/non_ip/global.conf
-# UPDATED: 2024-07-10 15:32:50
+# UPDATED: 2024-07-11 03:32:50
 # This file contains rules for services that are not available inside the Mainland China.
 
 DOMAIN,this_ruleset_is_made_by_sukkaw.ruleset.skk.moe
@@ -566,6 +566,8 @@ DOMAIN-SUFFIX,prowritingaid.com
 DOMAIN-SUFFIX,wordtune.com
 DOMAIN-SUFFIX,quillbot.com
 DOMAIN-SUFFIX,zh.1lib.sk
+DOMAIN-SUFFIX,quppy.com
+DOMAIN-SUFFIX,trakt.tv
 DOMAIN-KEYWORD,google
 DOMAIN-KEYWORD,blogspot
 DOMAIN-KEYWORD,facebook
@@ -581,4 +583,6 @@ DOMAIN-KEYWORD,wiki
 DOMAIN-KEYWORD,wikipedia
 DOMAIN-KEYWORD,91cg
 DOMAIN-KEYWORD,z-library
+DOMAIN-KEYWORD,quppy
+DOMAIN-KEYWORD,trakt
 USER-AGENT,Roam*
