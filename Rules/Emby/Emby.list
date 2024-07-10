@@ -1,23 +1,25 @@
 # NAME: Emby
-# AUTHOR: justdoiting
-# HOMEPAGE: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Loon/Emby/Emby.list
-# UPDATED: 2024-07-07 16:17:40
-# DOMAIN: 14
+# AUTHOR: justdoiting Edward
+# HOMEPAGE: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/Emby/Emby.list
+# HOMEPAGE: https://github.com/mist-whisper/Surge/blob/master/Rules/Emby/Emby.list
+# UPDATED: 2024-07-11 04:01:40
+# DOMAIN: 16
 # DOMAIN-KEYWORD: 11
 # DOMAIN-SUFFIX: 47
-# TOTAL: 68
+# PROCESS-NAME: 1
+# TOTAL: 71
 
-DOMAIN,https://789.123456.al
-DOMAIN,https://pub1.emby.wtf
-DOMAIN,https://pub2.emby.wtf
-DOMAIN,https://pub3.emby.wtf
-DOMAIN,http://dpx1.1110111.top:80
-DOMAIN,http://dpx1.1110111.top
-DOMAIN,http://7777777.buzz
-DOMAIN,http://6666666.buzz:4533
-DOMAIN,http://6666666.buzz
-DOMAIN,https://i109.com
-DOMAIN,https://vip.baisi.pro
+DOMAIN,789.123456.al
+DOMAIN,pub1.emby.wtf
+DOMAIN,pub2.emby.wtf
+DOMAIN,pub3.emby.wtf
+DOMAIN,dpx1.1110111.top
+DOMAIN,7777777.buzz
+DOMAIN,6666666.buzz
+DOMAIN,i109.com
+DOMAIN,vip.baisi.pro
+DOMAIN,581658.best
+DOMAIN,plex.tv
 
 DOMAIN,emby.enjoyit.eu.org
 DOMAIN,emby.lcloud.wiki
@@ -26,7 +28,6 @@ DOMAIN,notnetflix.cos.cat
 DOMAIN-SUFFIX,di.baisi.pro
 DOMAIN-SUFFIX,123456.al
 
-DOMAIN-SUFFIX,123456.al
 DOMAIN-SUFFIX,285286.xyz
 DOMAIN-SUFFIX,agahk1.jmsooo.com
 DOMAIN-SUFFIX,agajp1.jmsooo.com
@@ -80,3 +81,4 @@ DOMAIN-KEYWORD,heisi
 DOMAIN-KEYWORD,emby.wtf
 DOMAIN-KEYWORD,jmsooo
 DOMAIN-KEYWORD,odysseyplus
+PROCESS-NAME,com.mb.android
