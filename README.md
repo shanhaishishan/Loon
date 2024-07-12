@@ -17,7 +17,8 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 * [滴滴出行去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/DiDi_remove_ads.plugin)
 * [豆瓣去开屏广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/DoubanStarting_remove_ads.plugin)
 * [GeoLocation](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Geolocation.plugin)
-* [Google搜索重定向](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Google_Rewrite.plugin)
+* [Google人机验证](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Google_CAPTCHA.plugin)
+* [Google_Rewrite](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Google_Rewrite.plugin)
 * [🍟 Fries: 🚫 Block HTTPDNS](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/HTTPDNS_Block.plugin)
 * [京东比价](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/JD_Price.plugin)
 * [京东去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/JD_remove_ads.plugin)
@@ -131,14 +132,22 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 </table>
 
 ## GeoLocation
-> 节点信息查询（IP，服务商，国家，时区，经纬度，货币）
+> Google搜索内容时并发使用多个策略/策略组，以避免可能出现的人机验证。注意：需要在插件参数填写策略/策略组名的正则表达式。
 <table>
   <tr>
     <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Geolocation.plugin</td>
   </tr>
 </table>
 
-## Google搜索重定向
+## Google_CAPTCHA
+> 节点信息查询（IP，服务商，国家，时区，经纬度，货币）
+<table>
+  <tr>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Google_CAPTCHA.plugin</td>
+  </tr>
+</table>
+
+## Google_Rewrite
 > 将Google搜索重定向至.com域名，如遇频繁跳转请禁用本插件。
 <table>
   <tr>
