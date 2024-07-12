@@ -132,7 +132,7 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 </table>
 
 ## GeoLocation
-> Google搜索内容时并发使用多个策略/策略组，以避免可能出现的人机验证。注意：需要在插件参数填写策略/策略组名的正则表达式。
+> 节点信息查询（IP，服务商，国家，时区，经纬度，货币）
 <table>
   <tr>
     <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Geolocation.plugin</td>
@@ -140,7 +140,7 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 </table>
 
 ## Google_CAPTCHA
-> 节点信息查询（IP，服务商，国家，时区，经纬度，货币）
+> Google搜索内容时并发使用多个策略/策略组，以避免可能出现的人机验证。注意：需要在插件参数填写策略/策略组名的正则表达式。
 <table>
   <tr>
     <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Google_CAPTCHA.plugin</td>
