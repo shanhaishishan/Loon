@@ -17,7 +17,7 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 * [滴滴出行去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/DiDi_remove_ads.plugin)
 * [豆瓣去开屏广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/DoubanStarting_remove_ads.plugin)
 * [GeoLocation](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Geolocation.plugin)
-* [Google人机验证](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Google_CAPTCHA.plugin)
+* [Google_CAPTCHA](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Google_CAPTCHA.plugin)
 * [Google_Rewrite](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Google_Rewrite.plugin)
 * [🍟 Fries: 🚫 Block HTTPDNS](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/HTTPDNS_Block.plugin)
 * [京东比价](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/JD_Price.plugin)
