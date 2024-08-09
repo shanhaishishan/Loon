@@ -1,6 +1,6 @@
 #!name = 方弗相机会员
 #!desc = 解锁方弗相机会员
-#!openUrl = https://github.com/mist-whisper/Surge/tree/master/Modules
+#!openUrl = https://github.com/mist-whisper/Loon/tree/master/Plugins
 #!author = 伟人
 #!homepage = https://github.com/WeiGiegie/666/blob/main/ffxj.js
 #!icon = https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1009.png
@@ -9,7 +9,7 @@
 
 [Script]
 # >方弗相机（恢复购买）
-http-response ^https?:\/\/api.revenuecat.com\/v1\/(receipts|subscribers\/\$RCAnonymousID) script-path=https://raw.githubusercontent.com/mist-whisper/Loon/master/JS/FunforCam/FunforCam.js, requires-body=true, timeout=60, tag=ffxj
+http-response ^https?:\/\/api.revenuecat.com\/v1\/(receipts|subscribers\/\$RCAnonymousID) script-path=https://raw.githubusercontent.com/mist-whisper/Loon/master/JS/FunforCam/FunforCam.js, requires-body=true, timeout=60, tag=FunforCam
 
 [MITM]
 hostname = api.revenuecat.com
