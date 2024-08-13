@@ -15,7 +15,7 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 * [App解锁合集](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Collections.plugin)
 * [🍟 Fries: 🌐 DNS Enhanced](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/DNS_Enhanced.plugin)
 * [滴滴出行去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/DiDi_remove_ads.plugin)
-* [豆瓣去开屏广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/DoubanStarting_remove_ads.plugin)
+* [豆瓣去广告](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/DouBan_remove_ads.plugin)
 * [GeoLocation](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Geolocation.plugin)
 * [Google_CAPTCHA](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Google_CAPTCHA.plugin)
 * [Google_Rewrite](https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Google_Rewrite.plugin)
@@ -123,11 +123,11 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
   </tr>
 </table>
 
-## 豆瓣去开屏广告
-> 去除豆瓣开屏广告，只能去除开屏
+## 豆瓣去广告
+> 移除开屏广告、各页面信息流广告、首页横幅、搜索填充词。此插件需要IPA签名方可使用，App Store用户请勿使用此插件，务必点击下方署名链接查看详细教程。
 <table>
   <tr>
-    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/DoubanStarting_remove_ads.plugin</td>
+    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/DouBan_remove_ads.plugin</td>
   </tr>
 </table>
 
