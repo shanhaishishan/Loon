@@ -3,7 +3,7 @@
 ```Java
 https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 ```
-点击此处一键导入配置(https://www.nsloon.com/openloon/import?sub=https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf)
+[点击此处一键导入配置](https://www.nsloon.com/openloon/import?sub=https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf)
 
 # 插件
 
