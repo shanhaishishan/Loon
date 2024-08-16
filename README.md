@@ -47,9 +47,3 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 * [喜马拉雅去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Xmly_remove_ads.plugin)
 * [YouTube去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/YouTube_remove_ads.plugin)
 * [知乎去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Zhihu_remove_ads.plugin)
-<table>
-  <tr>
-    <td>https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Zhihu_remove_ads.plugin</td>
-  </tr>
-</table>
-
