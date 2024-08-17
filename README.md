@@ -6,6 +6,7 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 [一键导入基础配置](https://www.nsloon.com/openloon/import?sub=https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf)
 
 # 插件
+## 插件库更新重建中，部分插件可能暂时失效。
 **_点击下方链接,一键导入插件_**
 
 <!-- * [广告联盟](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Adsense.plugin)  -->
