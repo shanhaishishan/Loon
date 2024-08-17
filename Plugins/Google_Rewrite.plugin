@@ -1,8 +1,12 @@
 #!name = Google搜索重定向
 #!desc = 将Google搜索重定向至.com域名，如遇频繁跳转请禁用本插件。
-#!openUrl = https://github.com/mist-whisper/Loon/tree/master/Plugins
-#!author = 可莉🅥
-#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
+#!openUrl = 
+#!author = 可莉🅥[https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md]
+#!tag = 功能增强
+#!system = 
+#!system_version = 
+#!loon_version = 3.2.1(732)
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Google.png
 #!date = 2023-11-14 14:41:32
 
