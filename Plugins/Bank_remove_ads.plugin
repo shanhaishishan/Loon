@@ -1,9 +1,9 @@
 #!name = 银行去广告
 #!desc = 去除部分银行应用的广告
-#!openUrl = 
-#!author = 可莉🅥[https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md]
+#!openUrl = https://github.com/mist-whisper/Loon/blob/master/README.md
+#!author = 可莉🅥[https://gitlab.com/lodepuly/vpn_tool]
 #!tag = 去广告
-#!system = 
+#!system = iOS iPadOS MacOS
 #!system_version = 
 #!loon_version = 3.2.1(732)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
