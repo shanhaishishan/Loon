@@ -1,7 +1,11 @@
 #!name = APP脚本合集-骨钉
 #!desc = 超200款APP脚本解锁合集，已解锁列表请见仓库说明，持续更新中，请关注TG频道获取更新通知
-#!openUrl = https://github.com/mist-whisper/Loon/tree/master/Plugins
-#!author = 骨钉
+#!openUrl = https://github.com/mist-whisper/Loon/blob/master/README.md
+#!author = 骨钉[https://github.com/Guding88/Script/blob/main/Readme.md]
+#!tag = 会员解锁
+#!system = iOS iPadOS MacOS
+#!system_version = 
+#!loon_version = 3.2.1(732)
 #!homepage = https://github.com/Guding88/Script/blob/main/Readme.md
 #!icon = https://raw.githubusercontent.com/Guding88/iCon/main/png/Guding.png
 #!date = 2022-03-15 20:25:57
