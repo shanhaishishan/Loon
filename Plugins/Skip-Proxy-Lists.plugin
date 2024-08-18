@@ -1,0 +1,12 @@
+#!name = Skip Proxy And Real-IP Lists
+#!desc = 跳过部分应用的代理检测
+#!icon = https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1043.png
+#!tag = 优化增强
+#!OpenUrl= https://github.com/mist-whisper
+#!homepage=https://github.com/mist-whisper/Surge/edit/master/Modules/Skip-Proxy-Lists.sgmodule
+#!date=2024-07-06 20:05:57
+
+[General]
+skip-proxy = www.baidu.com, yunbusiness.ccb.com, wxh.wo.cn, gate.lagou.com, www.abchina.com.cn, www.shanbay.com, login-service.mobile-bank.psbc.com, mobile-bank.psbc.com
+
+real-ip = easy-login.10099.com.cn, *-update.xoyocdn.com
