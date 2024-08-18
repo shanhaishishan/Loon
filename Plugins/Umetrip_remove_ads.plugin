@@ -1,8 +1,12 @@
 #!name = 航旅纵横去广告
 #!desc = 过滤航旅纵横广告
 #!openUrl = https://apps.apple.com/app/id480161784 https://apps.apple.com/app/id768160271
-#!author = 佚名
-#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
+#!author = whisper[https://github.com/mist-whisper]
+#!tag = 去广告
+#!system = iOS iPadOS
+#!system_version = 
+#!loon_version = 3.2.1(732)
+#!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Umetrip.png
 #!date = 2023-10-27 11:24:48
 
