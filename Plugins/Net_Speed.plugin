@@ -1,11 +1,14 @@
 #!name = 测试网络延迟
 #!desc = 测试网络速度和延迟
-#!openUrl = https://github.com/mist-whisper/Loon/tree/master/Plugins
-#!author = @wuhu_zzz @xream @keywos @iKeLee @整点猫咪 技术指导：整点薯条
-#!homepage = https://github.com/getsomecat
+#!openUrl = https://github.com/mist-whisper/Loon/blob/master/README.md
+#!author = wuhu_zzz,xream[https://github.com/xream],keywos[https://github.com/keywos],可莉🅥[https://gitlab.com/lodepuly/vpn_tool],整点猫咪[https://github.com/getsomecat],整点薯条[https://github.com/VirgilClyne]
+#!tag = 去广告
+#!system = iOS iPadOS
+#!system_version = 
+#!loon_version = 3.2.1(732)
+#!homepage = https://github.com/getsomecat/Qx/blob/main/Net_Speed.js
 #!icon = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
 #!date = 2024-07-05 20:25:57
 
 [script]
-
 generic script-path=https://raw.githubusercontent.com/getsomecat/Loon/main/Net_Speedlite.js, tag=NetSpeed, timeout=10,img-url=bolt.system
