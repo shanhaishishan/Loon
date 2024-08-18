@@ -11,7 +11,7 @@
 #!date = 2024-04-21 15:41:08
 
 [Script]
-http-response ^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/JD/JD_Price.js, requires-body = true, tag = 京东比价
+http-response ^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item) script-path = https://raw.githubusercontent.com/mist-whisper/JS/master/JD_Price.js, requires-body = true, tag = 京东比价
   
 [Mitm]
 hostname = api.m.jd.com
