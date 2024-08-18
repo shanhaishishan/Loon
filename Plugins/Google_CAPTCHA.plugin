@@ -1,5 +1,5 @@
-#!name = Google人机验证
-#!desc = Google搜索内容时并发使用多个策略/策略组，以避免可能出现的人机验证。注意：需要在插件参数填写策略/策略组名的正则表达式。
+#!name = 谷歌人机验证
+#!desc = 谷歌搜索内容时并发使用多个策略/策略组，以避免可能出现的人机验证。注意：需要在插件参数填写策略/策略组名的正则表达式。
 #!openUrl = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!author = NobyDa[https://github.com/NobyDa]
 #!tag = 功能增强
