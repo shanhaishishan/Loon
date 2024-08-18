@@ -1,8 +1,12 @@
 #!name = 流媒体解锁查询
 #!desc = 优化查询准确率
-#!openUrl = https://github.com/mist-whisper/Loon/tree/master/Plugins
-#!author = ddgksf2013
-#!homepage = https://github.com/deezertidal/private
+#!openUrl = https://github.com/mist-whisper/Loon/blob/master/README.md
+#!author = deezertidal[https://github.com/deezertidal]
+#!tag = 功能增强
+#!system = iOS iPadOS
+#!system_version = 
+#!loon_version = 3.2.1(732)
+#!homepage = https://github.com/deezertidal/private/blob/main/MediaChecker.plugin
 #!icon = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available_1.png
 #!date = 2024-07-05 20:25:57
 
