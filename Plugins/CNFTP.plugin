@@ -1,14 +1,14 @@
 #!name = 芒果TV会员
 #!desc = 国内影视平台去广告，解锁芒果TV会员（含国区，美区，平板端）。电视端不可用。
+#!openUrl = https://apps.apple.com/app/id1295034410
 #!author = RuCu6[https://github.com],Yu9191[https://github.com/Yu9191]
 #!tag = 解锁去广告
-#!system = 
+#!system = iOS iPadOS
 #!system_version = 
 #!loon_version = 3.2.1(732)
+#!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Mango_TV.png
-#!openUrl = https://github.com/mist-whisper/Surge/tree/master/Modules
-#!homepage = https://github.com/RuCu6/QuanX/blob/main/Rewrites/Cube/cnftp.snippet
-#!update = 2024-07-22 22:45
+#!date = 2024-07-22 22:45
 
 [Rewrite]
 # 无用请求
