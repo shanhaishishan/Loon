@@ -1,11 +1,14 @@
 #!name = 方弗相机会员
 #!desc = 解锁方弗相机会员
-#!openUrl = https://github.com/mist-whisper/Loon/tree/master/Plugins
-#!author = 伟人
-#!homepage = https://github.com/WeiGiegie/666/blob/main/ffxj.js
+#!openUrl = https://apps.apple.com/app/id1621425556
+#!author = 伟人[https://github.com/WeiGiegie]
+#!tag = 会员解锁
+#!system = iOS iPadOS
+#!system_version = 
+#!loon_version = 3.2.1(732)
+#!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon = https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1009.png
-#!update = 2024-06-12 12:20
-#!category = 会员解锁
+#!date = 2024-06-12 12:20
 
 [Script]
 # >方弗相机
