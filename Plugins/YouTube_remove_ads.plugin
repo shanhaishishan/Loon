@@ -3,8 +3,8 @@
 #!openUrl = https://apps.apple.com/app/id544007664
 #!author = Maasea[https://github.com/Maasea], VirgilClyne[https://github.com/VirgilClyne], Choler[https://github.com/Choler], DivineEngine[https://github.com/DivineEngine], app2smile[https://github.com/app2smile]
 #!tag = 去广告
-#!system = iOS, iPadOS, macOS
-#!system_version = 15
+#!system = iOS iPadOS MacOS
+#!system_version = iOS15 iPadOS15 MacOS15
 #!loon_version = 3.2.1(732)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/YouTube.png
