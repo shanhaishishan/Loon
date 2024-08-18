@@ -1,9 +1,9 @@
 #!name = 百度网页去广告
 #!desc = 移除百度搜索移动端网页的首页广告信息流
-#!openUrl = 
+#!openUrl = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!author = Keywos[https://github.com/Keywos]
 #!tag = 去广告
-#!system = 
+#!system = iOS iPadOS MacOS
 #!system_version = 
 #!loon_version = 3.2.1(732)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
