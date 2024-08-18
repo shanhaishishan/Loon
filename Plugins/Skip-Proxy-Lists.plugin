@@ -1,9 +1,13 @@
 #!name = Skip Proxy And Real-IP Lists
 #!desc = 跳过部分应用的代理检测
-#!icon = https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1043.png
+#!openUrl = https://github.com/mist-whisper/Loon/blob/master/README.md
+#!author = whisper[https://github.com/mist-whisper]
 #!tag = 优化增强
-#!OpenUrl= https://github.com/mist-whisper
-#!homepage=https://github.com/mist-whisper/Surge/edit/master/Modules/Skip-Proxy-Lists.sgmodule
+#!system = iOS iPadOS
+#!system_version = 
+#!loon_version = 3.2.1(732)
+#!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
+#!icon = https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1043.png
 #!date=2024-07-06 20:05:57
 
 [General]
