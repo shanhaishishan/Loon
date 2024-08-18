@@ -1,8 +1,12 @@
 #!name = Google人机验证
 #!desc = Google搜索内容时并发使用多个策略/策略组，以避免可能出现的人机验证。注意：需要在插件参数填写策略/策略组名的正则表达式。
-#!openUrl = https://github.com/mist-whisper/Loon/tree/master/Plugins
-#!author = NobyDa
-#!homepage = https://github.com/NobyDa/Script/tree/master
+#!openUrl = https://github.com/mist-whisper/Loon/blob/master/README.md
+#!author = NobyDa[https://github.com/NobyDa]
+#!tag = 优化增强
+#!system = iOS iPadOS
+#!system_version = 
+#!loon_version = 3.2.1(732)
+#!homepage = https://github.com/NobyDa/Script/blob/master/Surge/Module/GoogleCAPTCHA.sgmodule
 #!icon = https://cdn.jsdelivr.net/gh/NobyDa/mini@master/Color/Google.png
 #!date = 2024-05-19 12:00:00
 
