@@ -1,0 +1,18 @@
+#!name = 订阅通会员
+#!desc = 解锁订阅通会员
+#!openUrl = https://apps.apple.com/app/id1577082754
+#!author = chxm1023[https://github.com/chxm1023]
+#!tag = 会员解锁
+#!system = iOS iPadOS macOS vision
+#!system_version = iOS16.0 iPadOS 16.0 macOS12.0 visionOS 1.0
+#!loon_version = 3.2.1(732)
+#!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
+#!icon = https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1093.png
+#!date = 2024-07-24 15:44:57
+
+[Script]
+# hostname = buy.itunes.apple.com
+http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=https://raw.githubusercontent.com/mist-whisper/JS/master/Subscriptions.js, requires-body=true, tag=Subscriptions
+
+[MITM]
+hostname = buy.itunes.apple.com
