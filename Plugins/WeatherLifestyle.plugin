@@ -1,0 +1,18 @@
+#!name = 白云天气会员
+#!desc = 解锁白云天气会员
+#!openUrl = https://apps.apple.com/app/id1575901953
+#!author = 彭于晏[https://github.com/89996462]
+#!tag = 会员解锁
+#!system = iOS iPadOS watchOS visionOS
+#!system_version = iOS 14.1  iPadOS 14.1 watchOS 7.0 visionOS 1.0
+#!loon_version = 3.2.1(732)
+#!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
+#!icon = https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1019.png
+#!date = 2024-08-19 14:30
+
+[Script]
+# >白云天气
+http-response  ^https?:\/\/api.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID) script-response-body https://raw.githubusercontent.com/mist-whisper/JS/master/WeatherLifestyle.js, requires-body=true, timeout=60, tag=WeatherLifestyle
+
+[mitm] 
+hostname = api.revenuecat.com
