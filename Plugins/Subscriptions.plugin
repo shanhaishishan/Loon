@@ -11,7 +11,7 @@
 #!date = 2024-07-24 15:44:57
 
 [Script]
-http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=https://raw.githubusercontent.com/Guding88/Script/main/dingyuetong.js, requires-body=true, timeout=60, tag=dingyuetong
+http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=https://raw.githubusercontent.com/mist-whisper/JS/master/Subscriptions.js, requires-body=true, timeout=60, tag=Subscriptions
 
 [MITM]
 hostname = buy.itunes.apple.com
