@@ -11,10 +11,9 @@
 #!date = 2024-06-12 12:20
 
 [Script]
-# >方弗相机
-http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) script-path=https://raw.githubusercontent.com/mist-whisper/JS/master/FunforCam.js, requires-body=true, timeout=60, tag=FunforCam
+http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) script-path=https://raw.githubusercontent.com/Guding88/Script/main/fangfuxiangji.js, requires-body=true, timeout=60, tag=fangfuxiangji
 
-http-request ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) script-path=https://raw.githubusercontent.com/mist-whisper/JS/master/FunforCam.js, timeout=60, tag=FunforCam
+http-request ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) script-path=https://raw.githubusercontent.com/Guding88/Script/main/fangfuxiangji.js, timeout=60, tag=fangfuxiangji
 
 [MITM]
 hostname = api.revenuecat.com
