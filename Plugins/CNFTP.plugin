@@ -1,5 +1,5 @@
-#!name = 芒果TV会员
-#!desc = 国内影视平台去广告，解锁芒果TV会员（含国区，美区，平板端）。电视端不可用。
+#!name = 国内影视平台去广告
+#!desc = 国内影视平台去广告
 #!openUrl = https://apps.apple.com/app/id1295034410
 #!author = RuCu6[https://github.com],Yu9191[https://github.com/Yu9191]
 #!tag = 解锁去广告
@@ -79,9 +79,9 @@ http-response ^https:\/\/search\.video\.iqiyi\.com\/q\? script-path=https://raw.
 http-response ^https?:\/\/(kjp|t7z)\.cupid\.iqiyi\.com\/mixer\? script-path=https://raw.githubusercontent.com/mist-whisper/JS/master/CNFTP.js, requires-body=true, timeout=60, tag=CNFTP
 
 # 会员解锁 (国区,美区,平板端)
-http-request ^https:\/\/mobile-stream\.api\.mgtv\.com\/v1\/video\/source\? script-path=https://raw.githubusercontent.com/mist-whisper/JS/master/MangoTV.js, timeout=60, tag=MangoTV
+# http-request ^https:\/\/mobile-stream\.api\.mgtv\.com\/v1\/video\/source\? script-path=https://raw.githubusercontent.com/mist-whisper/JS/master/MangoTV.js, timeout=60, tag=MangoTV
 
-http-request ^https:\/\/(mobile|pad|pcc)\.api\.mgtv\.com\/v8\/video\/getSource\? script-path=https://raw.githubusercontent.com/mist-whisper/JS/master/MangoTV.js, timeout=60, tag=MangoTV
+# http-request ^https:\/\/(mobile|pad|pcc)\.api\.mgtv\.com\/v8\/video\/getSource\? script-path=https://raw.githubusercontent.com/mist-whisper/JS/master/MangoTV.js, timeout=60, tag=MangoTV
 
 # 我的页面
 http-response ^https:\/\/me\.bz\.mgtv\.com\/v3\/module\/list\? script-path=https://raw.githubusercontent.com/mist-whisper/JS/master/CNFTP.js, requires-body=true, timeout=60, tag=CNFTP
