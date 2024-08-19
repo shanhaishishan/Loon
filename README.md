@@ -21,7 +21,7 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 * [广告平台拦截器](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/BlockAdvertisters.plugin)
 * [拦截HTTPDNS](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Block_HTTPDNS.plugin)
 * [BoxJs](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/BoxJs.plugin)
-* [芒果TV会员](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/CNFTP.plugin)
+* [国内影视平台去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/CNFTP.plugin)
 * [菜鸟去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Cainiao_remove_ads.plugin)
 * [App解锁合集](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Collections.plugin)
 * [彩云天气去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/ColorfulClouds_remove_ads.plugin)
