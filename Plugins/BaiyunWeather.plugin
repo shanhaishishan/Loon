@@ -1,7 +1,7 @@
 #!name = 白云天气会员
 #!desc = 解锁白云天气会员
 #!openUrl = https://apps.apple.com/app/id1575901953
-#!author = 彭于晏[https://github.com/89996462]
+#!author = 骨钉[https://github.com/Guding88]
 #!tag = 会员解锁
 #!system = iOS iPadOS
 #!system_version = 
@@ -12,7 +12,10 @@
 
 [Script]
 # >白云天气
-http-response ^https?:\/\/api.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ script-path=https://raw.githubusercontent.com/mist-whisper/JS/master/BaiyunWeather.js, requires-body=true, timeout=60, tag=BaiyunWeather
+[Script]
+http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) script-path=https://raw.githubusercontent.com/mist-whisper/JS/master/BaiyunWeather.js, requires-body=true, timeout=60, tag=BaiyunWeather
 
-[MITM] 
+http-request ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) script-path=https://raw.githubusercontent.com/mist-whisper/JS/master/BaiyunWeather.js, timeout=60, tag=BaiyunWeather
+
+[MITM]
 hostname = api.revenuecat.com
