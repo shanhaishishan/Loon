@@ -1,0 +1,11 @@
+#!name=fangfuxiangji
+#!desc=fangfuxiangji
+#!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1045.png
+
+[Script]
+http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) script-path=https://raw.githubusercontent.com/Guding88/Script/main/fangfuxiangji.js, requires-body=true, timeout=60, tag=fangfuxiangji
+
+http-request ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) script-path=https://raw.githubusercontent.com/Guding88/Script/main/fangfuxiangji.js, timeout=60, tag=fangfuxiangji
+
+[MITM]
+hostname = api.revenuecat.com
