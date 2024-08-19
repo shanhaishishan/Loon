@@ -3,8 +3,8 @@
 #!openUrl = https://apps.apple.com/app/id847764912
 #!author = RuCu6[https://github.com/RuCu6]
 #!tag = 解锁去广告
-#!system = iOS iPadOS
-#!system_version = 
+#!system = iOS iPadOS macOS visionOS watchOS
+#!system_version = iOS12.2 iPadOS12.2 macOS11.0 visionOS1.0 watchOS4.0
 #!loon_version = 3.2.1(732)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/ColorfulClouds.png
@@ -15,7 +15,13 @@
 ^https:\/\/starplucker\.cyapi\.cn\/v3\/(config\/cypage\/\w+\/conditions|notification\/message_center|operation\/homefeatures) reject-dict
 
 [Script]
-http-response ^https:\/\/(wrapper\.cyapi\.cn|api\.caiyunapp\.com|cdn-w\.caiyunapp\.com)\/v1\/activity\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/ColorfulClouds/ColorfulClouds_remove_ads.js, requires-body = true, tag = 彩云天气去广告
+http-response ^https:\/\/api\.caiyunapp\.com\/v1\/activity\? script-path=https://raw.githubusercontent.com/mist-whisper/JS/master/ColorfulClouds/ColorfulClouds.js, requires-body=true, timeout=60, tag=彩云天气
+
+http-response ^https:\/\/biz\.cyapi\.cn\/(p\/v1\/vip_info|v2\/user) script-path=https://raw.githubusercontent.com/mist-whisper/JS/master/ColorfulClouds/ColorfulClouds.js, requires-body=true, timeout=60, tag=彩云天气
+
+http-response ^https:\/\/wrapper\.cyapi\.cn\/v1\/activity\? script-path=https://raw.githubusercontent.com/mist-whisper/JS/master/ColorfulClouds/ColorfulClouds.js, requires-body=true, timeout=60, tag=彩云天气
+
+http-request ^https:\/\/wrapper\.cyapi\.cn\/v1\/(nafp\/origin_images|satellite)\? script-path=https://raw.githubusercontent.com/mist-whisper/JS/master/ColorfulClouds/ColorfulClouds.js, timeout=60, tag=彩云天气
 
 [Mitm]
-hostname = biz.cyapi.cn, starplucker.cyapi.cn, api.caiyunapp.com, cdn-w.caiyunapp.com
+hostname = api.caiyunapp.com, *.cyapi.cn
