@@ -1,7 +1,7 @@
 #!name = 方弗相机会员
 #!desc = 解锁方弗相机会员
 #!openUrl = https://apps.apple.com/app/id1621425556
-#!author = 伟人[https://github.com/WeiGiegie]
+#!author = 骨钉[https://github.com/Guding88]
 #!tag = 会员解锁
 #!system = iOS iPadOS
 #!system_version = 
@@ -12,7 +12,9 @@
 
 [Script]
 # >方弗相机
-http-response ^https?:\/\/api.revenuecat.com\/v1\/(receipts|subscribers\/\$RCAnonymousID) script-path=https://raw.githubusercontent.com/mist-whisper/JS/master/FunforCam.js, requires-body=true, timeout=60, tag=FunforCam
+http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) script-path=https://raw.githubusercontent.com/mist-whisper/JS/master/FunforCam.js, requires-body=true, timeout=60, tag=FunforCam
+
+http-request ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) script-path=https://raw.githubusercontent.com/mist-whisper/JS/master/FunforCam.js, timeout=60, tag=FunforCam
 
 [MITM]
 hostname = api.revenuecat.com
