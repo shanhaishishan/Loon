@@ -40,7 +40,7 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 * [酷狗音乐去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/KuGou_remove_ads.plugin)
 * [Line去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Line_remove_ads.plugin)
 * [插件仓库](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/LoonGallery.plugin)
-* [咪咕视频会员](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/MIGUVideo.plugin)
+<!-- * * [咪咕视频会员](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/MIGUVideo.plugin) -->
 * [脉脉去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/MaiMai_remove_ads.plugin)
 * [流媒体解锁查询](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/MediaChecker.plugin)
 * [MyBlockAds](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/MyBlockAds.plugin)
