@@ -38,6 +38,7 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 * [京东比价](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/JD_Price.plugin)
 * [京东去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/JD_remove_ads.plugin)
 * [酷狗音乐去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/KuGou_remove_ads.plugin)
+* [酷我音乐去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Kuwo_remove_ads.plugin)
 * [Line去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Line_remove_ads.plugin)
 * [插件仓库](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/LoonGallery.plugin)
   <!-- * [咪咕视频会员](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/MIGUVideo.plugin) -->
