@@ -44,10 +44,10 @@ AND, ((URL-REGEX, ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch), (USER-A
 
 [Script]
 # 商品信息流广告
-http-response ^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/FleaMarket/FleaMarket_remove_ads.js, requires-body = true, tag = 移除宝贝信息流广告
+http-response ^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/ script-path = https://raw.githubusercontent.com/mist-whisper/JS/master/FleaMarket_remove_ads.js, requires-body = true, tag = 移除宝贝信息流广告
 
 # 首页标签图片
-http-response ^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.circle\.list\/ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/FleaMarket/FleaMarket_remove_ads.js, requires-body = true, tag = 移除首页标签图片
+http-response ^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.circle\.list\/ script-path = https://raw.githubusercontent.com/mist-whisper/JS/master/FleaMarket_remove_ads.js, requires-body = true, tag = 移除首页标签图片
 
 [Mitm]
 hostname = acs.m.goofish.com, g-acs.m.goofish.com, dinamicx.alibabausercontent.com
