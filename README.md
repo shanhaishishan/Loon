@@ -43,12 +43,11 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 * [插件仓库](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/LoonGallery.plugin)
   <!-- * [咪咕视频会员](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/MIGUVideo.plugin) -->
 * [脉脉去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/MaiMai_remove_ads.plugin)
-* [流媒体解锁查询](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/MediaChecker.plugin)
 * [MyBlockAds](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/MyBlockAds.plugin)
 * [网易云音乐去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/NetEaseCloudMusic_remove_ads.plugin)
 * [测试网络延迟](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Net_Speed.plugin)
 * [代理链路检测](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/NodeLinkCheck.Plugin)
-* [节点检测工具](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Node_detection_tool.plugin)
+* [节点检测](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Node_detection_tool.plugin)
 * [拼多多去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/PinDuoDuo_remove_ads.plugin)
 * [DNS防泄露](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Prevent_DNS_Leaks.plugin)
 * [朴朴超市去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/PuPuMall_remove_ads.plugin)
