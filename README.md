@@ -11,6 +11,7 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 
 * [AdGuardPremium解锁](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/AdGuardPremium.plugin)
 * [APP启动页去广告Ultra+](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/AdultraPlusUltra.plugin)
+* [爱企查会员](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Aiinquiry_crack.plugin)
 * [高德地图去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Amap_remove_ads.plugin)
 * [APP脚本合集-骨钉](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Appheji_Guding.plugin)
 * [百度网页去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/BaidusearchWebpage_remove_ads.plugin)
