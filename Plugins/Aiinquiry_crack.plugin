@@ -1,0 +1,20 @@
+#!name = 爱企查解锁
+#!desc = 点击恢复购买即可解锁订阅
+#!openUrl = https://apps.apple.com/app/id1527039353
+#!author = litieyin[https://github.com/litieyin]
+#!tag = 会员解锁
+#!system = 
+#!system_version = 
+#!loon_version = 3.2.1(745)
+#!homepage = https://gitlab.com/isous/loonresource/-/blob/main/README.md
+#!icon = https://gitlab.com/isous/loonresource/-/raw/main/Icon/Aiinquiry.png
+#!date = 2023-09-08 13:48:55
+
+[Rewrite]
+^https:\/\/b2baifanfan\.baidu\.com\/crm\/web\/b2b\/im\/common\/getConfigByDeviceNum reject-200
+
+[Script]
+http-response ^https?:\/\/aiqicha\.baidu\.com\/usercenter\/getvipinfoajax script-path = https://gitlab.com/isous/loonresource/-/raw/main/Script/Aiinquiry/Aiinquiry_crack.js, requires-body = true, tag = 爱企查解锁
+
+[Mitm]
+hostname = aiqicha.baidu.com
