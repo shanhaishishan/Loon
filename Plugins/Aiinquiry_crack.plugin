@@ -1,9 +1,9 @@
-#!name = 爱企查解锁
-#!desc = 点击恢复购买即可解锁订阅
+#!name = 爱企查会员
+#!desc = 解锁爱企查会员，点击恢复购买即可解锁订阅
 #!openUrl = https://apps.apple.com/app/id1527039353
 #!author = litieyin[https://github.com/litieyin]
 #!tag = 会员解锁
-#!system = 
+#!system = iOS iPadOS
 #!system_version = 
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/isous/loonresource/-/blob/main/README.md
