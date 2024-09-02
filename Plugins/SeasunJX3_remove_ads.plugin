@@ -11,7 +11,7 @@
 #!date = 2024-08-30 22:46:48
 
 [General]
-real-ip = *-update.xoyocdn.com
+real-ip = 
 
 [Rewrite]
 # 热点推送
