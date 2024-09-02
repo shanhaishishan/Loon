@@ -11,7 +11,7 @@
 #!date = 2024-08-30 22:46:48
 
 [General]
-real-ip = jx3v*-update.xoyocdn.com
+real-ip = jx3v*-update.xoyocdn.com, *-update.xoyocdn.com
 
 [Rewrite]
 # 热点推送
