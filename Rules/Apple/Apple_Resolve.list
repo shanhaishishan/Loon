@@ -10,6 +10,7 @@ DOMAIN-SUFFIX, apps.apple.com //商店内容，如 App、图书和音乐
 DOMAIN-SUFFIX, mzstatic.com //商店内容，如 App、图书和音乐
 DOMAIN, itunes.apple.com
 DOMAIN, daf.xp.apple.com
+DOMAIN, token.safebrowsing.apple
 DOMAIN, ppq.apple.com //企业 App 验证
 # Apple ID - Apple 设备必须能够连接到以下主机才能验证 Apple ID。所有使用 Apple ID 的服务（如 iCloud、App 安装和 Xcode）都需要满足这个条件。
 DOMAIN, appleid.apple.com //“设置”和“系统偏好设置”中的 Apple ID 认证
