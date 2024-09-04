@@ -6,6 +6,7 @@
 
 DOMAIN,this_ruleset_is_made_by_sukkaw.ruleset.skk.moe
 
+DOMAIN,emby.baisi.xyz
 DOMAIN,1lib.sk
 DOMAIN,pki.goog
 DOMAIN,addons.mozilla.org
@@ -588,4 +589,6 @@ DOMAIN-KEYWORD,quppy
 DOMAIN-KEYWORD,trakt
 DOMAIN-KEYWORD,levelinfinite
 DOMAIN-KEYWORD,tmdb
+DOMAIN-KEYWORD,depay
+DOMAIN-KEYWORD,dupay
 USER-AGENT,Roam*
