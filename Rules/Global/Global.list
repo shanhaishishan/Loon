@@ -4,7 +4,7 @@
 # UPDATED: 2024-09-04 21:04
 # This file contains rules for services that are not available inside the Mainland China.
 
-DOMAIN,this_ruleset_is_made_by_sukkaw.ruleset.skk.moe
+#DOMAIN,this_ruleset_is_made_by_sukkaw.ruleset.skk.moe
 
 DOMAIN,emby.baisi.xyz
 DOMAIN,1lib.sk
