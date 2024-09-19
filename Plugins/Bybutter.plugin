@@ -1,0 +1,8 @@
+#!name=黄油相机
+#!desc=黄油相机
+
+[Script]
+黄油相机 = type=http-response,pattern=https:\/\/api4\.bybutter\.com\/v4\/*,requires-body=0,script-path= https://raw.githubusercontent.com/mist-whisper/JS/refs/heads/master/Bybutter.js,script-update-interval=0
+
+[MITM]
+hostname = api4.bybutter.com
