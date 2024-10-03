@@ -1,6 +1,6 @@
 #!name = Soul去广告
 #!desc = 移除开屏广告、移除话题页面热Soul话题、移除评论区礼物榜、移除更新提示、移除青少年弹窗、移除我的页面推广、移除悬浮部件。
-#!openUrl = https://apps.apple.com/app/id1032287195
+#!openUrl = 
 #!author = ZenmoFeiShi[https://github.com/ZenmoFeiShi], RuCu6[https://github.com/RuCu6], 可莉🅥[https://gitlab.com/lodepuly/vpn_tool]
 #!tag = 去广告
 #!system = iOS iPadOS
@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(732)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Soul.png
-#!date = 2024-06-16 20:23:01
+#!date = 2024-09-04 08:50
 
 [Rule]
 # 地理位置 - 影响注册账号时的属地判断
@@ -34,22 +34,22 @@ IP-CIDR, 121.196.197.147/32, REJECT, no-resolve
 [Rewrite]
 # 开屏广告
 ^https:\/\/ssp\.soulapp\.cn\/api\/q reject-dict
-^https:\/\/chat-live\.soulapp\.cn\/live\/planet\/recListV2 reject-200
+^https:\/\/chat-live\.soulapp\.cn\/live\/planet\/recListV2 reject-dict
 
 [Script]
-http-response ^https:\/\/api-a\.soulapp\.cn\/v2\/post\/gift\/list script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Soul/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
-http-response ^https:\/\/post\.soulapp\.cn\/hot\/soul\/rank script-path = https://raw.githubusercontent.com/mist-whisper/JS/master/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
-http-response ^https:\/\/gateway-mobile-gray\.soulapp\.cn\/mobile\/app\/version\/queryIos script-path = https://raw.githubusercontent.com/mist-whisper/JS/master/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
-http-response ^https:\/\/api-chat\.soulapp\.cn\/chat\/limitInfo script-path = https://raw.githubusercontent.com/mist-whisper/JS/master/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
-http-response ^https:\/\/post\.soulapp\.cn\/v\d\/post\/homepage\/guide\/card script-path = https://raw.githubusercontent.com/mist-whisper/JS/master/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
-http-response ^https:\/\/api-user\.soulapp\.cn\/furion\/position\/content script-path = https://raw.githubusercontent.com/mist-whisper/JS/master/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
-http-response ^https:\/\/api-account\.soulapp\.cn\/teenager\/config script-path = https://raw.githubusercontent.com/mist-whisper/JS/master/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
-http-response ^https:\/\/47\.110\.187\.87\/winterfell\/(?:v2\/)?getIpByDomain script-path = https://raw.githubusercontent.com/mist-whisper/JS/master/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
-http-response ^https:\/\/chat-live\.soulapp\.cn\/chatroom\/chatClassifyRoomList script-path = https://raw.githubusercontent.com/mist-whisper/JS/master/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
-http-response ^https:\/\/api-user\.soulapp\.cn\/v6\/planet\/config script-path = https://raw.githubusercontent.com/mist-whisper/JS/master/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
-http-response ^https:\/\/api-a\.soulapp\.cn\/official\/scene\/module script-path = https://raw.githubusercontent.com/mist-whisper/JS/master/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
-http-response ^https:\/\/post\.soulapp\.cn\/v2\/post\/recSquare\/subTabs script-path = https://raw.githubusercontent.com/mist-whisper/JS/master/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
-http-response ^https:\/\/api-user\.soulapp\.cn\/homepage\/diamond\/position\/info script-path = https://raw.githubusercontent.com/mist-whisper/JS/master/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
+http-response ^https:\/\/api-a\.soulapp\.cn\/v2\/post\/gift\/list script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/soul.js, requires-body = true, tag = 移除Soul广告
+http-response ^https:\/\/post\.soulapp\.cn\/hot\/soul\/rank script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/soul.js, requires-body = true, tag = 移除Soul广告
+http-response ^https:\/\/gateway-mobile-gray\.soulapp\.cn\/mobile\/app\/version\/queryIos script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/soul.js, requires-body = true, tag = 移除Soul广告
+http-response ^https:\/\/api-chat\.soulapp\.cn\/chat\/limitInfo script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/soul.js, requires-body = true, tag = 移除Soul广告
+http-response ^https:\/\/post\.soulapp\.cn\/v\d\/post\/homepage\/guide\/card script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/soul.js, requires-body = true, tag = 移除Soul广告
+http-response ^https:\/\/api-user\.soulapp\.cn\/furion\/position\/content script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/soul.js, requires-body = true, tag = 移除Soul广告
+http-response ^https:\/\/api-account\.soulapp\.cn\/teenager\/config script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/soul.js, requires-body = true, tag = 移除Soul广告
+#http-response ^https:\/\/47\.110\.187\.87\/winterfell\/(v2\/)?getIpByDomain script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/soul.js, requires-body = true, tag = 移除Soul广告
+http-response ^https:\/\/chat-live\.soulapp\.cn\/chatroom\/chatClassifyRoomList script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/soul.js, requires-body = true, tag = 移除Soul广告
+http-response ^https:\/\/api-user\.soulapp\.cn\/v6\/planet\/config script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/soul.js, requires-body = true, tag = 移除Soul广告
+http-response ^https:\/\/api-a\.soulapp\.cn\/official\/scene\/module script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/soul.js, requires-body = true, tag = 移除Soul广告
+http-response ^https:\/\/post\.soulapp\.cn\/v2\/post\/recSquare\/subTabs script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/soul.js, requires-body = true, tag = 移除Soul广告
+http-response ^https:\/\/api-user\.soulapp\.cn\/homepage\/diamond\/position\/info script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/soul.js, requires-body = true, tag = 移除Soul广告
 
-[Mitm]
-hostname = 47.110.187.87, api-a.soulapp.cn, api-account.soulapp.cn, api-chat.soulapp.cn, api-user.soulapp.cn, chat-live.soulapp.cn, gateway-mobile-gray.soulapp.cn, post.soulapp.cn, ssp.soulapp.cn
+[MITM]
+hostname = api*.soulapp.cn, gateway-mobile-gray.soulapp.cn, post.soulapp.cn, ssp.soulapp.cn
