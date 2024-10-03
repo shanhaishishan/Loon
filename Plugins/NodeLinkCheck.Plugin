@@ -1,6 +1,6 @@
 #!name = 代理链路检测
 #!desc = 查看目标节点的代理走向，点击下方链接查看使用方法。
-#!openUrl = https://github.com/mist-whisper/Loon/blob/master/README.md
+#!openUrl = 
 #!author = I-am-R-E[https://github.com/I-am-R-E]
 #!tag = 功能增强
 #!system = iOS iPadOS
