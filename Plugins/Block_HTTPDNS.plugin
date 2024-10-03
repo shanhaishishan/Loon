@@ -1,6 +1,6 @@
 #!name = 拦截HTTPDNS
 #!desc = 拦截常见的HTTPDNS服务，以确保这些请求都能够在Loon的DNS框架下工作。
-#!openUrl = https://github.com/mist-whisper/Loon/blob/master/README.md
+#!openUrl = 
 #!author = 可莉🅥[https://gitlab.com/lodepuly/vpn_tool], VirgilClyne[https://github.com/VirgilClyne]
 #!tag = DNS
 #!system = iOS iPadOS
