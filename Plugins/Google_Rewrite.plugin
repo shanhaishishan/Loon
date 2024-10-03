@@ -1,6 +1,6 @@
 #!name = 谷歌搜索重定向
 #!desc = 将Google搜索重定向至.com域名，如遇频繁跳转请禁用本插件。
-#!openUrl = https://github.com/mist-whisper/Loon/blob/master/README.md
+#!openUrl = 
 #!author = 可莉🅥[https://gitlab.com/lodepuly/vpn_tool]
 #!tag = 功能增强
 #!system = iOS iPadOS
