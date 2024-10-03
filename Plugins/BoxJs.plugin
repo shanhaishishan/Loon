@@ -1,6 +1,6 @@
 #!name = BoxJs
 #!desc = JavaScript数据管理器，用于管理脚本储存的数据。使用前请在本插件的详情页面为[PROXY]项分配代理策略。
-#!openUrl = http://boxjs.com
+#!openUrl = 
 #!author = chavyleung[https://github.com/chavyleung]
 #!tag = 脚本数据管理
 #!system = iOS iPadOS
