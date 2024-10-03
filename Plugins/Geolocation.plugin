@@ -1,6 +1,6 @@
 #!name = 节点信息查询
 #!desc = 节点IP，服务商，国家，时区，经纬度，货币查询
-#!openUrl = https://github.com/mist-whisper/Loon/blob/master/README.md
+#!openUrl = 
 #!author = deezertidal[https://github.com/deezertidal]
 #!tag = 优化增强
 #!system = iOS iPadOS
