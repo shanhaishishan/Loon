@@ -1,6 +1,6 @@
 #!name = 跳过代理
 #!desc = 跳过部分应用的代理检测
-#!openUrl = https://github.com/mist-whisper/Loon/blob/master/README.md
+#!openUrl = 
 #!author = whisper[https://github.com/mist-whisper]
 #!tag = 优化增强
 #!system = iOS iPadOS
