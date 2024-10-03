@@ -6,12 +6,10 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 [一键导入基础配置](https://www.nsloon.com/openloon/import?sub=https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf)
 
 # 插件
-## 插件库更新重建中，部分插件可能暂时失效。
 **_点击下方链接,一键导入插件_**
 
 * [AdGuardPremium解锁](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/AdGuardPremium.plugin)
 * [APP启动页去广告Ultra+](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/AdultraPlusUltra.plugin)
-* [爱企查会员](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Aiinquiry_crack.plugin)
 * [高德地图去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Amap_remove_ads.plugin)
 * [APP脚本合集-骨钉](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Appheji_Guding.plugin)
 * [百度网页去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/BaidusearchWebpage_remove_ads.plugin)
@@ -27,7 +25,8 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 * [App解锁合集](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Collections.plugin)
 * [彩云天气去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/ColorfulClouds_remove_ads.plugin)
 * [滴滴出行去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/DiDi_remove_ads.plugin)
-* [豆瓣去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/DouBan_remove_ads.plugin)
+* [订阅通会员](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Plugins/Dingyvetong.plugin)
+* [豆瓣去广告（自签可用）](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/DouBan_remove_ads.plugin)
 * [Fimo复古胶片相机](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/FIMO.plugin)
 * [闲鱼去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/FleaMarket_remove_ads.plugin)
 * [方弗相机会员](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/FunforCam.plugin)
@@ -42,7 +41,6 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 * [酷我音乐去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Kuwo_remove_ads.plugin)
 * [Line去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Line_remove_ads.plugin)
 * [插件仓库](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/LoonGallery.plugin)
-  <!-- * [咪咕视频会员](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/MIGUVideo.plugin) -->
 * [脉脉去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/MaiMai_remove_ads.plugin)
 * [MyBlockAds](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/MyBlockAds.plugin)
 * [网易云音乐去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/NetEaseCloudMusic_remove_ads.plugin)
@@ -60,7 +58,6 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 * [Soul去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Soul_remove_ads.plugin)
 * [Spotify歌词增强](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Spotify_lyrics_translation.plugin)
 * [Sub-Store](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Sub-Store.plugin)
-* [订阅通会员](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Subscriptions.plugin)
 * [乐播投屏去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/TV_Assistant_remove_ads.plugin)
 * [Talkatone去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Talkatone_remove_ads.plugin)
 * [淘宝去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Taobao_remove_ads.plugin)
@@ -75,3 +72,4 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 * [央视频](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Yangshipin.plugin)
 * [YouTube去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/YouTube_remove_ads.plugin)
 * [知乎去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Zhihu_remove_ads.plugin)
+* [网页去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Plugins/webpage.plugin)
