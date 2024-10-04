@@ -17,6 +17,7 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 * [银行去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Bank_remove_ads.plugin)
 * [Bilibili增强(白色B站)](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/BiliBiliWhite_remove_ads.plugin)
 * [Bilibili去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/BiliBili_remove_ads.plugin)
+* [广告拦截&净化合集](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Plugins/BlockAds.plugin)
 * [广告平台拦截器](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/BlockAdvertisters.plugin)
 * [拦截HTTPDNS](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Block_HTTPDNS.plugin)
 * [BoxJs](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/BoxJs.plugin)
