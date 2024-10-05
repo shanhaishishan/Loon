@@ -36,8 +36,8 @@
 # >>>>>>>>>>>>>>> ✅ B ✅ <<<<<<<<<<<<<<
 # > 哔哩哔哩
 # 开屏广告
-URL-REGEX, ^http:\/\/upos-sz-static\.bilivideo\.com\/ssaxcode\/\w{2}\/\w{2}\/\w{32}-1-SPLASH, REJECT-DICT
-URL-REGEX, ^http:\/\/[\d\.]+:8000\/v1\/resource\/\w{32}-1-SPLASH, REJECT-DICT
+# URL-REGEX, ^http:\/\/upos-sz-static\.bilivideo\.com\/ssaxcode\/\w{2}\/\w{2}\/\w{32}-1-SPLASH, REJECT-DICT
+# URL-REGEX, ^http:\/\/[\d\.]+:8000\/v1\/resource\/\w{32}-1-SPLASH, REJECT-DICT
 
 
 
@@ -433,13 +433,13 @@ IP-CIDR6, 2402:4e00:1200:ed00:0:9089:6dac:96b6/128, REJECT, no-resolve
 # > 哔哩哔哩
 # hostname = app.bilibili.com, api.bilibili.com, api.live.bilibili.com, grpc.biliapi.net
 # 开屏广告
-^https:\/\/(?:api\.bilibili\.com\/x\/mengqi\/v1\/resource|app\.bilibili\.com\/x\/resource\/peak\/download) reject-dict
+# ^https:\/\/(?:api\.bilibili\.com\/x\/mengqi\/v1\/resource|app\.bilibili\.com\/x\/resource\/peak\/download) reject-dict
 # 满意度调研
-^https:\/\/api\.bilibili\.com\/x\/v2\/dm\/qoe\/show\? reject-dict
+# ^https:\/\/api\.bilibili\.com\/x\/v2\/dm\/qoe\/show\? reject-dict
 # 大会员广告
-^https:\/\/api\.bilibili\.com\/x\/vip\/ads\/materials\? reject-dict
+# ^https:\/\/api\.bilibili\.com\/x\/vip\/ads\/materials\? reject-dict
 # 直播广告
-^https:\/\/api\.live\.bilibili\.com\/xlive\/e-commerce-interface\/v1\/ecommerce-user\/get_shopping_info\? reject-dict
+# ^https:\/\/api\.live\.bilibili\.com\/xlive\/e-commerce-interface\/v1\/ecommerce-user\/get_shopping_info\? reject-dict
 # 屏蔽默认搜索框关键词
 ^https:\/\/(?:app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.interface\.v1\.Search\/DefaultWords reject-dict
 # 流量卡推荐
@@ -3565,7 +3565,7 @@ http-response ^https:\/\/app\.bilibili\.com\/x\/v2\/feed\/index(\/story)?\? scri
 # 移除右上角活动入口
 http-response ^https:\/\/app\.bilibili\.com\/x\/resource\/top\/activity\? script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/bilibili/json.js, requires-body = true, tag = 哔哩哔哩移除右上角活动入口
 # 精简首页顶部标签
-http-response ^https:\/\/app\.bilibili\.com\/x\/resource\/show\/tab\/v2\? script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/bilibili/json.js, requires-body = true, tag = 哔哩哔哩精简首页顶部标签
+# http-response ^https:\/\/app\.bilibili\.com\/x\/resource\/show\/tab\/v2\? script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/bilibili/json.js, requires-body = true, tag = 哔哩哔哩精简首页顶部标签
 # 移除热搜广告
 http-response ^https:\/\/app\.bilibili\.com\/x\/v2\/search\/square script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/bilibili/json.js, requires-body = true, tag = 哔哩哔哩移除热搜广告
 # 移除观影页广告
