@@ -59,6 +59,7 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 * [淘宝去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Taobao_remove_ads.plugin)
 * [腾讯视频去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Tencent_Video_remove_ads.plugin)
 * [TestFlight解锁](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/TestFlightRegionUnlock.plugin)
+* [网页去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Plugins/Webpage.plugin)
 * [微博去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Weibo_remove_ads.plugin)
 * [微信外部链接解锁](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Weixin_external_links_unlock.plugin)
 * [微信小程序去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/WeixnMiniProgram_remove_ads.plugin)
@@ -66,4 +67,3 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 * [央视频](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Yangshipin.plugin)
 * [YouTube去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/YouTube_remove_ads.plugin)
 * [知乎去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Zhihu_remove_ads.plugin)
-* [网页去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Plugins/webpage.plugin)
