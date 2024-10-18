@@ -9,9 +9,7 @@
 #!homepage = https://github.com/mist-whisper
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/NeteaseCloudMusic.png
 #!date = 2024-10-11 01:45
-#!input = RuCu6_Music163_Cookie
-#!input = RuCu6_Music163_MConfigInfo
-#!input = RuCu6_Music163_UserAgent
+
 #!select = 隐藏漫游标签, 是, 否
 #!select = 隐藏动态标签, 是, 否
 #!select = 隐藏推荐标签, 是, 否
@@ -27,7 +25,10 @@
 #!select = 隐藏首页你的专属歌单, 是, 否
 
 [Argument]
-RuCu6_Music163_VIP_Shared = switch, true, false, tag=网易云音乐共享会员, desc=会员共享开关
+# #!input = RuCu6_Music163_Cookie
+# #!input = RuCu6_Music163_MConfigInfo
+# #!input = RuCu6_Music163_UserAgent
+# RuCu6_Music163_VIP_Shared = switch, true, false, tag=网易云音乐共享会员, desc=会员共享开关
 
 [Rule]
 DOMAIN, iadmat.nosdn.127.net, REJECT
