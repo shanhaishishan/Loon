@@ -8,7 +8,7 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 # 插件
 **_点击下方链接,一键导入插件_**
 
-* [AdGuardPremium解锁](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/AdGuardPremium.plugin)
+* [AdGuardPremium解锁](https://www.nsloon.com/openloon/import?plugin=[https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/AdGuardPremium.plugin](https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Plugins/AdGuardPremium.plugin?token=GHSAT0AAAAAACY3JBYBLIEEKPYP52MNVFAWZYYTSPQ))
 * [APP启动页去广告Ultra+](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/AdultraPlusUltra.plugin)
 * [高德地图去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Amap_remove_ads.plugin)
 * [APP脚本合集-骨钉](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Appheji_Guding.plugin)
