@@ -13,10 +13,11 @@
 [Rule]
 # 广告过滤
 DOMAIN-SUFFIX,wxs.qq.com,REJECT
-# 微信小程序通用规则
+# 微信小程序及公众号通用规则
 DOMAIN,wxsnsdy.wxs.qq.com,REJECT
 DOMAIN,wxsmsdy.video.qq.com,REJECT
 DOMAIN,wxsnsdythumb.wxs.qq.com,REJECT
+URL-REGEX, ^http:\/\/[\d\.]+(:49155)?\/finderpdd\.video\.qq\.com\/\d+\/\d+\/stodownload\?, REJECT-DICT
 # 收钱吧广告
 DOMAIN,ads-shopping.shouqianba.com,REJECT
 # 猫眼电影
