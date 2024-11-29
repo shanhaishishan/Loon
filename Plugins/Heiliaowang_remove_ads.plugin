@@ -1,6 +1,6 @@
 #!name = 黑料网去广告
 #!desc = 去除部分广告，优先使用海外永久入口，其次使用国内入口，走代理
-#!openUrl = https://155fun.com
+#!openUrl = https://155fun
 #!author = fishdown[https://github.com/fishdown]
 #!tag = 去广告
 #!system = iOS iPadOS
