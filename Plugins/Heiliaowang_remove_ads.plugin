@@ -1,5 +1,5 @@
 #!name = 黑料网去广告
-#!desc = 只去除了首页广告，其他地方的不会去。155fun.com 这是发布页
+#!desc = 155fun.com
 #!openUrl = 
 #!author = fishdown[https://github.com/fishdown]
 #!tag = 去广告
