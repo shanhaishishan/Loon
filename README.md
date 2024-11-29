@@ -54,7 +54,7 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 * [小红书去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/RedPaper_remove_ads.plugin)
 * [可莉广告过滤器](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Remove_ads_by_keli.plugin)
 * [Soul去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Soul_remove_ads.plugin)
-* [Spotify歌词增强](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Spotify_lyrics_translation.plugin)
+* [Spotify去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Plugins/Spotify_remove_ads.plugin)
 * [乐播投屏去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/TV_Assistant_remove_ads.plugin)
 * [淘宝去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Taobao_remove_ads.plugin)
 * [腾讯视频去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Tencent_Video_remove_ads.plugin)
