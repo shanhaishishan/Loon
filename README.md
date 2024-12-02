@@ -20,7 +20,7 @@ https://raw.githubusercontent.com/mist-whisper/Loon/master/Loon.conf
 * [高德地图去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Amap_remove_ads.plugin)
 * [APP脚本合集-骨钉](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Appheji_Guding.plugin)
 * [银行去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Bank_remove_ads.plugin)
-* [哔哩哔哩去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/BiliBili_remove_ads.plugin)
+* [哔哩哔哩去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Plugins/BiliBili_remove_ads_by_keli.plugin)
 * [广告拦截&净化合集](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Plugins/BlockAds.plugin)
 * [广告平台拦截器](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/BlockAdvertisters.plugin)
 * [拦截HTTPDNS](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Block_HTTPDNS.plugin)
