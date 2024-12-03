@@ -3,9 +3,9 @@
 #!openUrl = 
 #!author = Yu9191[https://github.com/Yu9191]
 #!tag = 解锁去广告
-#!system = iOS iPadOS macOS vision
-#!system_version = iOS11.0 iPadOS 11.0 macOS11.0 visionOS 1.0
-#!loon_version = 3.2.1(732)
+#!system = iOS iPadOS
+#!system_version = 15
+#!loon_version = 3.2.4(787)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Lcons/master/App_icon/120px/YangShiPin.png
 #!date = 2024-07-24 15:44:57
