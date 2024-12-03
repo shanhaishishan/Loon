@@ -2,11 +2,11 @@
 #!desc = APP解锁合集，已解锁列表见仓库说明
 #!openUrl = 
 #!author = chxm1023[https://github.com/chxm1023]
-#!tag = 去广告
+#!tag = 会员解锁
 #!system = iOS iPadOS
-#!system_version = 
-#!loon_version = 3.2.1(732)
-#!homepage = https://github.com/chxm1023/Rewrite/blob/chxm1023/README.md
+#!system_version = 15
+#!loon_version = 3.2.4(787)
+#!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon = https://raw.githubusercontent.com/chxm1023/Task/main/icon/ddm.png
 #!date = 2024-07-05 20:25:57
 
