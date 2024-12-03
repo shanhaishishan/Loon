@@ -3,10 +3,10 @@
 #!openUrl = 
 #!author = RuCu6[https://github.com/RuCu6]
 #!tag = 解锁去广告
-#!system = iOS iPadOS macOS visionOS watchOS
-#!system_version = 
-#!loon_version = 3.2.1(745)
-#!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
+#!system = iOS iPadOS
+#!system_version = 15
+#!loon_version = 3.2.4(787)
+#!homepage = https://github.com/luestr/ProxyResource/blob/main/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/ColorfulClouds.png
 #!date = 2024-09-28 10:30
 
