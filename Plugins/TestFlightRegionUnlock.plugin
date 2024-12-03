@@ -3,10 +3,10 @@
 #!openUrl = 
 #!author = 可莉🅥[https://gitlab.com/lodepuly/vpn_tool]
 #!tag = 功能增强
-#!system = iOS iPadOS macOS tvOS
-#!system_version = 
-#!loon_version = 3.2.1(732)
-#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
+#!system = iOS iPadOS
+#!system_version = 15
+#!loon_version = 3.2.4(787)
+#!homepage = https://github.com/luestr/ProxyResource/blob/main/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/TestFlight.png
 #!date = 2024-08-07 16:25:33
 
