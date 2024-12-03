@@ -1,13 +1,13 @@
 #!name = 航旅纵横去广告
 #!desc = 过滤航旅纵横广告
 #!openUrl = 
-#!author = whisper[https://github.com/mist-whisper]
+#!author = whisper[https://github.com/mist-whisper/Loon/blob/master/README.md]
 #!tag = 去广告
 #!system = iOS iPadOS
 #!system_version = 15
 #!loon_version = 3.2.4(787)
-#!homepage = https://github.com/luestr/ProxyResource/blob/main/README.md
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Umetrip.png
+#!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
+#!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Umetrip.png
 #!date = 2023-10-27 11:24:48
 
 [Rule]
