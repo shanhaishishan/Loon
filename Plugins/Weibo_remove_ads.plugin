@@ -40,7 +40,7 @@ URL-REGEX,"^http:\/\/api\.weibo\.cn\/httpdns\/config",REJECT
 
 [Script]
 http-response ^https:\/\/api\.weibo\.cn\/2\/(?:checkin\/show|client\/publisher_list|push\/active) script-path=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Script/Weibo/Weibo_remove_ads.js,requires-body=true,tag=移除首页签到弹窗
-http-response ^https:\/\/api\.weibo\.cn\/2\/groups\/allgroups\/v2\? script-path=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Script/Weibo/Weibo_remove_ads.js.js,requires-body=true,tag=移除首页顶部标签
+http-response ^https:\/\/api\.weibo\.cn\/2\/groups\/allgroups\/v2\? script-path=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Script/Weibo/Weibo_remove_ads.js,requires-body=true,tag=移除首页顶部标签
 http-response ^https:\/\/api\.weibo\.cn\/2\/(?:cardlist|page) script-path=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Script/Weibo/Weibo_remove_ads.js,requires-body=true,tag=移除详情页广告
 http-response ^https:\/\/api\.weibo\.cn\/2\/comments\/build_comments\? script-path=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Script/Weibo/Weibo_remove_ads.js,requires-body=true,tag=移除评论区广告
 http-response ^https:\/\/api\.weibo\.cn\/2\/(?:container\/asyn|flowlist|flowpage) script-path=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Script/Weibo/Weibo_remove_ads.js,requires-body=true,tag=移除详情页广告
