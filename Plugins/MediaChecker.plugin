@@ -7,8 +7,8 @@
 #!system_version = 15
 #!loon_version = 3.2.4(787)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
-#!icon = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available_1.png
+#!icon = https://raw.githubusercontent.com/mist-whisper/Lcons/refs/heads/master/Other_icon/Available_1.png
 #!date = 2024-07-05 20:25:57
 
 [Script]
-generic script-path= https://raw.githubusercontent.com/mist-whisper/JS/master/media-check.js, tag=流媒体-解锁查询, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ForeignMedia.png,time-out=10
+generic script-path= https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Script/MediaChecker/MediaChecker.js, tag=流媒体-解锁查询, img-url=https://raw.githubusercontent.com/mist-whisper/Lcons/refs/heads/master/Other_icon/ForeignMedia.png,time-out=10
