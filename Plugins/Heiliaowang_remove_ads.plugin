@@ -7,7 +7,7 @@
 #!system_version = 15
 #!loon_version = 3.2.4(787)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
-#!icon = https://lneuk.rslsilne.cc/static/pc/icons/icon_512x512.qscd.png
+#!icon = https://raw.githubusercontent.com/mist-whisper/Lcons/refs/heads/master/Website_icon/heiliaowang.png
 #!date = 2024-11-20
 
 [Rewrite] 
