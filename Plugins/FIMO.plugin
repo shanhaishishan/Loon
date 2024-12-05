@@ -7,12 +7,12 @@
 #!system_version = 15
 #!loon_version = 3.2.4(787)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
-#!icon = https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1034.png
+#!icon = https://raw.githubusercontent.com/mist-whisper/Lcons/refs/heads/master/Doraemon/Doraemon-1034.png
 #!date = 2024-08-19 14:30
 
 [Script]
 # >Fimo复古胶片相机
-http-response ^https?:\/\/server\.(yoyiapp|zbisq)\.com, script-path=https://raw.githubusercontent.com/mist-whisper/JS/master/FIMO.js, requires-body=true, tag=Fimo复古胶片相机
+http-response ^https?:\/\/server\.(yoyiapp|zbisq)\.com, script-path=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Script/FIMO/FIMO.js, requires-body=true, tag=Fimo复古胶片相机会员
 
 [MITM] 
 hostname = server.*.com
