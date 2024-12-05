@@ -7,12 +7,12 @@
 #!system_version = 15
 #!loon_version = 3.2.4(787)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
-#!icon = https://cdn.jsdelivr.net/gh/NobyDa/mini@master/Color/Google.png
+#!icon = https://raw.githubusercontent.com/mist-whisper/Lcons/refs/heads/master/App_icon/Google2.png
 #!date = 2024-05-19 12:00:00
 
 
 [Script]
-http-response ^https:\/\/www\.google\.com(?:\.[a-z]+|)\/(?:search\?(?:|.+?&)q=|$) requires-body=1,timeout=30,script-path=https://raw.githubusercontent.com/mist-whisper/JS/master/Google_CAPTCHA.js,tag=Google人机验证
+http-response ^https:\/\/www\.google\.com(?:\.[a-z]+|)\/(?:search\?(?:|.+?&)q=|$) requires-body=1,timeout=30,script-path=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Script/Google_CAPTCHA/Google_CAPTCHA.js,tag=Google人机验证
 
 [MITM]
 hostname = www.google.com*
