@@ -7,7 +7,7 @@
 #!system_version = 15
 #!loon_version = 3.2.4(787)
 #!homepage = https://whatshub.top/plugin/adultraplus.plugin
-#!icon = https://raw.githubusercontent.com/deezertidal/private/main/icons/startingad.png
+#!icon = https://raw.githubusercontent.com/mist-whisper/Lcons/refs/heads/master/Other_icon/startingad.png
 #!date = 2024-09-04 16:21
 
 [URL Rewrite]
