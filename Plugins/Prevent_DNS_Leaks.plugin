@@ -7,7 +7,7 @@
 #!system_version = 15
 #!loon_version = 3.2.4(787)
 #!homepage = https://github.com/luestr/ProxyResource/blob/main/README.md
-#!icon = https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/Prevent_DNS_Leaks.png
+#!icon = https://raw.githubusercontent.com/mist-whisper/Lcons/refs/heads/master/Other_icon/120px/Prevent_DNS_Leaks.png
 #!date = 2024-01-11 21:38:24
 
 # 你猜为什么会有这个插件呢？
