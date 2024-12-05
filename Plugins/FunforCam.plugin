@@ -7,13 +7,13 @@
 #!system_version = 15
 #!loon_version = 3.2.4(787)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
-#!icon = https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1045.png
+#!icon = https://raw.githubusercontent.com/mist-whisper/Lcons/refs/heads/master/Doraemon/Doraemon-1045.png
 #!date = 2024-06-12 12:20
 
 [Script]
-http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) script-path=https://raw.githubusercontent.com/mist-whisper/JS/master/FunforCam.js, requires-body=true, timeout=60, tag=FunforCam
+http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) script-path=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Script/FunforCam/FunforCam.js, requires-body=true, timeout=60, tag=FunforCam
 
-http-request ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) script-path=https://raw.githubusercontent.com/mist-whisper/JS/master/FunforCam.js, timeout=60, tag=FunforCam
+http-request ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) script-path=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Script/FunforCam/FunforCam.js, timeout=60, tag=FunforCam
 
 [MITM]
 hostname = api.revenuecat.com
