@@ -1,14 +1,19 @@
+# 本项目内容由 https://github.com/luestr 基于原项目修改而来，在此表示感谢。
 # NAME: YouTube
 # AUTHOR: blackmatrix7
-# HOMEPAGE: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Loon/YouTube/YouTube.list
+# REPO: https://github.com/blackmatrix7/ios_rule_script
 # UPDATED: 2024-07-03 16:14:51
+# DOMAIN: 3
 # DOMAIN-KEYWORD: 1
 # DOMAIN-SUFFIX: 179
+# DOMAIN-WILDCARD: 3
 # IP-CIDR: 2
 # IP-CIDR6: 1
 # USER-AGENT: 7
-# TOTAL: 190
-
+# TOTAL: 196
+DOMAIN,music.youtube.com
+DOMAIN,youtubei.googleapis.com
+DOMAIN,yt3.ggpht.com
 DOMAIN-SUFFIX,ggpht.cn
 DOMAIN-SUFFIX,ggpht.com
 DOMAIN-SUFFIX,googlevideo.com
@@ -188,6 +193,9 @@ DOMAIN-SUFFIX,youtubekids.com
 DOMAIN-SUFFIX,youtubemobilesupport.com
 DOMAIN-SUFFIX,yt.be
 DOMAIN-SUFFIX,ytimg.com
+DOMAIN-WILDCARD,youtube.*
+DOMAIN-WILDCARD,youtube.*.*
+DOMAIN-WILDCARD,youtube.com.*
 DOMAIN-KEYWORD,youtube
 USER-AGENT,*YouTubeMusic*
 USER-AGENT,*com.google.ios.youtubemusic*
