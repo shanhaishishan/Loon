@@ -1,15 +1,20 @@
-#!name=Script Hub(β): 重写 & 规则集转换
-#!desc=https://script.hub
-#!author=@小白脸 @xream @keywos @ckyb
-#!homepage=https://github.com/Script-Hub-Org/Script-Hub/tree/main
-#!openurl=https://script.hub/
-#!icon=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/assets/icon-dark.png
+#!name = Script Hub
+#!desc = 重写 & 规则集转换
+#!openurl = 
+#!author = 小白脸,xream[https://github.com/xream],keywos[https://github.com/keywos],ckyb[https://github.com/chengkongyiban]
+#!tag = 规则转换
+#!system = iOS iPadOS
+#!system_version = 15
+#!loon_version = 3.2.4(787)
+#!homepage = https://github.com/Script-Hub-Org/Script-Hub/tree/main
+#!icon = https://raw.githubusercontent.com/mist-whisper/Lcons/refs/heads/master/Other_icon/icon-dark.png
+#!date = 2024-12-06 16:05:33
+
+[Argument]
 #!select=启用插件随机图标, 启用, 禁用
 #!select=替换原始插件图标, 启用, 禁用
 #!select=插件随机图标合集, Doraemon(100P),Shin-chan(100P),Weslie-Wolffy(100P),Tom-Jerry(100P),Genshin(160P),Shin-Miya(100P),OnePiece(100P),Stitch(100P),Pokemon(112P),PokemonGif(56P),Digimon(56P),Transformers(48P),Maruko-chan(100P),AttackOnTitan(84P),Naruto(284P)
 #!select=ScriptHub通知, 开启通知, 关闭通知, 跟随链接
-#!input=Parser_body_max
-#!input=Parser_http_timeout
 
 [General]
 force-http-engine-hosts = script.hub, *.script.hub
