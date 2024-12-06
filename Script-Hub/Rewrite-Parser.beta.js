@@ -1,3 +1,5 @@
+// 引用地址：https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/Rewrite-Parser.beta.js
+
 /***************************
 支持将 QX重写 Surge模块 Loon插件 解析至Surge Shadowrocket Loon Stash
 
