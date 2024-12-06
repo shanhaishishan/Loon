@@ -1,3 +1,5 @@
+// 引用地址：https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/rule-parser.beta.js
+
 /****************************
    支持QX & Surge & Clash 规则集解析
    适用app: Surge Shadowrocket Stash Loon
