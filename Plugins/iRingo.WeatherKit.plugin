@@ -4,7 +4,7 @@
 #!author = VirgilClyne[https://github.com/VirgilClyne],WordlessEcho[https://github.com/WordlessEcho]
 #!tag =  iRingo
 #!system = iOS iPadOS macOS watchOS
-#!system_version = iOS 18 macOS 15 watchOS 11
+#!system_version = iOS18 macOS15 watchOS11
 #!loon_version = 3.2.4(787)
 #!version = 1.9.3
 #!homepage = https://NSRingo.github.io/guide/Weather/weather-kit
