@@ -1,1 +1,0 @@
-https://raw.githubusercontent.com/mist-whisper/Loon/master/Rules/CN_REGION/CN_REGION.list
