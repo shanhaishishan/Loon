@@ -1,3 +1,5 @@
+// 引用地址：https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/script-hub.beta.js
+
 const NAME = `script-hub`
 
 const $ = new Env(NAME)
