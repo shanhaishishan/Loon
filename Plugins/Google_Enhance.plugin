@@ -10,7 +10,8 @@
 #!icon = https://raw.githubusercontent.com/mist-whisper/Lcons/refs/heads/master/App_icon/120px/Google.png
 #!date = 2024-12-05 20:23:00
 
-#!select =脚本引擎,jsc,webview,auto,desc=脚本引擎：jsc/webview/auto，建议默认auto。
+#! select=脚本引擎,jsc,webview,auto
+#! desc=脚本引擎：jsc/webview/auto，建议默认auto。
 
 [Arguments]
 #policy=,tag=策略正则,desc=策略/策略组名的正则表达式，例如：^(🇸🇬|🇭🇰)\s.*\d+$ 如需同时使用所有策略/策略组可使用 .+ 表示。
