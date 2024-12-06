@@ -1,21 +1,31 @@
+# 本项目内容由 https://github.com/luestr 基于原项目修改而来，在此表示感谢。
 # NAME: WeChat
 # AUTHOR: blackmatrix7
-# HOMEPAGE: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Loon/WeChat/WeChat.list
+# REPO: https://github.com/blackmatrix7/ios_rule_script
 # UPDATED: 2024-07-03 16:17:23
-# DOMAIN: 8
+# DOMAIN: 18
 # DOMAIN-SUFFIX: 22
 # IP-ASN: 1
 # USER-AGENT: 2
-# TOTAL: 33
-
+# TOTAL: 43
 DOMAIN,apd-pcdnwxlogin.teg.tencent-cloud.net
 DOMAIN,btrace.qq.com
+DOMAIN,dl.wechat.com
 DOMAIN,dldir1.qq.com
+DOMAIN,sgfindershort.wechat.com
+DOMAIN,sgilinkshort.wechat.com
+DOMAIN,sglong.wechat.com
+DOMAIN,sgminorshort.wechat.com
+DOMAIN,sgquic.wechat.com
+DOMAIN,sgshort.wechat.com
 DOMAIN,slife.xy-asia.com
 DOMAIN,soup.v.qq.com
+DOMAIN,tencentmap.wechat.com
 DOMAIN,vweixinf.tc.qq.com
 DOMAIN,weixin110.qq.com
 DOMAIN,wup.imtt.qq.com
+DOMAIN,wx.tenpay.com
+DOMAIN,wxapp.tc.qq.com
 DOMAIN-SUFFIX,iot-tencent.com
 DOMAIN-SUFFIX,lbs.gtimg.com
 DOMAIN-SUFFIX,map.qq.com
