@@ -1,14 +1,16 @@
 #!name =  iRingo: 🌤 WeatherKit
-#!desc = iOS 18 & macOS 15 & watchOS 11\n1.解锁全部天气功能\n2.替换空气质量数据\n3.添加下一小时降水数据
-#!openUrl = http://boxjs.com/#/app/iRingo.WeatherKit
+#!desc = 1.解锁全部天气功能\n2.替换空气质量数据\n3.添加下一小时降水数据
+#!openUrl = 
 #!author = VirgilClyne[https://github.com/VirgilClyne],WordlessEcho[https://github.com/WordlessEcho]
-#!homepage = https://NSRingo.github.io/guide/Weather/weather-kit
-#!icon = https://developer.apple.com/assets/elements/icons/weatherkit/weatherkit-128x128.png
 #!tag =  iRingo
 #!system = iOS,iPadOS,macOS,watchOS
-#!date = 2024-12-05 08:49:35
+#!system_version = iOS 18 macOS 15 watchOS 11
+#!loon_version = 3.2.4(787)
 #!version = 1.9.3
-#!system_version = 18
+#!homepage = https://NSRingo.github.io/guide/Weather/weather-kit
+#!icon = https://raw.githubusercontent.com/mist-whisper/Lcons/refs/heads/master/iRingo/weatherkit-128x128.png
+#!date = 2024-12-05 08:49:35
+
 
 [Argument]
 NextHour.Provider = select,"ColorfulClouds","WeatherKit","QWeather",tag=[未来一小时降水强度] 数据源,desc=始终会使用选定的数据源，填补无降水监测地区的数据。
