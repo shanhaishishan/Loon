@@ -1,5 +1,5 @@
 #!name = 谷歌增强
-#!desc = 谷歌搜索内容时并发使用多个策略/策略组，以避免可能出现的人机验证。注意：需要在插件参数填写策略/策略组名的正则表达式。将Google搜索重定向至.com域名，如遇频繁跳转请禁用本插件。
+#!desc = 谷歌搜索内容时并发使用多个策略，以避免可能出现的人机验证。需要在插件参数填写策略名的正则表达式。将Google搜索重定向至.com域名，如遇频繁跳转请禁用本插件。
 #!openUrl = 
 #!author = NobyDa[https://github.com/NobyDa],可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
 #!tag = 功能增强
@@ -8,18 +8,17 @@
 #!loon_version = 3.2.4(787)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Lcons/refs/heads/master/App_icon/120px/Google.png
-#!date = 2024-12-06 17:28:00
+#!date = 2024-12-06 20:54:00
 
 [Argument]
 scriptEngine=select,"auto","webview","jsc",tag=脚本引擎,desc=选择脚本引擎
-regularExpression=input,"^(🇸🇬|🇭🇰)\s.*\d+$",tag=策略正则,desc=策略/策略组名的正则表达式，例如：^(🇸🇬|🇭🇰)\s.*\d+$ 如需同时使用所有策略/策略组可使用 .+ 表示。
-
+regularExpression=input,"^(🇸🇬|🇭🇰)\s.*\d+$",tag=策略正则,desc=策略/策略组名的正则表达式
 [Rewrite]
 ^https?:\/\/(www.)?(g|google)\.cn 307 https://www.google.com
 ^https?:\/\/(ditu|maps).google\.cn 307 https://maps.google.com
 
 [Script]
-http-response ^https:\/\/www\.google\.com(?:\.[a-z]+|)\/(?:search\?(?:|.+?&)q=|$) requires-body=1,timeout=30,script-path=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Script/Google_CAPTCHA/Google_CAPTCHA.js,tag=Google人机验证
+http-response ^https:\/\/www\.google\.com(?:\.[a-z]+|)\/(?:search\?(?:|.+?&)q=|$) requires-body=1,timeout=30,script-path=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Script/Google_Enhance/Google_CAPTCHA.js,tag=Google人机验证
 
 [MITM]
 hostname = www.google.com*,www.google.cn
