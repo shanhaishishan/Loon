@@ -14,6 +14,8 @@
 scriptEngine=select,"jsc","webview","auto",tag=脚本引擎,desc=选择脚本引擎
 policy=input,"",tag=策略正则,desc=策略/策略组名的正则表达式，例如：^(🇸🇬|🇭🇰)\s.*\d+$ 如需同时使用所有策略/策略组可使用 .+ 表示。
 
+[Rule]
+
 [Rewrite]
 ^https?:\/\/(www.)?(g|google)\.cn 307 https://www.google.com
 ^https?:\/\/(ditu|maps).google\.cn 307 https://maps.google.com
