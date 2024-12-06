@@ -1,3 +1,5 @@
+// 引用地址：https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/script-converter.beta.js
+
 const TITLE = `Script Hub: 脚本转换`
 const NAME = `script-converter`
 
