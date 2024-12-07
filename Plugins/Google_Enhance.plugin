@@ -11,7 +11,7 @@
 #!date = 2024-12-06 20:54:00
 
 [Argument]
-scriptEngine=select="auto","webview","jsc",tag=脚本引擎
+scriptEngine=select,"auto","webview","jsc",tag=脚本引擎
 regularExpression=input,"^(🇸🇬|🇭🇰)\s.*\d+$",tag=策略正则表达式
 
 [Rewrite]
