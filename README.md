@@ -9,6 +9,7 @@
 > 
 > ### 转载请务必保留原作者署名信息，且遵守本仓库的 [CC BY-NC-SA 4.0](LICENSE.md) 许可协议。
 
+------
 
 #### 配置模板
 > [!TIP]
@@ -16,9 +17,7 @@
 > 
 > [基础配置](https://www.nsloon.com/openloon/import?sub=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Loon.conf)
 
-
-
-
+------
 
 #### 插件
 
