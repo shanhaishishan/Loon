@@ -11,8 +11,9 @@
 #!date = 2024-12-06 20:54:00
 
 [Argument]
-scriptEngine=select,"auto","webview","jsc",tag=脚本引擎,desc=选择脚本引擎
-regularExpression=input,"^(🇸🇬|🇭🇰)\s.*\d+$",tag=策略正则,desc=策略/策略组名的正则表达式
+scriptEngine=select=选择脚本引擎,"auto","webview","jsc",tag=脚本引擎
+regularExpression=input,"^(🇸🇬|🇭🇰)\s.*\d+$",tag=策略正则表达式
+
 [Rewrite]
 ^https?:\/\/(www.)?(g|google)\.cn 307 https://www.google.com
 ^https?:\/\/(ditu|maps).google\.cn 307 https://maps.google.com
