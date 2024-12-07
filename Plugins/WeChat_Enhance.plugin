@@ -1,5 +1,5 @@
 #!name = WeChat增强
-#!desc = DNS分流，内置WeChat分流，广告过滤，解锁微信外部链接。本模块内置有分流规则，因此无需另外添加分流，如之前有添加请去除；本模块使用需要在编辑参数里输入你现有且想让WeChat/微信域名走的策略组名。
+#!desc = WeChat广告过滤，解锁微信外部链接。使用前需要选择让WeChat域名走的策略组名。
 #!openUrl = 
 #!author = ld2j[https://github.com/LD2J0618],RuCu6[https://github.com/RuCu6],可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md],VirgilClyne,zZPiglet[https://github.com/zZPiglet]
 #!tag = 功能增强
