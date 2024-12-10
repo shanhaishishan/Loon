@@ -8,7 +8,7 @@
 #!loon_version = 3.2.4(787)
 #!homepage = https://github.com/luestr/ProxyResource/blob/main/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Lcons/refs/heads/master/App_icon/120px/Weibo.png
-#!date = 2024-12-20 01:49:00
+#!date = 2024-12-10 16:15:00
 
 [Rule]
 DOMAIN,wbapp.uve.weibo.com,DIRECT
@@ -41,6 +41,8 @@ URL-REGEX,"^http:\/\/api\.weibo\.cn\/httpdns\/config",REJECT
 [Script]
 # 微博移除发现页广告
 http-response ^https?:\/\/m?api\.weibo\.c(n|om)\/2\/search\/(finder|container_timeline|container_discover)\? script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/weibo/weibo_ads.js, requires-body=true, timeout=60, tag=微博移除发现页广告
+# 微博热搜页面广告
+http-response ^https?:\/\/m?api\.weibo\.c(n|om)\/2\/(page|flowpage)\? script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/weibo/weibo_ads.js, requires-body=true, timeout=60, tag=微博热搜页面广告
 
 http-response ^https:\/\/api\.weibo\.cn\/2\/(?:checkin\/show|client\/publisher_list|push\/active) script-path=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Script/Weibo/Weibo_remove_ads.js,requires-body=true,tag=移除首页签到弹窗
 http-response ^https:\/\/api\.weibo\.cn\/2\/groups\/allgroups\/v2\? script-path=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Script/Weibo/Weibo_remove_ads.js,requires-body=true,tag=移除首页顶部标签
