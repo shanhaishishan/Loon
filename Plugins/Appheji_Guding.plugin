@@ -1,5 +1,5 @@
 #!name = APP脚本合集-骨钉
-#!desc = 超200款APP脚本解锁合集，已解锁列表请见仓库说明，持续更新中，请关注TG频道获取更新通知
+#!desc = 超200款APP脚本解锁合集，已解锁列表请见仓库说明。
 #!openUrl = 
 #!author = 骨钉[https://github.com/Guding88/Script/blob/main/Readme.md]
 #!tag = 会员解锁
@@ -8,10 +8,10 @@
 #!loon_version = 3.2.4(787)
 #!homepage = https://github.com/Guding88/Script/blob/main/Readme.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Lcons/refs/heads/master/Other_icon/Guding.png
-#!date = 2022-03-15 20:25:57
+#!date = 2024-12-11 15:42
 
 [Script]
-
+# https://raw.githubusercontent.com/Guding88/Script/refs/heads/main/APPheji_Guding.plugin
 # iTunes合集
 http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=https://raw.githubusercontent.com/Guding88/Script/main/APPheji_iTunes.js, requires-body=true, tag=iTunes合集
 
@@ -188,12 +188,5 @@ http-response ^https?:\/\/pgapi\.ksmobile\.com\/v1\/ios\/auth script-path=https:
 # 青柠设计
 http-response ^https?:\/\/api\.qingning6\.com\/api\/user\/getUserInfo script-path=https://raw.githubusercontent.com/Guding88/Script/main/qingningsheji.js, requires-body=true, tag=青柠设计
 
-
-
-
 [MITM]
-
 hostname = buy.itunes.apple.com,api.revenuecat.com,my.countingthings.com,cubox.cc,cubox.pro,api.qonversion.io,pocketlists.com,api.neuralprisma.com,appapi.neuralprisma.com,www.evestudio.cn,purchases.ws.pho.to,api.busuu.com,api.expingworld.com,api.leapmobile.cloud,explorer.tratao.com,www.1314zhilv.com,api.getdailyart.com,kc.xinli001.com,www.freshhome.top,api.stats.fm,api.boyasec.com,jietu6.com,1jietu.com,app.yiyan.art,integral2.dasyibalang.com,www.zomoplan.com,yopu.co,diary-id.sumi.io, server.zbisq.com, focos.oracle.bendingspoonsapps.com, bingxiang.51wnl-cq.com, api.to-future.net, 19700.com, api.tipsoon.com, app.huashijie.art, storevalidator.easybrain.com, box.timeblocks.com, fz68resapi.imendon.com, api.shouqilai.cn, lchttpapi.xczim.com, ruanmianmian.xinzhi.space, *.duitang.com, xianbeikeji.com, sz.szsszykj.com, acs.m.taobao.com, accounts.agenda.com, judouapp.com, openapi.qian-gua.com, service-ei2k47mp-1251731618.bj.apigw.tencentcs.com, newos.glassmarket.cn, lengapp.com, neckgo.wedea.cn, getway-plan.bjsybw.cn, gw.aoscdn.com, api.wemore.com, jz.wacai.com, api0.easeprime.com, carrotweather.herokuapp.com, pgapi.ksmobile.com, api.qingning6.com
-
-
-
