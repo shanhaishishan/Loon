@@ -8,7 +8,9 @@
 #!loon_version = 3.2.4(787)
 #!homepage = https://github.com/luestr/ProxyResource/blob/main/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Lcons/refs/heads/master/App_icon/120px/Spotify.png
-#!date = 2024-04-28 15:54:48
+#!date = 2024-11-28 00:00:00
+
+# https://kelee.one/Tool/Loon/Plugin/Spotify_remove_ads.plugin
 
 [Script]
 http-request ^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/ script-path=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Script/Spotify/Spotify_remove_ads.js,timeout=10,tag=JSON处理
