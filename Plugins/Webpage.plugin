@@ -8,33 +8,43 @@
 #!loon_version = 3.2.4(787)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Lcons/refs/heads/master/App_icon/webpage.png
-#!date = 2024-10-04 01:25
+#!date = 2024-12-18 22:05
 
 [Rewrite]
 # 桌面端请使用 https://google.com/ncr
+
 # 谷歌服务重定向 //*.google.cn
 # ^https?:\/\/www\.google\.cn 302 https://www.google.com
 # ^https?:\/\/translate\.google\.cn 302 https://translate.google.com
 
-# Avple 跳转弹窗 //asserts.avple.tv
+# Avple跳转弹窗 //asserts.avple.tv
  ^https:\/\/asserts\.avple\.tv\/file\/avple-images\/ad\.js reject
 
- PornHub (https://cn.pornhub.com/) //*.pornhub.com
+# PornHub (https://cn.pornhub.com/) //*.pornhub.com
  ^https:\/\/(?:cn|www)\.pornhub\.com\/_xa\/ads(_batch)?\? reject
 
 [Script]
-# ======= 普通网页 ====== #
-## 百度 //boxer.baidu.com, m.baidu.com, www.baidu.com, zhidao.baidu.com
-## 百度防跳转
+# 百度 //boxer.baidu.com, m.baidu.com, www.baidu.com, zhidao.baidu.com
+
+# 百度防跳转
 http-request ^https:\/\/boxer\.baidu\.com\/scheme\?scheme script-path = https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Script/Webpage/BaiduNoRedirect.js, tag = 百度防跳转
-## 百度首页
+
+# 百度首页
 http-response ^https:\/\/(?:www|m)\.baidu\.com(\/|\/\?(tn=&)?from=\d+\w)?$ script-path = https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Script/Webpage/baidu-index.js, requires-body = true, tag = 百度首页
-## 百度知道
+
+# 百度知道
 http-response ^https:\/\/zhidao\.baidu\.com\/(?:question|index|\?fr|\?word) script-path = https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Script/Webpage/baidu-zhidao.js, requires-body = true, tag = 百度知道
 
-# ======= ooxx ====== #
+# 黑料网
+^https?:\/\/[^\/]+\/category\/6\.html$ response-body-replace-regex <style> <style>\x20.video-list\x20>\x20.video-item:nth-of-type(-n+2)\x20{\x20display:none\x20!important}\x20.gotoclick{\x20display:none\x20!important}\x20.modal{\x20display:none\x20!important}\x20.addbox{\x20display:none\x20!important}
+^https?:\/\/[^\/]+\/category\/20\.html$ response-body-replace-regex <style> <style>\x20.video-list\x20>\x20.video-item:nth-of-type(3)\x20{\x20display:none\x20!important}\x20.gotoclick{\x20display:none\x20!important}\x20.modal{\x20display:none\x20!important}\x20.addbox{\x20display:none\x20!important}
+^https:\/\/18hlw\.com response-body-replace-regex <style> <style>\x20.gotoclick{\x20display:none\x20!important}\x20.modal{\x20display:none\x20!important}\x20.addbox{\x20display:none\x20!important}
+^https:\/\/lneuk\.rslsilne\.cc response-body-replace-regex <style> <style>\x20.gotoclick{\x20display:none\x20!important}\x20.modal{\x20display:none\x20!important}\x20.addbox{\x20display:none\x20!important}
+^https:\/\/7054s\.rbcmpeu\.org response-body-replace-regex <style> <style>\x20.gotoclick{\x20display:none\x20!important}\x20.modal{\x20display:none\x20!important}\x20.addbox{\x20display:none\x20!important}
+^https:\/\/d2bkn61acaxm61\.cloudfront\.net response-body-replace-regex <style> <style>\x20.gotoclick{\x20display:none\x20!important}\x20.modal{\x20display:none\x20!important}\x20.addbox{\x20display:none\x20!important}
+
 # JavDB //javdb.com
 http-response ^https:\/\/javdb\.com\/ script-path = https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Script/Webpage/javdb.js, requires-body = true, tag = JavDB
 
 [MITM]
-hostname = boxer.baidu.com, m.baidu.com, www.baidu.com, zhidao.baidu.com, #*.google.cn, asserts.avple.tv, javdb.com, *.pornhub.com
+hostname = boxer.baidu.com, m.baidu.com, www.baidu.com, zhidao.baidu.com, #*.google.cn, asserts.avple.tv, javdb.com, *.pornhub.com, 18hlw.com,lneuk.rslsilne.cc,7054s.rbcmpeu.org,d2bkn61acaxm61.cloudfront.net
