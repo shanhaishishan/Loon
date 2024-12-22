@@ -1,9 +1,6 @@
 /*
 脚本引用 https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js
 
-# 2024-09-16
-# 京东比价
-# 仅适用于京东App版本≤V12.4.3
 # 2024-12-22
 # 发现13.8.3又支持此脚本了
 # 脚本修改来源 https://raw.githubusercontent.com/githubdulong/Script/master/jd_price2.sgmodule
