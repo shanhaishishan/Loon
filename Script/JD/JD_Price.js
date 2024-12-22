@@ -1,7 +1,22 @@
 /*
 脚本引用 https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js
+
+# 2024-09-16
+# 京东比价
+# 仅适用于京东App版本≤V12.4.3
+# 2024-12-22
+# 发现13.8.3又支持此脚本了
+# 脚本修改来源 https://raw.githubusercontent.com/githubdulong/Script/master/jd_price2.sgmodule
+
+# 1. 修复比价接口
+# 2. 之前只能QX，Surge，更换为Env,兼容Loon等，仅测试QX
+
+[rewrite_local]
+^https?:\/\/api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) url script-response-body https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js
+[mitm]
+hostname = api.m.jd.com
 */
-// 2024-09-18 16:09:49
+
 const path1 = "serverConfig";
 const path2 = "wareBusiness";
 const path3 = "basicConfig";
@@ -43,7 +58,7 @@ if (url.indexOf(path2) !== -1) {
             const lowerword = adword_obj();
             lowerword.data.ad.textColor = "#fe0000";
             let bestIndex = floors.findIndex(element =>
-                element.mId === lowerword.mId || element.sortId > lowerword.sortId
+                element.mId === lowerword.mId && element.sortId > lowerword.sortId
             );
             bestIndex = bestIndex === -1 ? floors.length : bestIndex;
 
