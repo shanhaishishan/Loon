@@ -5,7 +5,6 @@
 #This file contains known addresses that are avaliable in the Mainland China.
 # This ruleset is made by Sukka and Edward
 
-DOMAIN,yuanyoumao.com
 DOMAIN,download.sgameglobal.com
 DOMAIN,api.revenuecat.com
 DOMAIN,cdn.bootcdn.net
@@ -17,6 +16,7 @@ DOMAIN,cn.download.nvidia.com
 DOMAIN,www.intel.cn
 DOMAIN,ocsp.digicert.cn
 DOMAIN,plex.tv
+
 DOMAIN-SUFFIX,mcd.cn
 DOMAIN-SUFFIX,vivo.com
 DOMAIN-SUFFIX,vivo.com.cn
@@ -766,11 +766,14 @@ DOMAIN-SUFFIX,yunpan.com
 DOMAIN-SUFFIX,yunpan.com.cn
 DOMAIN-SUFFIX,qh-cdn.com
 DOMAIN-SUFFIX,baomitu.com
+
 DOMAIN-KEYWORD,mcd
 DOMAIN-KEYWORD,hok
 DOMAIN-KEYWORD,hok-tl
 DOMAIN-KEYWORD,analytics
 DOMAIN-KEYWORD,wise
+DOMAIN-KEYWORD,yuanyoumao
+
 USER-AGENT,%E4%BC%98%E9%85%B7*
 USER-AGENT,%E6%89%8B%E6%9C%BA%E6%B7%98%E5%AE%9D*
 USER-AGENT,MicroMessenger Client
