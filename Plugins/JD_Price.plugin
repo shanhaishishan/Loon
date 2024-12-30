@@ -1,7 +1,7 @@
 #!name = 京东比价
-#!desc = 在京东应用内嵌入比价信息，点击商品标题即可查看。仅支持京东的标准模式。
+#!desc = 点击商品详情后以通知的形式推送比价内容。
 #!openUrl = 
-#!author = 苍井灰灰[https://github.com/wf021325], githubdulong[https://github.com/githubdulong]
+#!author = githubdulong[https://github.com/githubdulong]
 #!tag = 功能增强
 #!system = iOS iPadOS
 #!system_version = 15
@@ -10,7 +10,6 @@
 #!icon = https://raw.githubusercontent.com/mist-whisper/Lcons/refs/heads/master/App_icon/120px/JD.png
 #!date = 2024-12-22 17:05:34
 
-[Script]
 [Script]
 http-request ^https:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html script-path=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Script/JD/JD_Price.js,requires-body=true,tag=京东比价
 
