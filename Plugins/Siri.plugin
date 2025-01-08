@@ -8,7 +8,7 @@
 #!loon_version = 3.2.4(787)
 #!version = 4.2.7
 #!homepage = https://NSRingo.github.io/guide/Siri/siri
-#!icon = https://developer.apple.com/assets/elements/icons/siri/siri-128x128.png
+#!icon = https://raw.githubusercontent.com/mist-whisper/Lcons/refs/heads/master/iRingo/siri-128x128.png
 #!date = 2024-12-24 04:25:06
 
 [Argument]
