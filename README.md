@@ -53,7 +53,7 @@
 * [朴朴超市去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/PuPuMall_remove_ads.plugin)
 * [全民K歌去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/QQKSong_remove_ads.plugin)
 * [QQ链接解锁](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/QQ_Redirect.plugin)
-* [小红书去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/RedPaper_remove_ads.plugin)
+* [小红书去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/REDnote_remove_ads.plugin)
 * [Script-Hub](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Plugins/Script-Hub.plugin)
 * [Siri增强](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Plugins/Siri.plugin)
 * [Soul去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Soul_remove_ads.plugin)
