@@ -14,7 +14,7 @@
 ^https:\/\/api\.xiaoheihe\.cn\/account\/get_ads_info_v2 reject-dict
 
 [Script]
-http-response ^https:\/\/api\.xiaoheihe\.cn\/bbs\/app\/feeds\/news script-path=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Script/XiaoHeiHe/XiaoHeiHe_remove_ads.js,requires-body=true,tag=移除热点板块信息流广告
+http-response ^https:\/\/api\.xiaoheihe\.cn\/bbs\/app\/feeds\/news script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/XiaoHeiHe/XiaoHeiHe_remove_ads.js,requires-body=true,tag=移除热点板块信息流广告
 
 [MitM]
 hostname=api.xiaoheihe.cn
