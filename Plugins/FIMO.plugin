@@ -12,7 +12,7 @@
 
 [Script]
 # >Fimo复古胶片相机
-http-response ^https?:\/\/server\.(yoyiapp|zbisq)\.com, script-path=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Script/FIMO/FIMO.js, requires-body=true, tag=Fimo复古胶片相机会员
+http-response ^https?:\/\/server\.(yoyiapp|zbisq)\.com, script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/FIMO/FIMO.js, requires-body=true, tag=Fimo复古胶片相机会员解锁
 
 [MITM] 
 hostname = server.*.com
