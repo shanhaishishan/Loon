@@ -11,9 +11,9 @@
 #!date = 2024-06-12 12:20
 
 [Script]
-http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) script-path=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Script/FunforCam/FunforCam.js, requires-body=true, timeout=60, tag=FunforCam
+http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/FunforCam/FunforCam.js, requires-body=true, timeout=60, tag=方弗相机会员解锁
 
-http-request ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) script-path=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Script/FunforCam/FunforCam.js, timeout=60, tag=FunforCam
+http-request ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/FunforCam/FunforCam.js, timeout=60, tag=方弗相机会员解锁
 
 [MITM]
 hostname = api.revenuecat.com
