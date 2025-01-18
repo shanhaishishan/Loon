@@ -19,7 +19,7 @@ regularExpression=input,"^(🇸🇬|🇭🇰)\s.*\d+$",tag=策略正则表达式
 ^https?:\/\/(ditu|maps).google\.cn 307 https://maps.google.com
 
 [Script]
-http-response ^https:\/\/www\.google\.com(?:\.[a-z]+|)\/(?:search\?(?:|.+?&)q=|$) requires-body=1,timeout=30,script-path=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Script/Google_Enhance/Google_CAPTCHA.js,tag=Google人机验证
+http-response ^https:\/\/www\.google\.com(?:\.[a-z]+|)\/(?:search\?(?:|.+?&)q=|$) requires-body=1,timeout=30,script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/Google_Enhance/Google_CAPTCHA.js,tag=Google人机验证
 
 [MITM]
 hostname = www.google.com*,www.google.cn
