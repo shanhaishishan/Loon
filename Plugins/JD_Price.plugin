@@ -1,5 +1,5 @@
 #!name = 京东比价
-#!desc = 点击商品详情后以通知的形式推送比价内容，务必打开Loon的通知提醒。
+#!desc = 点击商品详情后以通知的形式推送比价内容，需要打开Loon的通知提醒。
 #!openUrl = 
 #!author = githubdulong[https://github.com/githubdulong]
 #!tag = 功能增强
@@ -11,7 +11,7 @@
 #!date = 2024-12-30 17:05:34
 
 [Script]
-http-request ^https:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html script-path=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Script/JD/JD_Price.js,requires-body=true,tag=京东比价
+http-request ^https:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/JD/JD_Price.js,requires-body=true,tag=京东比价
 
 [MitM]
 hostname=in.m.jd.com
