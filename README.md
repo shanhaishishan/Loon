@@ -15,7 +15,7 @@
 > [!TIP]
 > 仅提供基础配置文件，不提供其他配置和软件教学，详细使用方法请参考[官方文档](https://nsloon.app/docs/intro)自行研究。
 > 
-> [基础配置](https://www.nsloon.com/openloon/import?sub=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Loon.conf)
+> [可莉的基础配置](https://www.nsloon.com/openloon/import?sub=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Loon.conf)
 
 ------
 
