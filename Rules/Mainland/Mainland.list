@@ -1,7 +1,7 @@
 # NAME: Mainland
 # AUTHOR: Sukka
 # HOMEPAGE: https://ruleset.skk.moe/List/non_ip/domestic.conf
-# UPDATED: 2024-12-24
+# UPDATED: 2025-01-21
 #This file contains known addresses that are avaliable in the Mainland China.
 # This ruleset is made by Sukka and Edward
 
@@ -16,6 +16,7 @@ DOMAIN,cn.download.nvidia.com
 DOMAIN,www.intel.cn
 DOMAIN,ocsp.digicert.cn
 DOMAIN,plex.tv
+DOMAIN,apps.bazaarvoice.com
 
 DOMAIN-SUFFIX,mcd.cn
 DOMAIN-SUFFIX,vivo.com
@@ -774,6 +775,7 @@ DOMAIN-KEYWORD,analytics
 DOMAIN-KEYWORD,wise
 DOMAIN-KEYWORD,yuanyoumao
 DOMAIN-KEYWORD,asus
+DOMAIN-KEYWORD,fonts
 
 USER-AGENT,%E4%BC%98%E9%85%B7*
 USER-AGENT,%E6%89%8B%E6%9C%BA%E6%B7%98%E5%AE%9D*
