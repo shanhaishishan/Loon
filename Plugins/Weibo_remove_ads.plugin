@@ -18,6 +18,9 @@ DOMAIN,huodong.weibo.cn,REJECT
 DOMAIN-SUFFIX,biz.weibo.com,REJECT
 
 [Rewrite]
+^https:\/\/api\.weibo\.cn\/2\/searchall\? reject-dict
+^https:\/\/wx4\.sinaimg\.cn\/large\? reject-dict
+^https:\/\/api\.weibo\.cn\/\2\/container/\asyn\? reject-dict
 ^https:\/\/simg\.s\.weibo\.com\/ads\? reject-dict
 ^https:\/\/api\.weibo\.cn\/2\/!\/multimedia\/playback\/batch_get\? reject-dict
 ^https:\/\/api\.weibo\.cn\/2\/remind\/unread_count\? reject-dict
@@ -42,6 +45,9 @@ DOMAIN-SUFFIX,biz.weibo.com,REJECT
 ^https:\/\/weibo\.com\/ttarticle\/x\/m\/aj\/(?:reward|uvead) reject-dict
 
 [Script]
+http-response ^https:\/\/api\.weibo\.cn\/2\/searchall\? script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/Weibo/Weibo_remove_ads.js,requires-body=true,tag=去广告测试4
+http-response ^https:\/\/wx4\.sinaimg\.cn\/large\? script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/Weibo/Weibo_remove_ads.js,requires-body=true,tag=去广告测试5
+http-response ^https:\/\/api\.weibo\.cn\/\2\/container/\asyn\? script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/Weibo/Weibo_remove_ads.js,requires-body=true,tag=去广告测试6
 http-response ^https:\/\/simg\.s\.weibo\.com\/ads\? script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/Weibo/Weibo_remove_ads.js,requires-body=true,tag=去广告测试
 http-response ^https:\/\/api\.weibo\.cn\/2\/!\/multimedia\/playback\/batch_get\? script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/Weibo/Weibo_remove_ads.js,requires-body=true,tag=去广告测试2
 http-response ^https:\/\/api\.weibo\.cn\/2\/remind\/unread_count\? script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/Weibo/Weibo_remove_ads.js,requires-body=true,tag=去广告测试3
