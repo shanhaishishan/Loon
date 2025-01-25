@@ -18,6 +18,7 @@ DOMAIN,huodong.weibo.cn,REJECT
 DOMAIN-SUFFIX,biz.weibo.com,REJECT
 
 [Rewrite]
+^https:\/\/simg\.s\.weibo\.com\/ads\? reject-dict
 ^https:\/\/wx3\.sinaimg\.cn\/large\? reject-dict
 ^https:\/\/wx3\.sinaimg\.cn\/thumb300\?  reject-dict
 ^https:\/\/api\.weibo\.cn\/2\/realtime\/channel_poll\? reject-dict
