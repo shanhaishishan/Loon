@@ -3,11 +3,11 @@
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
 # UPDATED: 2024-07-03 16:14:50
-# DOMAIN: 9
-# DOMAIN-KEYWORD: 6
+# DOMAIN: 8
+# DOMAIN-KEYWORD: 3
 # DOMAIN-SUFFIX: 36
-# TOTAL: 51
-DOMAIN,uplaypc-s-ubisoft.cdn.ubi.com
+# TOTAL: 47
+
 DOMAIN,steambroadcast.akamaized.net
 DOMAIN,steamcdn-a.akamaihd.net
 DOMAIN,steamcommunity-a.akamaihd.net
@@ -55,6 +55,3 @@ DOMAIN-SUFFIX,wmsjsteam.com
 DOMAIN-KEYWORD,steambroadcast
 DOMAIN-KEYWORD,steamstore
 DOMAIN-KEYWORD,steamuserimages
-DOMAIN-KEYWORD,ubisoft
-DOMAIN-KEYWORD,ubiservices
-DOMAIN-KEYWORD,ubiconnect
