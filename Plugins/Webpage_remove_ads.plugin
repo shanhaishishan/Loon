@@ -1,14 +1,19 @@
 #!name = 综合去广告
 #!desc = 移除一些小广告。
 #!openUrl = 
-#!author = RuCu6[https://github.com/RuCu6],whisper[https://github.com/mist-whisper]
+#!author = RuCu6[https://github.com/RuCu6],whisper[https://github.com/mist-whisper],kokoryh[https://github.com/kokoryh]
 #!tag = 去广告
 #!system = iOS iPadOS
 #!system_version = 15
 #!loon_version = 3.2.4(787)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Lcons/refs/heads/master/App_icon/webpage.png
-#!date = 2025-02-18
+#!date = 2025-02-24
+
+[Rule]
+DOMAIN-SUFFIX,creative.myavlive.com,REJECT
+DOMAIN-SUFFIX,trackwilltrk.com,REJECT
+DOMAIN-SUFFIX,tsyndicate.com,REJECT
 
 [Rewrite]
 # Avple跳转弹窗 //asserts.avple.tv
@@ -38,8 +43,11 @@ http-response ^https:\/\/(?:www|m)\.baidu\.com(\/|\/\?(tn=&)?from=\d+\w)?$ scrip
 # 百度知道
 http-response ^https:\/\/zhidao\.baidu\.com\/(?:question|index|\?fr|\?word) script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/Webpage/baidu-zhidao.js, requires-body = true, tag=百度知道
 
-# JavDB //javdb.com
+# JavDB
 http-response ^https:\/\/javdb\.com\/ script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/Webpage/javdb.js, requires-body = true, tag=JavDB
 
+# missav
+http-response ^https:\/\/missav\.(?:ai|ws)\/(?!(build|fonts|img|js|api|cdn-cgi)\/). script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/Webpage/missav.js, requires-body=true, tag=missav
+
 [MITM]
-hostname = boxer.baidu.com, m.baidu.com, www.baidu.com, zhidao.baidu.com, #*.google.cn, asserts.avple.tv, javdb.com, *.pornhub.com, 18hlw.com,lneuk.rslsilne.cc,7054s.rbcmpeu.org,d2bkn61acaxm61.cloudfront.net,list-app-m.i4.cn
+hostname = boxer.baidu.com, m.baidu.com, www.baidu.com, zhidao.baidu.com, #*.google.cn, asserts.avple.tv, javdb.com, *.pornhub.com, 18hlw.com,lneuk.rslsilne.cc,7054s.rbcmpeu.org,d2bkn61acaxm61.cloudfront.net,list-app-m.i4.cn,missav.ai, missav.ws
