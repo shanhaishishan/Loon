@@ -19,8 +19,8 @@ DOMAIN-SUFFIX,tsyndicate.com,REJECT
 # Avple跳转弹窗 //asserts.avple.tv
  ^https:\/\/asserts\.avple\.tv\/file\/avple-images\/ad\.js reject
 
-# PornHub (https://cn.pornhub.com/) //*.pornhub.com
- ^https:\/\/(?:cn|www)\.pornhub\.com\/_xa\/ads(_batch)?\? reject
+# PornHub
+^https:\/\/(?:cn|www)\.pornhub\.com\/_xa\/ads(_batch)?\? reject
 
 # 黑料网
 ^https?:\/\/[^\/]+\/category\/6\.html$ response-body-replace-regex <style> <style>\x20.video-list\x20>\x20.video-item:nth-of-type(-n+2)\x20{\x20display:none\x20!important}\x20.gotoclick{\x20display:none\x20!important}\x20.modal{\x20display:none\x20!important}\x20.addbox{\x20display:none\x20!important}
