@@ -11,9 +11,9 @@
 #!date = 2025-02-24
 
 [Rule]
-DOMAIN-SUFFIX,creative.myavlive.com,REJECT
-DOMAIN-SUFFIX,trackwilltrk.com,REJECT
-DOMAIN-SUFFIX,tsyndicate.com,REJECT
+#DOMAIN-SUFFIX,creative.myavlive.com,REJECT
+#DOMAIN-SUFFIX,trackwilltrk.com,REJECT
+#DOMAIN-SUFFIX,tsyndicate.com,REJECT
 
 [Rewrite]
 # Avple跳转弹窗 //asserts.avple.tv
