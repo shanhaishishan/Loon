@@ -11,18 +11,20 @@
 #!date = 2024-11-28 00:00:00
 
 [Rule]
-DOMAIN, soul-ad.soulapp.cn,REJECT
-DOMAIN, ad-r.soulapp.cn,REJECT
-DOMAIN, ad-reward.soulapp.cn,REJECT
-DOMAIN-SUFFIX,cdn.soulapp.cn,REJECT
-IP-CIDR, 47.56.131.76/32,REJECT, no-resolve
-IP-CIDR, 47.97.215.55/32,REJECT, no-resolve
-IP-CIDR, 47.99.42.29/32,REJECT, no-resolve
-IP-CIDR, 120.27.235.201/32,REJECT, no-resolve
-IP-CIDR, 121.196.197.147/32,REJECT, no-resolve
-
 DOMAIN-SUFFIX,soulapp.cn,DIRECT
-
+IP-CIDR,8.210.3.170/32,DIRECT,no-resolve
+IP-CIDR,47.75.72.47/32,DIRECT,no-resolve
+DOMAIN,ad-h5-cdn.soulapp.cn,REJECT
+DOMAIN,ad-h5-station-cdn.soulapp.cn,REJECT
+DOMAIN,ad-r.soulapp.cn,REJECT
+DOMAIN,soul-ad.soulapp.cn,REJECT
+IP-CIDR,47.56.131.76/32,REJECT,no-resolve
+IP-CIDR,47.97.215.55/32,REJECT,no-resolve
+IP-CIDR,47.99.42.29/32,REJECT,no-resolve
+IP-CIDR,47.110.187.87/32,REJECT,no-resolve
+IP-CIDR,47.243.147.125/32,REJECT,no-resolve
+IP-CIDR,120.27.235.201/32,REJECT,no-resolve
+IP-CIDR,121.196.197.147/32,REJECT,no-resolve
 
 [Rewrite]
 ^https:\/\/ssp\.soulapp\.cn\/api\/q reject-dict
