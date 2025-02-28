@@ -11,6 +11,7 @@
 #!date = 2025-02-24
 
 [Rule]
+DOMAIN-KEYWORD,missav,Proxy
 DOMAIN-SUFFIX,creative.myavlive.com,REJECT
 DOMAIN-SUFFIX,trackwilltrk.com,REJECT
 DOMAIN-SUFFIX,tsyndicate.com,REJECT
@@ -47,7 +48,7 @@ http-response ^https:\/\/zhidao\.baidu\.com\/(?:question|index|\?fr|\?word) scri
 http-response ^https:\/\/javdb\.com\/ script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/Webpage/javdb.js, requires-body = true, tag=JavDB
 
 # missav
-http-response ^https:\/\/missav\.(?:ai|ws)\/(?!(build|fonts|img|js|api|cdn-cgi)\/). script-path=https://raw.githubusercontent.com/kokoryh/Sparkle/master/dist/missav.html.js, requires-body=true, tag=missav.html
+http-response ^https:\/\/missav\.(?:ai|ws)\/(?!(build|fonts|img|js|api|cdn-cgi)\/). script-path=https://raw.githubusercontent.com/kokoryh/Sparkle/master/dist/missav.html.js, requires-body=true, tag=missav
 
 [MITM]
 hostname = boxer.baidu.com, m.baidu.com, www.baidu.com, zhidao.baidu.com, #*.google.cn, asserts.avple.tv, javdb.com, *.pornhub.com, 18hlw.com,lneuk.rslsilne.cc,7054s.rbcmpeu.org,d2bkn61acaxm61.cloudfront.net,list-app-m.i4.cn,missav.ai, missav.ws
