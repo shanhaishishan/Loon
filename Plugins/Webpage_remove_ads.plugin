@@ -1,5 +1,5 @@
 #!name = 综合去广告
-#!desc = 移除一些小广告。
+#!desc = 移除一些网页端小广告。
 #!openUrl = 
 #!author = RuCu6[https://github.com/RuCu6],whisper[https://github.com/mist-whisper],kokoryh[https://github.com/kokoryh]
 #!tag = 去广告
@@ -16,7 +16,7 @@ DOMAIN-SUFFIX,trackwilltrk.com,REJECT
 DOMAIN-SUFFIX,tsyndicate.com,REJECT
 
 [Rewrite]
-# Avple跳转弹窗 //asserts.avple.tv
+# Avple跳转弹窗
  ^https:\/\/asserts\.avple\.tv\/file\/avple-images\/ad\.js reject
 
 # PornHub
