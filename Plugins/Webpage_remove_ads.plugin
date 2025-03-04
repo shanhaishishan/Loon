@@ -30,9 +30,6 @@ DOMAIN-SUFFIX,tsyndicate.com,REJECT
 ^https:\/\/7054s\.rbcmpeu\.org response-body-replace-regex <style> <style>\x20.gotoclick{\x20display:none\x20!important}\x20.modal{\x20display:none\x20!important}\x20.addbox{\x20display:none\x20!important}
 ^https:\/\/d2bkn61acaxm61\.cloudfront\.net response-body-replace-regex <style> <style>\x20.gotoclick{\x20display:none\x20!important}\x20.modal{\x20display:none\x20!important}\x20.addbox{\x20display:none\x20!important}
 
-# > 爱思助手
-^https?:\/\/list-app-m\.i4\.cn\/(adclickcb|getHotSearchList|getopfstadinfo)\.xhtml reject
-
 [Script]
 # 百度防跳转
 http-request ^https:\/\/boxer\.baidu\.com\/scheme\?scheme script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/Webpage/BaiduNoRedirect.js, tag=百度防跳转
@@ -50,4 +47,4 @@ http-response ^https:\/\/javdb\.com\/ script-path=https://raw.githubusercontent.
 http-response ^https:\/\/missav\.(?:ai|ws)\/(?!(build|fonts|img|js|api|cdn-cgi)\/). script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/Webpage/missav.js, requires-body=true, tag=missav
 
 [MITM]
-hostname = boxer.baidu.com, m.baidu.com, www.baidu.com, zhidao.baidu.com, #*.google.cn, asserts.avple.tv, javdb.com, *.pornhub.com, 18hlw.com,lneuk.rslsilne.cc,7054s.rbcmpeu.org,d2bkn61acaxm61.cloudfront.net,list-app-m.i4.cn,missav.ai,missav.ws
+hostname = boxer.baidu.com, m.baidu.com, www.baidu.com, zhidao.baidu.com, #*.google.cn, asserts.avple.tv, javdb.com, *.pornhub.com, 18hlw.com,lneuk.rslsilne.cc,7054s.rbcmpeu.org,d2bkn61acaxm61.cloudfront.net,missav.ai,missav.ws
