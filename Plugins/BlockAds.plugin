@@ -1,5 +1,5 @@
-#!name = MyBlockAds
-#!desc = 自用去广告插件, 以下app请使用单独插件: 高德地图, 哔哩哔哩, 网易云音乐, 微博, YouTube, 知乎。
+#!name = BlockAds
+#!desc = 综合去广告插件, 移除一些小广告。
 #!openUrl = 
 #!author = RuCu6[https://github.com/RuCu6]
 #!tag = 去广告
@@ -7,8 +7,8 @@
 #!system_version = 15
 #!loon_version = 3.2.4(787)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
-#!icon = https://raw.githubusercontent.com/mist-whisper/Lcons/refs/heads/master/App_icon/myblockads.png
-#!date = 2025-03-05 00:58
+#!icon = https://raw.githubusercontent.com/mist-whisper/Lcons/refs/heads/master/App_icon/lanhua.png
+#!date = 2025-03-15
 
 [Rule]
 # 12306
@@ -98,6 +98,11 @@ DOMAIN, sdkconfig.ad.xiaomi.com, REJECT
 DOMAIN, ads.95516.com, REJECT
 DOMAIN, switch.cup.com.cn, REJECT
 
+# missav
+DOMAIN-SUFFIX,creative.myavlive.com,REJECT
+DOMAIN-SUFFIX,trackwilltrk.com,REJECT
+DOMAIN-SUFFIX,tsyndicate.com,REJECT
+
 [Rewrite]
 # 爱思助手 //list-app-m.i4.cn
 ^https:\/\/list-app-m\.i4\.cn\/(?:adclickcb|getHotSearchList|getopfstadinfo)\.xhtml reject
@@ -171,6 +176,20 @@ DOMAIN, switch.cup.com.cn, REJECT
 # 云闪付 //wallet.95516.com
 ^https:\/\/wallet\.95516\.com(:10533)?\/s\/wl\/icon\/large\/1 reject
 
+# Avple跳转弹窗
+ ^https:\/\/asserts\.avple\.tv\/file\/avple-images\/ad\.js reject
+
+# PornHub
+^https:\/\/(?:cn|www)\.pornhub\.com\/_xa\/ads(_batch)?\? reject
+
+# 黑料网
+^https?:\/\/[^\/]+\/category\/6\.html$ response-body-replace-regex <style> <style>\x20.video-list\x20>\x20.video-item:nth-of-type(-n+2)\x20{\x20display:none\x20!important}\x20.gotoclick{\x20display:none\x20!important}\x20.modal{\x20display:none\x20!important}\x20.addbox{\x20display:none\x20!important}
+^https?:\/\/[^\/]+\/category\/20\.html$ response-body-replace-regex <style> <style>\x20.video-list\x20>\x20.video-item:nth-of-type(3)\x20{\x20display:none\x20!important}\x20.gotoclick{\x20display:none\x20!important}\x20.modal{\x20display:none\x20!important}\x20.addbox{\x20display:none\x20!important}
+^https:\/\/18hlw\.com response-body-replace-regex <style> <style>\x20.gotoclick{\x20display:none\x20!important}\x20.modal{\x20display:none\x20!important}\x20.addbox{\x20display:none\x20!important}
+^https:\/\/lneuk\.rslsilne\.cc response-body-replace-regex <style> <style>\x20.gotoclick{\x20display:none\x20!important}\x20.modal{\x20display:none\x20!important}\x20.addbox{\x20display:none\x20!important}
+^https:\/\/7054s\.rbcmpeu\.org response-body-replace-regex <style> <style>\x20.gotoclick{\x20display:none\x20!important}\x20.modal{\x20display:none\x20!important}\x20.addbox{\x20display:none\x20!important}
+^https:\/\/d2bkn61acaxm61\.cloudfront\.net response-body-replace-regex <style> <style>\x20.gotoclick{\x20display:none\x20!important}\x20.modal{\x20display:none\x20!important}\x20.addbox{\x20display:none\x20!important}
+
 [Script]
 # 12306 //ad.12306.cn, mobile.12306.cn
 http-request ^https:\/\/ad\.12306\.cn\/ad\/ser\/getAdList$ script-path = https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/MyBlockads/12306.js, requires-body = true, tag = 移除12306广告
@@ -197,5 +216,20 @@ http-response ^https:\/\/api\.m\.mi\.com\/v1\/app\/start script-path = https://r
 http-response ^https:\/\/ad\.mcloud\.139\.com\/advertapi\/adv-filter\/ script-path = https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/MyBlockads/cloud139.js, requires-body = true, tag = 移除中国移动云盘广告
 http-response ^https:\/\/jzts\.cmpassport\.com\/personalized\/getPushContent script-path = https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/MyBlockads/cloud139.js, requires-body = true, tag = 移除中国移动云盘广告
 
+# 百度防跳转
+http-request ^https:\/\/boxer\.baidu\.com\/scheme\?scheme script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/Webpage/BaiduNoRedirect.js, tag=百度防跳转
+
+# 百度首页
+http-response ^https:\/\/(?:www|m)\.baidu\.com(\/|\/\?(tn=&)?from=\d+\w)?$ script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/Webpage/baidu-index.js, requires-body = true, tag=百度首页
+
+# 百度知道
+http-response ^https:\/\/zhidao\.baidu\.com\/(?:question|index|\?fr|\?word) script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/Webpage/baidu-zhidao.js, requires-body = true, tag=百度知道
+
+# JavDB
+http-response ^https:\/\/javdb\.com\/ script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/Webpage/javdb.js, requires-body = true, tag=JavDB
+
+# missav
+http-response ^https:\/\/missav\.(?:ai|ws)\/(?!(build|fonts|img|js|api|cdn-cgi)\/). script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/Webpage/missav.js, requires-body=true, tag=missav
+
 [MITM]
-hostname = ad.12306.cn, mobile.12306.cn, list-app-m.i4.cn, *api.alipan.com, member.alipan.com, acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com, pan.baidu.com, 2023.redircdn.com, www.washpayer.com, api.douban.com, img3.doubanio.com, qnmob3.doubanio.com, image.mybank.icbc.com.cn, hfapp-service.qweather.net, acs-m.freshippo.com, gab.122.gov.cn, api.coolapk.com, adserviceretry.kglink.cn, p0.pipi.cn, flowplus.meituan.net, img.meituan.net, s3plus.meituan.net, osg-service.sgcc.com.cn, api.m.mi.com, home.mi.com, shop-api.retail.mi.com, wallet.95516.com, mobilepaas.abchina.com.cn, ad.mcloud.139.com, jzts.cmpassport.com
+hostname = ad.12306.cn, mobile.12306.cn, list-app-m.i4.cn, *api.alipan.com, member.alipan.com, acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com, pan.baidu.com, 2023.redircdn.com, www.washpayer.com, api.douban.com, img3.doubanio.com, qnmob3.doubanio.com, image.mybank.icbc.com.cn, hfapp-service.qweather.net, acs-m.freshippo.com, gab.122.gov.cn, api.coolapk.com, adserviceretry.kglink.cn, p0.pipi.cn, flowplus.meituan.net, img.meituan.net, s3plus.meituan.net, osg-service.sgcc.com.cn, api.m.mi.com, home.mi.com, shop-api.retail.mi.com, wallet.95516.com, mobilepaas.abchina.com.cn, ad.mcloud.139.com, jzts.cmpassport.com, boxer.baidu.com, m.baidu.com, www.baidu.com, zhidao.baidu.com, asserts.avple.tv, javdb.com, *.pornhub.com, 18hlw.com,lneuk.rslsilne.cc,7054s.rbcmpeu.org,d2bkn61acaxm61.cloudfront.net,missav.ai,missav.ws
