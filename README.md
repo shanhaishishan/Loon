@@ -31,6 +31,7 @@
 * [高德地图去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Amap_remove_ads.plugin)
 * [哔哩哔哩去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Plugins/BiliBili_remove_ads.plugin)
 * [国内影视平台去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/CNFTP.plugin)
+* [爱奇艺去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Plugins/IQiYi_Video_remove_ads.plugin)
 * [菜鸟去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Cainiao_remove_ads.plugin)
 * [彩云天气去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/ColorfulClouds_remove_ads.plugin)
 * [滴滴出行去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/DiDi_remove_ads.plugin)
