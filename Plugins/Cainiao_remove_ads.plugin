@@ -8,7 +8,7 @@
 #!loon_version = 3.2.4(787)
 #!homepage = https://github.com/luestr/ProxyResource/blob/main/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Lcons/refs/heads/master/App_icon/120px/Cainiao.png
-#!date = 2024-11-28 00:00:00
+#!date = 2025-03-19 23:49:00
 
 [Rule]
 AND,((URL-REGEX,"^http:\/\/.+\/amdc\/mobileDispatch"),(USER-AGENT,"Cainiao4iPhone*")),REJECT
@@ -37,6 +37,8 @@ DOMAIN,ykad-data.youku.com,REJECT
 ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.com\.cainiao\.cncreditmarket\.hit\.getactivityhit\.cn reject-dict
 ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.com\.cainiao\.longquan\.place\.getpageresourcecontent\.cn reject-dict
 ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.adx\.flyad\.getad reject-dict
+# 支付宝内菜鸟
+^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads reject
 
 [Script]
 http-response ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.app\.mine\.main\.cn script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/Cainiao/Cainiao_remove_ads.js,requires-body=true,tag=移除我的页面推广
@@ -46,4 +48,4 @@ http-response ^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.nbfriend\.message\.c
 http-response ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/Cainiao/Cainiao_remove_ads.js,requires-body=true,tag=移除菜鸟小程序推广
 
 [MitM]
-hostname=cn-acs.m.cainiao.com,guide-acs.m.taobao.com
+hostname=cn-acs.m.cainiao.com,guide-acs.m.taobao.com,amdc.m.taobao.com
