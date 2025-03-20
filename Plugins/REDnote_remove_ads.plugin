@@ -1,5 +1,5 @@
 #!name = 小红书去广告
-#!desc = 过滤信息流推广，移除笔记以及评论区图片、live图及视频水印，如有异常，请先清除缓存再尝试。
+#!desc = 过滤信息流推广，移除图片及视频水印（评论区live图不适用），如有异常，请先清除缓存再尝试。
 #!openUrl = 
 #!author = RuCu6[https://github.com/RuCu6], fmz200[https://github.com/fmz200]
 #!tag = 去广告
@@ -21,9 +21,9 @@ AND, ((PROTOCOL, QUIC), (DOMAIN-SUFFIX, xiaohongshu.com)), REJECT
 ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/guide\? reject-dict
 ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/guide\/user_banner reject-dict
 ^https?:\/\/www\.xiaohongshu\.com\/api\/sns\/(v\d\/ads\/resource|v\d\/hey\/\w+\/hey_gallery) reject-dict
-# 评论区图片水印
+# 评论区图片水印（live图不适用）
 ^https?:\/\/ci\.xiaohongshu\.com\/system_config\/watermark reject-img
-# 评论区用户id置空
+# 评论区用户id置空（live图不适用）
 ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/comment\/list response-body-replace-regex red_id fmz200
 
 [Script]
