@@ -24,7 +24,7 @@ AND, ((PROTOCOL, QUIC), (DOMAIN-SUFFIX, xiaohongshu.com)), REJECT
 # 评论区图片水印（live图不适用）
 ^https?:\/\/ci\.xiaohongshu\.com\/system_config\/watermark reject-img
 # 评论区用户id置空（live图不适用）
-^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/comment\/list response-body-replace-regex red_id fmz200
+#^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/comment\/list response-body-replace-regex red_id fmz200
 
 [Script]
 # 搜索页
@@ -41,6 +41,9 @@ http-response ^https?:\/\/(edith|rec|www)\.xiaohongshu\.com\/api\/sns\/v\d\/note
 http-response ^https?:\/\/(edith|rec|www)\.xiaohongshu\.com\/api\/sns\/v\d\/(followfeed|homefeed)\? script-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js, requires-body=true, timeout=60, tag=移除图片视频水印
 http-response ^https?:\/\/(edith|rec|www)\.xiaohongshu\.com\/api\/sns\/(v2\/note\/feed|v3\/note\/videofeed)\? script-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js, requires-body=true, timeout=60, tag=移除图片视频水印
 http-response ^https?:\/\/(edith|rec|www)\.xiaohongshu\.com\/api\/sns\/(v4\/note\/videofeed|v10\/note\/video\/save)\? script-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js, requires-body=true, timeout=60, tag=移除图片视频水印
+# 小红书评论区水印测试
+http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v5\/note\/comment\/list\? script-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js, requires-body=true, timeout=60, tag=移除小红书评论区水印
+http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/interaction\/comment\/video\/download\? script-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js, requires-body=true, timeout=60, tag=移除小红书评论区水印
 
 [MITM]
 hostname = edith.xiaohongshu.com, www.xiaohongshu.com, ci.xiaohongshu.com, rec.xiaohongshu.com
