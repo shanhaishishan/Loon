@@ -5,7 +5,7 @@
 #!tag =  iRingo
 #!system = iOS iPadOS macOS watchOS
 #!system_version = iOS18 macOS15 watchOS11
-#!loon_version = 3.2.4(787)
+#!loon_version = 3.2.9(837)
 #!version = 1.9.4
 #!homepage = https://NSRingo.github.io/guide/Weather/weather-kit
 #!icon = https://raw.githubusercontent.com/mist-whisper/Lcons/refs/heads/master/iRingo/weatherkit-128x128.png
