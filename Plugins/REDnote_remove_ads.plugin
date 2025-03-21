@@ -24,7 +24,7 @@ AND, ((PROTOCOL, QUIC), (DOMAIN-SUFFIX, xiaohongshu.com)), REJECT
 # 评论区图片水印（live图不适用）
 ^https?:\/\/ci\.xiaohongshu\.com\/system_config\/watermark reject-img
 # 评论区用户id置空（live图不适用）
-#^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/comment\/list response-body-replace-regex red_id fmz200
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/comment\/list response-body-replace-regex red_id fmz200
 
 [Script]
 # 搜索页
