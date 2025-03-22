@@ -7,7 +7,7 @@
 #!system_version = 15
 #!loon_version = 3.2.9(837)
 #!homepage = https://github.com/luestr/ProxyResource/blob/main/README.md
-#!icon = https://raw.githubusercontent.com/mist-whisper/Lcons/refs/heads/master/Other_icon/120px/Node_detection_tool.png
+#!icon = https://raw.githubusercontent.com/mist-whisper/Icons/refs/heads/master/Other_icon/120px/Node_detection_tool.png
 #!date = 2024-12-02 15:25:28
 
 [Script]
