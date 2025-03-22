@@ -1,5 +1,5 @@
 #!name = 腾讯体育去广告
-#!desc = 移除腾讯体育开屏广告和应用内部分广告
+#!desc = 移除腾讯体育开屏广告和应用内部分广告。
 #!openUrl = 
 #!author = whisper[https://github.com/mist-whisper]
 #!tag = 去广告
@@ -7,13 +7,12 @@
 #!system_version = 15
 #!loon_version = 3.2.9(837)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
-#!icon = 
+#!icon = https://raw.githubusercontent.com/mist-whisper/Icons/refs/heads/master/App_icon/TencentSport.png
 #!date = 2025-02-11
 
 [Rewrite]
 ^https?:\/\/news\.ssp\.qq\.com\/app reject
 ^https?:\/\/sports3\.gtimg\.com\/community\/20cf93884470434eaf38b2e77ab7796a\.png reject
-
 ^https?:\/\/btrace\.qq\.com reject-200
 ^https?:\/\/api2\.helper\.qq\.com\/game\/buttons reject-img
 ^https?:\/\/lives\.l\.qq\.com\/livemsg\?sdtfrom= reject-img
@@ -31,8 +30,6 @@
 ^https?:\/\/mmgr\.gtimg\.com\/gjsmall\/qiantu\/upload\/ reject-img
 ^https?:\/\/mmgr\.gtimg\.com\/gjsmall\/qqpim\/public\/ios\/splash\/.+?\/\d{4}_\d{4} reject-img
 ^https?://bk\.bingo\.qq\.com/bk/crx/data/videoAd.*$ reject-dict
-
-[Script]
 
 [MITM]
 hostname = news.ssp.qq.com, sports3.gtimg.com, btrace.qq.com, api2.helper.qq.com, *.beacon.qq.com, mi.gdt.qq.com, lives.l.qq.com, imgcache.qq.com, mtteve.beacon.qq.com, vv.video.qq.com, ssl.kohsocialapp.qq.com, qt.qq.com, 3gimg.qq.com, y.gtimg.cn, splashqqlive.gtimg.com, qzonestyle.gtimg.cn, discuz.gtimg.cn, bla.gtimg.com, mmgr.gtimg.com, bk.bingo.qq.com
