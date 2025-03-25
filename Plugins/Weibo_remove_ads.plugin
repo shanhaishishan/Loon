@@ -7,7 +7,7 @@
 #!system_version = 15
 #!loon_version = 3.2.9(837)
 #!homepage = https://github.com/luestr/ProxyResource/blob/main/README.md
-#!icon = https://raw.githubusercontent.com/mist-whisper/Icons/refs/heads/master/App_icon/120px/Weibo.png
+#!icon = https://raw.githubusercontent.com/mist-whisper/Icons/master/App_icon/120px/Weibo.png
 #!date = 2025-02-28 19:53:25
 
 # https://kelee.one/Tool/Loon/Plugin/Weibo_remove_ads.plugin
