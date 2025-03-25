@@ -1,5 +1,5 @@
 #!name = Telegram跳转第三方客户端
-#!desc = Telegram外链直接跳转第三方客户端，需要选择跳转至Swiftgram还是Turrit。
+#!desc = Telegram外链直接跳转至第三方客户端，需要选择跳转至Swiftgram还是Turrit。
 #!openUrl = 
 #!author = 秦城二院彭医生[https://github.com/dcpengx]
 #!tag = 功能增强
