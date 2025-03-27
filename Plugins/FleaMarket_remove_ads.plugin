@@ -8,7 +8,7 @@
 #!system_version = 15
 #!loon_version = 3.2.9(837)
 #!homepage = https://github.com/luestr/ProxyResource/blob/main/README.md
-#!icon = https://raw.githubusercontent.com/mist-whisper/Icons/refs/heads/master/App_icon/120px/FleaMarket.png
+#!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/App_icon/120px/FleaMarket.png
 #!date = 2024-11-28 00:00:00
 
 [Rule]
