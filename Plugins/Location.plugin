@@ -7,7 +7,7 @@
 #!system_version = 15
 #!loon_version = 3.2.9(837)
 #!homepage = https://NSRingo.github.io/guide/GeoServices/location
-#!icon = https://raw.githubusercontent.com/mist-whisper/Icons/master/iRingo/ios_location_services-250x250.jpg
+#!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/iRingo/ios_location_services-250x250.jpg
 #!date = 2024-12-05 08:49:35
 
 [Argument]
