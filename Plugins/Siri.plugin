@@ -8,7 +8,7 @@
 #!loon_version = 3.2.9(837)
 #!version = 4.2.7
 #!homepage = https://NSRingo.github.io/guide/Siri/siri
-#!icon = https://raw.githubusercontent.com/mist-whisper/Icons/master/iRingo/siri-128x128.png
+#!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/iRingo/siri-128x128.png
 #!date = 2024-12-24 04:25:06
 
 [Argument]
