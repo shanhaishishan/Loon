@@ -14,7 +14,7 @@
 blockUpload=switch,false,true,tag=隐藏上传按钮,desc=用于隐藏YouTube底栏的上传按钮
 blockShorts=switch,false,true,tag=隐藏短视频按钮,desc=用于隐藏YouTube底栏的Shorts按钮
 captionLang=select,"zh-Hans","zh-Hant","ja","ko","en","off",tag=字幕翻译语言,desc=需要把YouTube字幕翻译翻译为何种语言
-debug=switch,false,true,tag=启用调试模式,desc=此插件的调试模式
+#debug=switch,false,true,tag=启用调试模式,desc=此插件的调试模式
 
 [Rule]
 AND,((DOMAIN-SUFFIX,googlevideo.com),(PROTOCOL,QUIC)),REJECT
