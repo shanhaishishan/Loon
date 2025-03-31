@@ -1,12 +1,12 @@
 #!name = 酷我音乐去广告
 #!desc = 解锁会员皮肤、会员音频(音质最高支持到“至臻音质2.0”)、听书权限。移除开屏广告、各类弹窗、悬浮窗、各类横幅广告、信息流广告、歌词评论区广告和播放器界面广告，精简侧边栏。
 #!openUrl = 
-#!author = 可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md],影子[https://www.napi.ltd]
+#!author = 可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md],影子[https://www.napi.ltd],wish[https://github.com/mist-whisper]
 #!tag = 解锁去广告
 #!system = iOS iPadOS
 #!system_version = 15
 #!loon_version = 3.2.9(837)
-#!homepage = https://github.com/luestr/ProxyResource/blob/main/README.md
+#!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/App_icon/120px/Kuwo.png
 #!date = 2025-02-22
 
