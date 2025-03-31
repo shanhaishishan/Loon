@@ -8,7 +8,7 @@
 #!loon_version = 3.2.9(837)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/App_icon/120px/Kuwo.png
-#!date = 2025-02-22
+#!date = 2025-03-15
 
 [Argument]
 QS = select,"Hi-Res音质","无损音质","超品音质","高品音质",tag=音质选择
