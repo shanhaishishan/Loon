@@ -1,1 +1,1 @@
-https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Rules/AdRules/AdRules.list
+https://raw.githubusercontent.com/mist-whisper/Loon/master/Rules/AdRules/AdRules.list
