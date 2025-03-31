@@ -1,7 +1,7 @@
 #!name = 谷歌增强
 #!desc = 谷歌搜索内容时并发使用多个策略，以避免可能出现的人机验证。需要在插件参数填写策略名的正则表达式。将Google搜索重定向至.com域名，如遇频繁跳转请禁用本插件。
 #!openUrl = 
-#!author = NobyDa[https://github.com/NobyDa],可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
+#!author = NobyDa[https://github.com/NobyDa],可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md],wish[https://github.com/mist-whisper]
 #!tag = 功能增强
 #!system = iOS iPadOS
 #!system_version = 15
