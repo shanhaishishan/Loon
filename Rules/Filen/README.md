@@ -1,1 +1,1 @@
-https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Rules/Filen/Filen.list
+https://raw.githubusercontent.com/mist-whisper/Loon/master/Rules/Filen/Filen.list
