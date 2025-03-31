@@ -1,7 +1,7 @@
 #!name = 航旅纵横去广告
 #!desc = 过滤航旅纵横广告
 #!openUrl = 
-#!author = whisper[https://github.com/mist-whisper/Loon/blob/master/README.md]
+#!author = wish[https://github.com/mist-whisper]
 #!tag = 去广告
 #!system = iOS iPadOS
 #!system_version = 15
@@ -14,7 +14,7 @@
 URL-REGEX,"^http?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/native",REJECT
 
 [Script]
-http-response ^http?:\/\/(114\.115\.217\.129)|(home\.umetrip\.com)\/gateway\/api\/umetrip\/native$ script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/Umetrip/Umetrip_remove_ads.js,tag=移除首页广告
+http-response ^http?:\/\/(114\.115\.217\.129)|(home\.umetrip\.com)\/gateway\/api\/umetrip\/native$ script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/Umetrip/Umetrip_remove_ads.js,tag=移除首页广告
 
 [MitM]
 hostname=114.115.217.129,home.umetrip.com
