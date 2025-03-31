@@ -1,1 +1,1 @@
-https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Rules/Battle/Battlenet.list
+https://raw.githubusercontent.com/mist-whisper/Loon/master/Rules/Battle/Battlenet.list
