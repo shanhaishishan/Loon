@@ -1,1 +1,1 @@
-https://raw.githubusercontent.com/mist-whisper/Loon/refs/heads/master/Rules/REGION/REGION.SPLITTER
+https://raw.githubusercontent.com/mist-whisper/Loon/master/Rules/REGION/REGION.SPLITTER
