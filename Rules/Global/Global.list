@@ -1,7 +1,7 @@
 # NAME: Global
 # AUTHOR: Sukka Edward
 # HOMEPAGE: https://ruleset.skk.moe/List/non_ip/global.conf
-# UPDATED: 2025-03-02
+# UPDATED: 2025-04-01
 # This file contains rules for services that are not available inside the Mainland China.
 
 #DOMAIN,this_ruleset_is_made_by_sukkaw.ruleset.skk.moe
@@ -594,4 +594,6 @@ DOMAIN-KEYWORD,levelinfinite
 DOMAIN-KEYWORD,tmdb
 DOMAIN-KEYWORD,depay
 DOMAIN-KEYWORD,dupay
+DOMAIN-KEYWORD,hhneko
+DOMAIN-KEYWORD,subneko
 USER-AGENT,Roam*
