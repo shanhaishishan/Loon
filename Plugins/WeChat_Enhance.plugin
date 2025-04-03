@@ -7,7 +7,7 @@
 #!system_version = 15
 #!loon_version = 3.2.9(837)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
-#!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/App_icon/120px/Weixin.png
+#!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/App_icon/120px/WeChat.png
 #!date = 2025-03-16
 
 [Rule]
