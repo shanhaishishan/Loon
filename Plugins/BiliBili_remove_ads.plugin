@@ -7,7 +7,7 @@
 #!system_version = 15
 #!loon_version = 3.2.9(837)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
-#!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/MyIcon/BiliBiliWhite.png
+#!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/App_icon/120px/Bilibili.png
 #!date = 2025-03-28 00:08:44
 
 [Argument]
