@@ -8,11 +8,11 @@
 #!loon_version = 3.2.9(837)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/MyIcon/Google.png
-#!date = 2024-12-06 20:54:00
+#!date = 2025-04-12 17:44:00
 
 [Argument]
 scriptEngine=select,"auto","webview","jsc",tag=脚本引擎,desc=选择脚本引擎
-regularExpression=input,"^(🇸🇬|🇭🇰)\s.*\d+$",tag=策略正则表达式,desc=输入策略正则表达式
+regularExpression=input,"^(🇸🇬|🇺🇸)\s.*\d+$",tag=策略正则表达式,desc=输入策略正则表达式
 
 [Rewrite]
 ^https?:\/\/(www.)?(g|google)\.cn 307 https://www.google.com
