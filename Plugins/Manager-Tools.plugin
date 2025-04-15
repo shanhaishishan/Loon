@@ -2,11 +2,11 @@
 #!desc = 重写及规则集转换，高级订阅管理工具和Boxjs管理工具合集
 #!openurl = 
 #!author = 小白脸,xream[https://github.com/xream],keywos[https://github.com/keywos],ckyb[https://github.com/chengkongyiban],Peng-YM[https://github.com/Peng-YM],chavyleung[https://github.com/chavyleung]
-#!tag = 规则转换
+#!tag = 工具
 #!system = iOS iPadOS
 #!system_version = 15
 #!loon_version = 3.2.9(837)
-#!homepage = https://github.com/Script-Hub-Org/Script-Hub/tree/main
+#!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/MyIcon/ManagerTools.png
 #!date = 2025-04-15
 
