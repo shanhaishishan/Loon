@@ -1,0 +1,10 @@
+#!name=jd_buy_helper
+#!desc=jd_buy_helper
+#!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1035.png
+
+[Script]
+# > 京东购物助手
+http-response ^https:\/\/in\.m\.jd\.com\/product\/.+?\.html script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_buy_helper.js, requires-body=true, tag=购物助手
+
+[MITM]
+hostname = in.m.jd.com, lite-in.m.jd.com
