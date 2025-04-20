@@ -49,7 +49,7 @@
 * [QQ音乐去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/QQMusic_remove_ads.plugin)
 * [QQ链接解锁](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/QQ_Redirect.plugin)
 * [小红书去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/REDnote_remove_ads.plugin)
-* [Manager-Tools](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Manager-Tools.plugin)
+* [Manager Tools](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Manager-Tools.plugin)
 * [Siri增强](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Siri.plugin)
 * [Spotify去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Spotify_remove_ads.plugin)
 * [淘宝去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Taobao_remove_ads.plugin)
