@@ -1,14 +1,14 @@
 #!name = 京东去广告
 #!desc = 移除京东开屏广告，精简我的页面产品推广，下滑或点击商品详情即可显示比价信息。\n首次使用需要下载慢慢买APP，点击我的页面获取CK数据，无需登录。
 #!openUrl = 
-#!author = RuCu6[https://github.com/RuCu6], githubdulong[https://github.com/githubdulong],wish[https://github.com/mist-whisper]
+#!author = RuCu6[https://github.com/RuCu6], githubdulong[https://github.com/githubdulong],wish[https://github.com/mist-whisper],wf021325[https://github.com/wf021325]
 #!tag = 去广告增强
 #!system = iOS iPadOS
 #!system_version = 15
 #!loon_version = 3.2.9(837)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/App_icon/120px/JD.png
-#!date = 2025-04-19
+#!date = 2025-04-21 23:15:00
 
 [Rule]
 DOMAIN,dns.jd.com,REJECT
@@ -24,9 +24,9 @@ IP-CIDR6,2402:db40:5100:1011::5/128,REJECT,no-resolve
 [Script]
 http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome) script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/JD/JD_remove_ads.js,requires-body=true,tag=移除京东广告
 
-http-request ^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com/baoliao\/center\/menu script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/JD/MmmCK.js, requires-body=true, tag=获取慢慢买ck
+http-request ^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com\/baoliao\/center\/menu$ script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/JD/JD_Price.js, requires-body=true, timeout=60, tag=获取慢慢买ck
 
-http-response ^https:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/JD/JD_Price.js, requires-body=true, timeout=30, tag=京东比价
+http-response ^https?:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/JD/JD_Price.js, requires-body=true, timeout=60, tag=京东比价
 
 [MITM]
 hostname = in.m.jd.com, apapia-sqk-weblogic.manmanbuy.com, m.360buyimg.com
