@@ -11,9 +11,9 @@
 #!date = 2025-04-23 11:06:00
 
 [Argument]
-MANMANBUY_ENABLE = switch, false, true, tag = 账号捕获, desc = 慢慢买 CK 脚本启停
-DISABLE_NOTICE = switch, false, true, tag = 转链及通知功能, desc = 是否启用转链及通知功能，默认禁用，仅显示比价图表
-THEME_TIME = input, "7-19", tag = 浅色模式时间范围, desc = 自定义深色模式时间范围，默认7~19为浅色模式。
+manmanbuy_enable = switch, false, true, tag = 账号捕获, desc = 慢慢买 CK 脚本启停
+disable_notice = switch, false, true, tag = 转链及通知功能, desc = 是否启用转链及通知功能，默认禁用，仅显示比价图表
+theme_time = input, "7-19", tag = 浅色模式时间范围, desc = 自定义深色模式时间范围，默认7~19为浅色模式。
 
 [Rule]
 DOMAIN,dns.jd.com,REJECT
@@ -29,9 +29,9 @@ IP-CIDR6,2402:db40:5100:1011::5/128,REJECT,no-resolve
 [Script]
 http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome) script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/JD/JD_remove_ads.js,requires-body=true,tag=移除京东广告
 
-http-request ^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com\/baoliao\/center\/menu$ script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/JD/JD_Price.js, requires-body=true, timeout=60, enable={MANMANBUY_ENABLE}, tag=账号捕获
+http-request ^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com\/baoliao\/center\/menu$ script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/JD/JD_Price.js, requires-body=true, timeout=60, enable={manmanbuy_enable}, tag=账号捕获
 
-http-response ^https?:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/JD/JD_Price.js, requires-body=true, timeout=60, argument=[{DISABLE_NOTICE},{THEME_TIME}], tag=京东比价
+http-response ^https?:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/JD/JD_Price.js, requires-body=true, timeout=60, argument=[{disable_notice},{theme_time}], tag=京东比价
 
 [MITM]
 hostname = in.m.jd.com, apapia-sqk-weblogic.manmanbuy.com, m.360buyimg.com
