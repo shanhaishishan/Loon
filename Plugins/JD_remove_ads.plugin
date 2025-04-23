@@ -8,12 +8,12 @@
 #!loon_version = 3.2.9(837)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/App_icon/120px/JD.png
-#!date = 2025-04-23 11:06:00
+#!date = 2025-04-23 12:07:00
 
 [Argument]
 manmanbuy_enable = switch, false, true, tag = 账号捕获, desc = 慢慢买 CK 脚本启停
 disable_notice = switch, false, true, tag = 转链及通知功能, desc = 是否启用转链及通知功能，默认禁用，仅显示比价图表
-theme_time = input, "7-19", tag = 浅色模式时间范围, desc = 自定义深色模式时间范围，默认7~19为浅色模式。
+theme_time = input, "7-19", tag = 浅色模式时间设置, desc = 自定义深浅色模式时间范围，默认7~19为浅色模式。
 
 [Rule]
 DOMAIN,dns.jd.com,REJECT
