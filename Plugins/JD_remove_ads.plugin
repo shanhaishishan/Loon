@@ -1,7 +1,7 @@
 #!name = 京东去广告
 #!desc = 移除京东开屏广告，精简我的页面产品推广，下滑或点击商品详情即可显示比价信息。\n首次使用需要下载慢慢买APP，点击我的页面获取CK数据，无需登录。
 #!openUrl = 
-#!author = RuCu6[https://github.com/RuCu6], githubdulong[https://github.com/githubdulong], wish[https://github.com/mist-whisper], wf021325[https://github.com/wf021325]
+#!author = RuCu6[https://github.com/RuCu6], githubdulong[https://github.com/githubdulong], wish[https://github.com/mist-whisper]
 #!tag = 去广告增强
 #!system = iOS iPadOS
 #!system_version = 15
@@ -12,7 +12,7 @@
 
 [Argument]
 manmanbuy_enable = switch, false, true, tag = 账号捕获, desc = 慢慢买 CK 脚本启停
-theme_time = input, "7-19", tag = 浅色模式时间设置, desc = 自定义深浅色模式时间范围，默认7~19为浅色模式。
+theme_time = input, "7-19", tag = 深浅模式时间设置, desc = 自定义深浅模式时间，默认7~19为浅色模式。
 
 [Rule]
 DOMAIN,dns.jd.com,REJECT
