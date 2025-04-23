@@ -12,7 +12,6 @@
 
 [Argument]
 manmanbuy_enable = switch, false, true, tag = 账号捕获, desc = 慢慢买 CK 脚本启停
-disable_notice = switch, false, true, tag = 转链及通知功能, desc = 是否启用转链及通知功能，默认禁用，仅显示比价图表
 theme_time = input, "7-19", tag = 浅色模式时间设置, desc = 自定义深浅色模式时间范围，默认7~19为浅色模式。
 
 [Rule]
@@ -31,7 +30,7 @@ http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLay
 
 http-request ^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com\/baoliao\/center\/menu$ script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/JD/JD_Price.js, requires-body=true, timeout=60, enable={manmanbuy_enable}, tag=账号捕获
 
-http-response ^https?:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/JD/JD_Price.js, requires-body=true, timeout=60, enable=[{disable_notice},{theme_time}], tag=京东比价
+http-response ^https?:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/JD/JD_Price.js, requires-body=true, timeout=60, enable={theme_time}, tag=京东比价
 
 [MITM]
 hostname = in.m.jd.com, apapia-sqk-weblogic.manmanbuy.com, m.360buyimg.com
