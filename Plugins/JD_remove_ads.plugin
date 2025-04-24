@@ -13,7 +13,7 @@
 [Argument]
 manmanbuy_enable = switch,true,false,tag=账号捕获,desc=慢慢买 CK 脚本启停
 manmanbuy_key = input,tag=[测试功能]账号信息,desc=填写慢慢买CK
-theme_time = input,tag=[测试功能]浅色模式时间设置,desc=自定义深浅模式时间，默认7-19为浅色模式
+THEME_TIME = input,tag=[测试功能]浅色模式时间设置,desc=自定义深浅模式时间，默认7-19为浅色模式
 
 [Rule]
 DOMAIN,dns.jd.com,REJECT
@@ -31,7 +31,7 @@ http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLay
 
 http-request ^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com/baoliao\/center\/menu script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/JD/JD_Price.js,requires-body=true,timeout=60,enable={manmanbuy_enable},argument={manmanbuy_key},tag=账号捕获
 
-http-response ^https:\/\/in\.m\.jd\.com\/product\/.+?\.html script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/JD/JD_Price.js,requires-body=true,timeout=60,argument={theme_time},tag=京东比价
+http-response ^https:\/\/in\.m\.jd\.com\/product\/.+?\.html script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/JD/JD_Price.js,requires-body=true,timeout=60,argument={THEME_TIME},tag=京东比价
 
 [MITM]
 hostname = in.m.jd.com, apapia-sqk-weblogic.manmanbuy.com, m.360buyimg.com
