@@ -8,7 +8,7 @@
 #!loon_version = 3.2.9(837)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/MyIcon/Google.png
-#!date = 2025-04-12 17:44:00
+#!date = 2025-04-24 18:26:00
 
 [Argument]
 scriptEngine=select,"auto","webview","jsc",tag=脚本引擎,desc=选择脚本引擎
@@ -19,7 +19,7 @@ regularExpression=input,"^(🇸🇬|🇺🇸)\s.*\d+$",tag=策略正则表达式
 ^https?:\/\/(ditu|maps).google\.cn 307 https://maps.google.com
 
 [Script]
-http-response ^https:\/\/www\.google\.com(?:\.[a-z]+|)\/(?:search\?(?:|.+?&)q=|$) requires-body=1,timeout=30,script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/Google_Enhance/Google_CAPTCHA.js,tag=Google人机验证
+http-response ^https:\/\/www\.google\.com(?:\.[a-z]+|)\/(?:search\?(?:|.+?&)q=|$) requires-body=1,timeout=30,script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/Google_Enhance/Google_CAPTCHA.js,argument=[{scriptEngine},{regularExpression}],tag=Google人机验证
 
 [MITM]
 hostname = www.google.com*,www.google.cn
