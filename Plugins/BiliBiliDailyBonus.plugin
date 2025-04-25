@@ -1,4 +1,4 @@
-#!name = BiliBili每日等级任务
+#!name = 哔哩哔哩每日等级任务
 #!desc = 定时任务及Cookie获取，保持开启，如检测到cookie变更会自动更新，解决cookie经常过期的问题(cookie仍有效不提醒更新)。
 #!openUrl = 
 #!author = ClydeTime[https://github.com/ClydeTime]
