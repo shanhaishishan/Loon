@@ -1,0 +1,23 @@
+#!name = 微信支付有优惠定时领金币
+#!desc = 每天定时自动领微信支付有优惠的金币。\n首次安装插件后需进入“微信支付有优惠”小程序获取CK，获取后即可关闭。
+#!openUrl = 
+#!author = FoKit[https://github.com/FoKit]
+#!tag = 功能增强
+#!system = iOS iPadOS
+#!system_version = 15
+#!loon_version = 3.2.9(837)
+#!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
+#!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/MyIcon/WechatPay.png
+#!date = 2024-05-18
+
+[Argument]
+cookie = switch,true,false,tag=账号捕获,desc=获取cookie
+coupon = switch,true,false,tag=金币获取,desc=定时自动领取金币
+
+[Script]
+http-response https:\/\/payapp\.weixin\.qq\.com\/(coupon-center-user\/home\/login|coupon-center-award\/award\/detail) tag=账号捕获,script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/wechat_pay_coupon.js,requires-body=1,enable={cookie}
+
+cron "30 9 * * *" script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/wechat_pay_coupon.js,tag=金币获取,enable={coupon}
+
+[MITM]
+hostname = payapp.weixin.qq.com
