@@ -11,6 +11,8 @@
 #!date = 2025-02-28 20:08:47
 
 [Argument]
+test1=switch,false,true,tag=[测试功能1],desc=
+test2=switch,false,true,tag=[测试功能2],desc=
 MY=switch,false,true,tag=[隐藏底栏]漫游标签,desc=
 DT=switch,false,true,tag=[隐藏底部]笔记标签,desc=
 FX=switch,false,true,tag=[隐藏底部]发现标签,desc=
@@ -50,6 +52,10 @@ DOMAIN,ipv6.music.163.com,REJECT
 # 主页播客推荐
 ^https:\/\/interface\d\.music\.163\.com\/eapi\/my\/podcast\/tab\/recommend reject-dict
 
+# 测试功能
+^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/e?api\/(mine\/(collect|rn)\/header\/info|v\d\/user\/detail\/\d+|vipnewcenter\/app\/resource\/newaccountpage|music-vip-membership\/(client|front)\/vip\/info|batch|playlist\/privilege|search\/complex\/page|v\d\/(discovery\/recommend\/songs|playlist\/detail)) header-replace x-aeapi false
+^https?:\/\/interface\d?\.music\.163\.com\/e?api\/vip\/cashier\/tspopup\/get - reject-200
+
 [Script]
 http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/(?:batch|v2\/resource\/comment\/floor\/get) script-path=https://kelee.one/Resource/Script/NeteaseCloudMusic/NeteaseCloudMusic_remove_ads.js,requires-body=true,binary-body-mode=true,timeout=20,tag=评论区、热推、有话想说、分享一下、歌曲下的祝福等小提示
 http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/(?:homepage\/block\/page|link\/page\/rcmd\/(?:block\/resource\/multi\/refresh|resource\/show)) script-path=https://kelee.one/Resource/Script/NeteaseCloudMusic/NeteaseCloudMusic_remove_ads.js,requires-body=true,binary-body-mode=true,timeout=20,tag=推荐、home、主页,argument=[{PRGG},{PRRK},{PRDRD},{PRSCVPT},{PRST},{PRRR},{HMPR},{PRMST},{PRCN}]
@@ -58,6 +64,10 @@ http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/link\/page\/disco
 # http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/song\/play\/more\/list\/ script-path=https://kelee.one/Resource/Script/NeteaseCloudMusic/NeteaseCloudMusic_remove_ads.js,requires-body=true,binary-body-mode=true,timeout=20,tag=播放音效
 http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/link\/position\/show\/resource script-path=https://kelee.one/Resource/Script/NeteaseCloudMusic/NeteaseCloudMusic_remove_ads.js,requires-body=true,binary-body-mode=true,timeout=20,tag=我的页面
 http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/user\/follow\/users\/mixed\/get script-path=https://kelee.one/Resource/Script/NeteaseCloudMusic/NeteaseCloudMusic_remove_ads.js,requires-body=true,binary-body-mode=true,timeout=20,tag=显示未关注你的人
+
+http-response ^https?:\/\/interface\d?\.music\.163\.com\/e?api\/(mine\/(collect|rn)\/header\/info|v\d\/user\/detail\/\d+|vipnewcenter\/app\/resource\/newaccountpage|music-vip-membership\/(client|front)\/vip\/info|batch|playlist\/privilege|search\/complex\/page|v\d\/(discovery\/recommend\/songs|playlist\/detail)) script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/NeteaseCloudMusic/netease.js, requires-body=true, binary-body-mode=true, timeout=60, tag=测试功能1,enable={test1}
+
+http-request ^https?:\/\/interface\d?\.music\.163\.com\/e?api\/(song\/enhance\/player\/url\/v\d|vipauth\/app\/auth\/query) script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/NeteaseCloudMusic/netease.js, requires-body=true, timeout=60, tag=测试功能2,enable={test2}
 
 [MitM]
 hostname=interface*.music.163.com
