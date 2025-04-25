@@ -12,7 +12,7 @@
 
 [Argument]
 music_vip=switch,false,true,tag=[解锁]黑胶会员,desc=
-song_query=switch,false,true,tag=[解锁]歌曲音质,desc=
+song_query=switch,false,true,tag=[解锁]播放权限,desc=
 MY=switch,false,true,tag=[隐藏底栏]漫游标签,desc=
 DT=switch,false,true,tag=[隐藏底部]笔记标签,desc=
 FX=switch,false,true,tag=[隐藏底部]发现标签,desc=
@@ -67,7 +67,7 @@ http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/user\/follow\/use
 
 http-response ^https?:\/\/interface\d?\.music\.163\.com\/e?api\/(mine\/(collect|rn)\/header\/info|v\d\/user\/detail\/\d+|vipnewcenter\/app\/resource\/newaccountpage|music-vip-membership\/(client|front)\/vip\/info|batch|playlist\/privilege|search\/complex\/page|v\d\/(discovery\/recommend\/songs|playlist\/detail)) script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/NeteaseCloudMusic/netease.js, requires-body=true, binary-body-mode=true, timeout=60, tag=解锁黑胶会员,enable={music_vip}
 
-http-request ^https?:\/\/interface\d?\.music\.163\.com\/e?api\/(song\/enhance\/player\/url\/v\d|vipauth\/app\/auth\/query) script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/NeteaseCloudMusic/netease.js, requires-body=true, timeout=60, tag=解锁歌曲音质,enable={song_query}
+http-request ^https?:\/\/interface\d?\.music\.163\.com\/e?api\/(song\/enhance\/player\/url\/v\d|vipauth\/app\/auth\/query) script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/NeteaseCloudMusic/netease.js, requires-body=true, timeout=60, tag=解锁播放权限,enable={song_query}
 
 [MitM]
 hostname=interface*.music.163.com
