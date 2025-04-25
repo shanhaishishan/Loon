@@ -11,8 +11,8 @@
 #!date = 2025-04-25 21:40:00
 
 [Argument]
-test1=switch,false,true,tag=[解锁黑胶会员],desc=
-test2=switch,false,true,tag=[解锁歌曲音质],desc=
+music_vip=switch,false,true,tag=[解锁]黑胶会员,desc=
+song_query=switch,false,true,tag=[解锁]歌曲音质,desc=
 MY=switch,false,true,tag=[隐藏底栏]漫游标签,desc=
 DT=switch,false,true,tag=[隐藏底部]笔记标签,desc=
 FX=switch,false,true,tag=[隐藏底部]发现标签,desc=
