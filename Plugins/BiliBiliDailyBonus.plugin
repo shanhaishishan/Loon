@@ -1,4 +1,4 @@
-#!name = 哔哩哔哩每日等级任务（暂时失效）
+#!name = 哔哩哔哩每日等级任务
 #!desc = 每天自动完成哔哩哔哩等级任务。\n首次安装插件需打开BiliBili自动获取Cookie。\n保持开启状态时检测到Cookie变更会自动更新，解决Cookie经常过期的问题(Cookie有效时不提示更新)。
 #!openUrl = 
 #!author = ClydeTime[https://github.com/ClydeTime]
