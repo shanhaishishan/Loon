@@ -8,7 +8,7 @@
 #!loon_version = 3.2.9(837
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/MyIcon/DailyBonus.png
-#!date = 2023-06-02
+#!date = 2025-04-26 21:16:00
 
 [Argument]
 DailyBonus = switch,true,false,tag=每日等级任务,desc=每天自动完成哔哩哔哩等级任务
@@ -18,9 +18,9 @@ BiliBiliCookieWEB = switch,true,false,tag=网页版账号捕获,desc=获取网�
 [Script]
 cron "45 11 * * *" script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=每日等级任务,enable={DailyBonus}
 
-http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(APP),enable={BiliBiliCookieAPP}
+http-request ^https?:\/\/cm\.bilibili\.com\/cm\/api\/fees\/wise$ script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(APP),enable={BiliBiliCookieAPP}
 
 http-request ^https?:\/\/m.bilibili.com/$ script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(网页),enable={BiliBiliCookieWEB}
 
 [MITM]
-hostname = app.bilibili.com, m.bilibili.com
+hostname = cm.bilibili.com, m.bilibili.com
