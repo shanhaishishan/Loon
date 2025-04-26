@@ -12,14 +12,14 @@
 
 [Argument]
 DailyBonus = switch,true,false,tag=每日等级任务,desc=每天自动完成哔哩哔哩等级任务
-# BiliBiliCookieAPP = switch,true,false,tag=账号捕获,desc=获取CK
-BiliBiliCookieWEB = switch,true,false,tag=账号捕获,desc=获取CK
+BiliBiliCookieAPP = switch,true,false,tag=客户端账号捕获,desc=获取客户端CK
+BiliBiliCookieWEB = switch,true,false,tag=网页版账号捕获,desc=获取网页版CK
 
 [Script]
-# BiliBili每日等级任务
-cron "38 11 * * *" script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=每日等级任务,enable={DailyBonus}
+cron "45 11 * * *" script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=每日等级任务,enable={DailyBonus}
 
-# http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(APP),enable={BiliBiliCookieAPP}
+http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(APP),enable={BiliBiliCookieAPP}
+
 http-request ^https?:\/\/m.bilibili.com/$ script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(网页),enable={BiliBiliCookieWEB}
 
 [MITM]
