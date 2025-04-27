@@ -1,14 +1,22 @@
 #!name = 金山文档去广告
-#!desc = 移除首页横幅推广、表单收集页面推广和我的页面推广。
+#!desc = 移除首页横幅推广、表单收集页面推广和我的页面推广。\nWPS每日签到并兑换会员，需进入此插件的详情页面开启插件。
 #!openUrl = 
-#!author = 可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
-#!tag = 去广告
+#!author = 小白脸, 可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md], wish[https://github.com/mist-whisper]
+#!tag = 功能增强
 #!system = iOS iPadOS
 #!system_version = 15
 #!loon_version = 3.2.9(837
-#!homepage = https://github.com/luestr/ProxyResource/blob/main/README.md
+#!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/App_icon/120px/WPS_Documents.png
-#!date = 2025-04-14 14:16:55
+#!date = 2025-04-27 11:30:00
+
+[Argument]
+CaptureCookie=switch,false,true,tag=捕获Cookie,desc=此开关控制插件是否捕获Cookie
+AK=input,"",tag=百度API Key,desc=这里需要输入有效的百度API Key
+SK=input,"",tag=百度Secret Key,desc=这里需要输入有效的百度Secret Key
+DAY=input,"1",tag=兑换天数,desc=每日签到时自动兑换的天数，可不做更改。
+MAX_RETRIES=input,"5",tag=失败重试次数,desc=仅允许填写阿拉伯数字
+CRONEXP=input,"30 12 * * *",tag=定时参数,desc=这里需要输入符合CRON表达式的参数
 
 [Rewrite]
 ^https:\/\/www\.kdocs\.cn\/kdg\/api\/v1\/cards\/type\/3\?iosVer=\d+\.\d+\.\d+&isGetList=1 reject-dict
@@ -16,6 +24,11 @@
 ^https:\/\/www\.kdocs\.cn\/kdg\/api\/v1\/cards\/type\/27\?iosVer=\d+\.\d+\.\d+&isGetList=1 reject-dict
 
 ^https:\/\/f-api\.kdocs\.cn\/godfather\/api\/thirdparty\/v1\/viewpager\?showLocal=mobileWebIndex reject-dict
+
+[Script]
+http-request ^https:\/\/moapi\.wps\.cn\/app\/ios\/v1\/app$ script-path=https://raw.githubusercontent.com/githubdulong/Script/master/WPS_checkin.js,requires-body=true,tag=捕获Cookie,enable={CaptureCookie}
+
+cron {CRONEXP} script-path=https://raw.githubusercontent.com/githubdulong/Script/master/WPS_checkin.js,tag=WPS每日签到,timeout=120,argument=[{AK},{SK},{MAX_RETRIES}]
 
 [MitM]
 hostname=www.kdocs.cn,f-api.kdocs.cn
