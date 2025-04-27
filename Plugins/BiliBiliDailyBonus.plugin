@@ -16,7 +16,7 @@ BiliBiliCookieAPP = switch,true,false,tag=客户端账号捕获,desc=获取客�
 BiliBiliCookieWEB = switch,false,true,tag=网页版账号捕获,desc=获取网页版CK
 
 [Script]
-cron "45 11 * * *" script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=每日等级任务,enable={DailyBonus}
+cron "05 10 * * *" script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=每日等级任务,enable={DailyBonus}
 
 http-request ^https?:\/\/cm\.bilibili\.com\/cm\/api\/fees\/wise$ script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(APP),enable={BiliBiliCookieAPP}
 
