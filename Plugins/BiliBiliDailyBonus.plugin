@@ -1,5 +1,5 @@
 #!name = 哔哩哔哩每日等级任务
-#!desc = 每天自动完成哔哩哔哩等级任务。\n首次安装插件需打开BiliBili自动获取Cookie，默认仅开启客户端捕获。\n保持开启状态时检测到Cookie变更会自动更新，解决Cookie经常过期的问题(Cookie有效时不提示更新)。
+#!desc = 每天自动完成哔哩哔哩等级任务。\n首次安装插件需打开BiliBili自动获取Cookie，建议客户端和网页版择一使用。\n保持开启状态时检测到Cookie变更会自动更新，解决Cookie经常过期的问题(Cookie有效时不提示更新)。
 #!openUrl = 
 #!author = ClydeTime[https://github.com/ClydeTime], wish[https://github.com/mist-whisper]
 #!tag = 功能增强
@@ -12,13 +12,13 @@
 
 [Argument]
 BiliBiliCookieAPP = switch,true,false,tag=客户端账号捕获,desc=获取客户端CK
-# BiliBiliCookieWEB = switch,false,true,tag=网页版账号捕获,desc=获取网页版CK
+BiliBiliCookieWEB = switch,true,false,tag=网页版账号捕获,desc=获取网页版CK
 DailyBonus = switch,true,false,tag=每日等级任务,desc=每天自动完成哔哩哔哩等级任务
 CRONEXP = input,"0 8 * * *",tag=定时参数,desc=这里需要输入符合CRON表达式的参数
 
 [Script]
 http-request ^https?:\/\/cm\.bilibili\.com\/cm\/api\/fees\/wise$ script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(APP),enable={BiliBiliCookieAPP}
-# http-request ^https?:\/\/m.bilibili.com/$ script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(网页),enable={BiliBiliCookieWEB}
+http-request ^https?:\/\/m.bilibili.com/$ script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(网页),enable={BiliBiliCookieWEB}
 cron {CRONEXP} script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=每日等级任务,enable={DailyBonus}
 [MITM]
 hostname = cm.bilibili.com, m.bilibili.com
