@@ -31,4 +31,4 @@ http-request ^https:\/\/moapi\.wps\.cn\/app\/ios\/v1\/app$ script-path=https://r
 cron {CRONEXP} script-path=https://raw.githubusercontent.com/githubdulong/Script/master/WPS_checkin.js,tag=WPS每日签到,timeout=120,argument=[{AK},{SK},{MAX_RETRIES}]
 
 [MitM]
-hostname=www.kdocs.cn,f-api.kdocs.cn
+hostname=www.kdocs.cn,f-api.kdocs.cn,moapi.wps.cn
