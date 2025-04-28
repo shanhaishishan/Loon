@@ -1,14 +1,14 @@
 #!name = WeChat增强
 #!desc = WeChat广告过滤，解锁微信外部链接。
 #!openUrl = 
-#!author = ld2j[https://github.com/LD2J0618],RuCu6[https://github.com/RuCu6],可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md],VirgilClyne,zZPiglet[https://github.com/zZPiglet],wish[https://github.com/mist-whisper]
-#!tag = 功能增强
+#!author = ld2j[https://github.com/LD2J0618],RuCu6[https://github.com/RuCu6],可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md],VirgilClyne,zZPiglet[https://github.com/zZPiglet],wish[https://github.com/mist-whisper],ZenmoFeiShi[https://github.com/ZenmoFeiShi]
+#!tag = 去广告增强
 #!system = iOS iPadOS
 #!system_version = 15
 #!loon_version = 3.2.9(837)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/App_icon/120px/WeChat.png
-#!date = 2025-03-16
+#!date = 2025-04-28 21:57:00
 
 [Rule]
 # 微信公众号广告过滤
@@ -21,10 +21,9 @@ DOMAIN,wxsnsdythumb.wxs.qq.com,REJECT
 DOMAIN,ads-shopping.shouqianba.com,REJECT
 # 猫眼电影
 DOMAIN,ad.maoyan.com,REJECT
-# 捷停车 @怎么肥事
-DOMAIN,e.jparking.cn,REJECT
 
 [Rewrite]
+# 同城旅行 @怎么肥事
 ^https:\/\/wx\.17u\.cn\/xcxhomeapi\/aggregator\/index - reject-dict
 ^https:\/\/wx\.17u\.cn\/mytourapi\/mytrip\/blankflight - reject-dict
 ^https:\/\/wx\.17u\.cn\/membermessageuserapi\/message\/list - reject-dict
@@ -39,25 +38,16 @@ DOMAIN,e.jparking.cn,REJECT
 ^https:\/\/wx\.17u\.cn\/wechatmypubapi\/myInfo\/memberShow - reject-dict
 ^https:\/\/wx\.17u\.cn\/xcxhomeapi\/home\/converge - reject-dict
 ^https:\/\/wx\.17u\.cn\/platformpubapi\/customer\/lead\/getInfo - reject-dict
+# 美团 @怎么肥事
 ^https:\/\/web\.meituan\.com\/api\/miniprogram\/my\/novelZone - reject-dict
 ^https:\/\/web\.meituan\.com\/api\/miniprogram\/my\/resources - reject-dict
 ^https:\/\/npay\.meituan\.com\/conch\/flow\/mypage-wallet-info - reject-dict
 ^https:\/\/web\.meituan\.com\/newUser\/returnMoney\/popWindow - reject-dict
 ^https:\/\/npay\.meituan\.com\/conch\/walletv3\/wechat-pop-window - reject-dict
+# 京东 @怎么肥事
 ^https:\/\/api\.m\.jd\.com\/\?loginType=11 - reject-dict
-^https:\/\/webapi\.qmai\.cn\/web\/cmk-center\/marketing\/canvas\/advert-reach - reject
-# 交通银行小程序开屏广告 @张军
-^https:\/\/creditcardapp\.bankcomm\.com\/cnsvPmpaMdbcardWeb\/page\/getGuidePageAds - reject
 # 招行首页横幅广告 @ArthasYZ
 ^https:\/\/mbmodule-openapi\.paas\.cmbchina\.com\/graphic\/v2\/module\/graphic - reject
-# 中石油去开屏广告发现
-^https:\/\/app\.95504\.net\/app\/json\/page_ad\/initPageAd\?ver= - reject
-# 中油好客e站小程序弹窗广告
-^https:\/\/minipro\.95504\.net\/app\/json\/ad\/getPopAdData - reject
-# 中油好客e站小程序底部横幅广告
-^https:\/\/minipro\.95504\.net\/app\/json\/ad\/getIndexAdData - reject
-# 多点 @ArthasYZ
-^https:\/\/flow\.dmall\.com\/app\/home\/pops - reject
 # 永辉 @ArthasYZ
 ^https:\/\/api\.yonghuivip\.com\/api\/fp\/homepage\/pop - reject
 ^https:\/\/activity\.yonghuivip\.com\/api\/app\/fp\/homepage\/pop - reject
@@ -71,12 +61,6 @@ DOMAIN,e.jparking.cn,REJECT
 ^https:\/\/hdgateway\.zto\.com\/getAdInfo - reject
 ^https:\/\/hdgateway\.zto\.com\/listJumperShow - reject
 ^https:\/\/fscdn\.zto\.com\/fs1 - reject
-# 怪兽充电 aag.enmonster.com
-^https:\/\/aag\.enmonster\.com\/apa\/index\/advert\/skin - reject
-# 小兔充充 ad.xiaotucc.com, mapi.xiaotucc.com
-^https:\/\/ad\.xiaotucc\.com\/advert - reject
-# U净 api-marketing.zhinengxiyifang.cn
-^https:\/\/api-marketing\.zhinengxiyifang\.cn\/api\/v2\/cloudcode\/wechat\/bid - reject
 # 乘车码 @jinlvei ccmsupport-sz.tenpay.com
 ^https:\/\/ccmsupport-sz\.tenpay\.com\/cgi-bin\/common\/ccm_page_element.cgi - reject
 # 收钱吧小程序 @可莉🅥
@@ -106,18 +90,9 @@ DOMAIN,e.jparking.cn,REJECT
 ^https:\/\/3pp\.starbucks\.com\.cn\/wxmem\/popup mock-response-body data-type=text data="{}" status-code=200
 ^https:\/\/3pp\.starbucks\.com\.cn\/wxmem\/index\/banner mock-response-body data-type=text data="{}" status-code=200
 ^https:\/\/3pp\.starbucks\.com\.cn\/wxmem\/index\/global mock-response-body data-type=text data="{}" status-code=200
-# 石家庄公交乘车码 wechat-api.i-xiaoma.com.cn
-^https:\/\/wechat-api\.i-xiaoma\.com\.cn\/app\/v1\/bus\/wechat\/content mock-response-body data-type=text data="{}" status-code=200
-# 神州租车 apiproxy.zuche.com
-^https:\/\/apiproxy\.zuche\.com\/resource\/carrctapi\/home\/marketing mock-response-body data-type=text data="{}" status-code=200
-^https:\/\/apiproxy\.zuche\.com\/resource\/carrctapi\/home\/page\/advertising mock-response-body data-type=text data="{}" status-code=200
 # 闪送 miniprogram.ishansong.com, ads.ishansong.com
 ^https:\/\/miniprogram\.ishansong\.com\/cms\/faq\/query mock-response-body data-type=text data="{}" status-code=200
 ^https:\/\/ads\.ishansong\.com\/advert mock-response-body data-type=text data="{}" status-code=200
-# 曹操出行 minicap.caocaokeji.cn
-^https:\/\/minicap\.caocaokeji\.cn\/advert-bss\/pullAdvert mock-response-body data-type=text data="{}" status-code=200
-# 羊城通 r2.gzyct.com
-^https:\/\/r2\.gzyct\.com\/qrcode\/advert mock-response-body data-type=text data="{}" status-code=200
 # 极兔快递 applets.jtexpress.com.cn
 ^https:\/\/applets\.jtexpress\.com\.cn mock-response-body data-type=text data="{}" status-code=200
 # 哈啰 api.hellobike.com
@@ -126,16 +101,11 @@ DOMAIN,e.jparking.cn,REJECT
 ^https:\/\/api\.kuaidihelp\.com\/g_order_core\/v2\/mina\/User\/getBannerList mock-response-body data-type=text data="{}" status-code=200
 # 美柚 wxproj.seeyouyima.com
 ^https:\/\/wxproj\.seeyouyima\.com\/data\/today_tips mock-response-body data-type=text data="{}" status-code=200
-# 快狗打车搬家 suyun-user.daojia.com
-^https:\/\/suyun-guest\.daojia\.com\/api\/kuaigou\/banjia\/review mock-response-body data-type=text data="{}" status-code=200
 # 货拉拉 qapi.huolala.cn, appuser-static.huolala.cn
 ^https:\/\/qapi\.huolala\.cn\/ads mock-response-body data-type=text data="{}" status-code=200
 ^https:\/\/qapi\.huolala\.cn\/home_new_user mock-response-body data-type=text data="{}" status-code=200
 ^https:\/\/qapi\.huolala\.cn\/get_service_list mock-response-body data-type=text data="{}" status-code=200
 ^https:\/\/appuser-static\.huolala\.cn\/imgs mock-response-body data-type=text data="{}" status-code=200
-# 广州地铁乘车码 apis.alenable.com
-^https:\/\/apis\.alenable\.com\/mall\/v1\/api\/mall\/skin\/user\/get mock-response-body data-type=text data="{}" status-code=200
-^https:\/\/apis\.alenable\.com\/ycx\/v1\/api\/adPut mock-response-body data-type=text data="{}" status-code=200
 # 上海地铁Metro大都会乘车码 dock.tenchii.com
 ^https:\/\/dock\.tenchii\.com\/DockCard\/api\/mini\/card\/list mock-response-body data-type=text data="{}" status-code=200
 # 申通快递 customer-app.sto.cn, sto-customer-app.oss-cn-shanghai.aliyuncs.co
@@ -143,15 +113,6 @@ DOMAIN,e.jparking.cn,REJECT
 ^https:\/\/sto-customer-app\.oss-cn-shanghai\.aliyuncs\.com\/images mock-response-body data-type=text data="{}" status-code=200
 # 达达快送 supplier-api.imdada.cn
 ^https:\/\/supplier-api\.imdada\.cn\/fe\/public\/ad\/spot\?forwardServiceName=growth-activity mock-response-body data-type=text data="{}" status-code=200
-# 来电 mobile-api.imlaidian.com
-^https:\/\/mobile-api\.imlaidian\.com\/api\/args mock-response-body data-type=text data="{}" status-code=200
-# 搜电充电 wxs-weixin.sd.zhumanggroup.com
-^https:\/\/wxs-weixin\.sd\.zhumanggroup\.com\/api\/v2\/ad mock-response-body data-type=text data="{}" status-code=200
-# 街电 s.jiediankeji.com
-^https:\/\/s\.jiediankeji\.com\/adv mock-response-body data-type=text data="{}" status-code=200
-# 小电充电 smarket.dian.so,file.dian.so
-^https:\/\/smarket\.dian\.so mock-response-body data-type=text data="{}" status-code=200
-^https:\/\/file\.dian\.so\/c\/leto mock-response-body data-type=text data="{}" status-code=200
 # 松果出行 @Keywos api.songguo7.com
 ^https:\/\/api\.songguo7\.com\/(\w{3})?mp\/v2\/misc\/(toast|user_operate_info|unlock_without_order|unlock_operate_info) mock-response-body data-type=text data="{}" status-code=200
 # 奈雪 tm-api.pin-dao.cn
@@ -183,14 +144,8 @@ DOMAIN,e.jparking.cn,REJECT
 ^https:\/\/alittle-tea\.oss-cn-shanghai\.aliyuncs\.com\/images\/platform\/alittle mock-response-body data-type=text data="{}" status-code=200
 # M Stand api.prod.dj.mstand.cn, api.prod.dj.mstand.cn
 ^https:\/\/api\.prod\.dj\.mstand\.cn\/scrm\/app\/mdm\/index\/listAdv\?types mock-response-body data-type=text data="{}" status-code=200
-# 首汽约车 gw-passenger-wap.01zhuanche.com
-^https:\/\/gw-passenger-wap\.01zhuanche\.com\/gw-passenger-wap\/zhuanche-passenger-token\/commonSkipToken\/common\/getAdList mock-response-body data-type=text data="{}" status-code=200
 # 德邦快递 www.deppon.com
 ^https:\/\/www\.deppon\.com\/gwapi\/memberService\/eco\/member\/grade\/commonInterface mock-response-body data-type=text data="{}" status-code=200
-# 享道出行 passengerapi.saicmobility.com
-^https:\/\/passengerapi\.saicmobility\.com\/(ad\/requestAd|pay\/v1\/queryOpenedCouponPackages) mock-response-body data-type=text data="{}" status-code=200
-# T3出行 passenger.t3go.cn
-^https:\/\/passenger\.t3go\.cn\/passenger-activity-api\/notoken\/api\/v1\/resource\/getSource mock-response-body data-type=text data="{}" status-code=200
 # 携程旅行 m.ctrip.com
 ^https:\/\/m\.ctrip\.com\/restapi\/soa2\/13916\/tripAds mock-response-body data-type=text data="{}" status-code=200
 ^https:\/\/m\.ctrip\.com\/restapi\/soa2\/12673\/queryWeChatHotEvent mock-response-body data-type=text data="{}" status-code=200
@@ -214,13 +169,6 @@ DOMAIN,e.jparking.cn,REJECT
 ^https:\/\/api\.maoyan\.com\/sns\/common\/feed\/channel\/v2\/list\.json mock-response-body data-type=text data="{}" status-code=200
 # 演出页面全部拦截
 ^https:\/\/wx\.maoyan\.com\/maoyansh\/myshow\/ajax\/ad\/detail mock-response-body data-type=text data="{}" status-code=200
-# 途虎养车小程序 @张军
-^https:\/\/mkt-gateway\.tuhu\.cn\/mkt-scene-marketing-service\/api\/scene\/queryScheme mock-response-body data-type=text data="{}" status-code=200
-# 横店电影小程序 @张军
-^https:\/\/api\.hengdianfilm\.com\/\/cinema\/queryAvailableBannerInfo\/2\?cid= mock-response-body data-type=text data="{}" status-code=200
-^https:\/\/api\.hengdianfilm\.com\/\/cinema\/queryAvailableBannerInfo\/4\?cid= mock-response-body data-type=text data="{}" status-code=200
-# 乐堡潮玩馆小程序
-^https:\/\/tbgapplet\.carlsberg\.asia\/tuborg\/banner\/(loading|index) mock-response-body data-type=text data="{}" status-code=200
 # 顺丰速运+ @可莉🅥
 ^https:\/\/ucmp\.sf-express\.com\/proxy\/operation-platform\/info-flow-adver\/query mock-response-body data-type=text data="{}" status-code=200
 ^https:\/\/ucmp\.sf-express\.com\/proxy\/esgcempcore\/memberGoods\/pointMallService\/goodsList mock-response-body data-type=text data="{}" status-code=200
@@ -240,9 +188,6 @@ http-response ^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspams
 
 # EMS中国邮政物流速递 @TEAXS ump.ems.com.cn
 http-response ^https:\/\/ump\.ems\.com\.cn\/new-generation-extend\/redis\/pageInfoByChannel script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/WexinMiniPrograms/ems/ems.js, requires-body=true, tag=EMS中国邮政物流速递去广告
-
-# 小兔充充 @TEAXS mapi.xiaotucc.com
-http-response ^https:\/\/mapi\.xiaotucc\.com\/(mall\/main|main_page\/index\/getActivity) script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/WexinMiniPrograms/xiaotucc/xiaotucc.js, requires-body=true, tag=小兔充充去广告
 
 # 全家微会员 minifm.maxxipoint.com
 http-response ^https:\/\/minifm\.maxxipoint\.com\/banner\/list script-path=https://raw.githubusercontent.com/mist-whisper/Script/refs/heads/master/WexinMiniPrograms/FamilyMart/FamilyMart.js, requires-body=true, tag=全家微会员去广告
