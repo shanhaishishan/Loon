@@ -1,18 +1,20 @@
 # NAME: Telegram
 # AUTHOR: blackmatrix7
 # HOMEPAGE: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Loon/Telegram/Telegram.list
-# UPDATED: 2025-04-15
-# DOMAIN: 3
+# UPDATED: 2025-05-01
+# DOMAIN: 4
 # DOMAIN-KEYWORD: 1
 # DOMAIN-SUFFIX: 22
 # IP-ASN: 5
 # IP-CIDR: 4
 # IP-CIDR6: 4
-# TOTAL: 39
+# TOTAL: 40
 
+DOMAIN,ws.intentchat.app
 DOMAIN,api.iturrit.com
 DOMAIN,api.imem.app
 DOMAIN,api.swiftgram.app
+
 DOMAIN-SUFFIX,cdn-telegram.org
 DOMAIN-SUFFIX,comments.app
 DOMAIN-SUFFIX,contest.com
@@ -35,7 +37,9 @@ DOMAIN-SUFFIX,telesco.pe
 DOMAIN-SUFFIX,tg.dev
 DOMAIN-SUFFIX,tx.me
 DOMAIN-SUFFIX,usercontent.dev
+
 DOMAIN-KEYWORD,nicegram
+
 IP-ASN,211157,no-resolve
 IP-ASN,44907,no-resolve
 IP-ASN,59930,no-resolve
