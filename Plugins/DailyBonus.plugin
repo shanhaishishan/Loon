@@ -13,9 +13,9 @@
 [Argument]
 BiliBili_Cookie_APP = switch,false,true,tag=B站客户端账号捕获,desc=获取客户端Cookie
 BiliBili_Cookie_WEB = switch,false,true,tag=B站网页版账号捕获,desc=获取网页版Cookie
-MXBC_Cookie = switch,true,false,tag=蜜雪冰城账号捕获,desc=获取Cookie
-BiliBili_DailyBonus = switch,true,false,tag=B站每日等级任务,desc=每天自动完成哔哩哔哩等级任务
-MXBC_DailyBonus = switch,true,false,tag=蜜雪冰城每日签到,desc=每天自动完成蜜雪冰城签到任务
+MXBC_Cookie = switch,false,true,tag=蜜雪冰城账号捕获,desc=获取Cookie
+BiliBili_DailyBonus = switch,false,true,tag=B站每日等级任务,desc=每天自动完成哔哩哔哩等级任务
+MXBC_DailyBonus = switch,false,true,tag=蜜雪冰城每日签到,desc=每天自动完成蜜雪冰城签到任务
 BiliBili_CRONEXP = input,"0 8 * * *",tag=B站定时参数,desc=这里需要输入符合CRON表达式的参数
 MXBC_CRONEXP = input,"0 10 * * *",tag=蜜雪冰城定时参数,desc=这里需要输入符合CRON表达式的参数
 
