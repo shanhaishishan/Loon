@@ -1,7 +1,7 @@
 #!name = 定时任务
 #!desc = 每天自动完成相关任务，根据需求进入插件打开相应开关即可。\n首次安装插件需打开对应 APP 或 小程序 获取Cookie。
 #!openUrl = 
-#!author = Sliverkiss[https://github.com/Sliverkiss], ClydeTime[https://github.com/ClydeTime], wish[https://github.com/mist-whisper]
+#!author = FoKit[https://github.com/FoKit], Sliverkiss[https://github.com/Sliverkiss], ClydeTime[https://github.com/ClydeTime], wish[https://github.com/mist-whisper]
 #!tag = 功能增强
 #!system = iOS iPadOS
 #!system_version = 15
