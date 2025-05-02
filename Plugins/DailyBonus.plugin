@@ -26,14 +26,14 @@ WechatPay_CRONEXP = input,"0 10 * * *",tag=支付有优惠定时参数,desc=这�
 # B站
 http-request ^https?:\/\/cm\.bilibili\.com\/cm\/api\/fees\/wise$ script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(APP),enable={BiliBili_Cookie_APP}
 http-request ^https?:\/\/m.bilibili.com/$ script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(网页),enable={BiliBili_Cookie_WEB}
-cron {BiliBili_CRONEXP} script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=每日等级任务,enable={BiliBili_DailyBonus}
+cron {BiliBili_CRONEXP} script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站每日等级任务,enable={BiliBili_DailyBonus}
 
 # 蜜雪冰城
-http-response ^https:\/\/mxsa\.mxbc\.net\/api\/v1\/customer\/info script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/MXBC/mxbc.js, requires-body=true, timeout=60,  tag=蜜雪冰城账号捕获,enable={MXBC_Cookie}
+http-response ^https:\/\/mxsa\.mxbc\.net\/api\/v1\/customer\/info script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/MXBC/mxbc.js, requires-body=true, timeout=60,  tag=蜜雪冰城Cookie,enable={MXBC_Cookie}
 cron {MXBC_CRONEXP} script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/MXBC/mxbc.js,  tag=蜜雪冰城每日签到,enable={MXBC_DailyBonus}
 
 # 微信支付有优惠
-http-response https:\/\/payapp\.weixin\.qq\.com\/(coupon-center-user\/home\/login|coupon-center-award\/award\/detail) tag=支付有优惠账号捕获,script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/wechat_pay_coupon.js,requires-body=1,enable={WechatPay_Cookie}
+http-response https:\/\/payapp\.weixin\.qq\.com\/(coupon-center-user\/home\/login|coupon-center-award\/award\/detail) tag=支付有优惠Cookie,script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/wechat_pay_coupon.js,requires-body=1,enable={WechatPay_Cookie}
 cron {WechatPay_CRONEXP} script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/wechat_pay_coupon.js,tag=支付有优惠金币获取,enable={WechatPay_DailyBonus}
 
 [MITM]
