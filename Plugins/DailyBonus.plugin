@@ -1,0 +1,31 @@
+#!name = 定时任务
+#!desc = 每天自动完成相关任务。\n首次安装插件需打开对应 APP 或 小程序 获取Cookie。
+#!openUrl = 
+#!author = Sliverkiss[https://github.com/Sliverkiss], ClydeTime[https://github.com/ClydeTime], wish[https://github.com/mist-whisper]
+#!tag = 功能增强
+#!system = iOS iPadOS
+#!system_version = 15
+#!loon_version = 3.2.9(837)
+#!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
+#!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/MyIcon/DailyBonus.png
+#!date = 2025-05-02 14:32:00
+
+[Argument]
+BiliBili_Cookie_APP = switch,false,true,tag=B站客户端账号捕获,desc=获取客户端Cookie
+BiliBili_Cookie_WEB = switch,false,true,tag=B站网页版账号捕获,desc=获取网页版Cookie
+MXBC_Cookie = switch,true,false,tag=蜜雪冰城账号捕获,desc=获取Cookie
+BiliBili_DailyBonus = switch,true,false,tag=B站每日等级任务,desc=每天自动完成哔哩哔哩等级任务
+MXBC_DailyBonus = switch,true,false,tag=蜜雪冰城每日签到,desc=每天自动完成蜜雪冰城签到任务
+BiliBili_CRONEXP = input,"0 8 * * *",tag=B站定时参数,desc=这里需要输入符合CRON表达式的参数
+MXBC_CRONEXP = input,"0 10 * * *",tag=蜜雪冰城定时参数,desc=这里需要输入符合CRON表达式的参数
+
+[Script]
+http-request ^https?:\/\/cm\.bilibili\.com\/cm\/api\/fees\/wise$ script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(APP),enable={BiliBili_Cookie_APP}
+http-request ^https?:\/\/m.bilibili.com/$ script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(网页),enable={BiliBili_Cookie_WEB}
+cron {BiliBili_CRONEXP} script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=每日等级任务,enable={BiliBili_DailyBonus}
+
+http-response ^https:\/\/mxsa\.mxbc\.net\/api\/v1\/customer\/info script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/MXBC/mxbc.js, requires-body=true, timeout=60,  tag=账号捕获,enable={MXBC_Cookie}
+cron {MXBC_CRONEXP} script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/MXBC/mxbc.js,  tag=每日签到,enable={MXBC_DailyBonus}
+
+[MITM]
+hostname = cm.bilibili.com, m.bilibili.com
