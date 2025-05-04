@@ -22,7 +22,7 @@ SoulSing_DailyBonus = switch,"false","true",tag=Soul金币签到,desc=每天自�
 WechatPay_DailyBonus = switch,"false","true",tag=支付有优惠金币获取,desc=定时自动领取金币
 BiliBili_CRONEXP = input,"0 8 * * *",tag=B站定时参数,desc=这里需要输入符合CRON表达式的参数
 MXBC_CRONEXP = input,"0 9 * * *",tag=蜜雪冰城定时参数,desc=这里需要输入符合CRON表达式的参数
-{Soul_CRONEXP} = input,"50 9 * * *",tag=Soul定时参数,desc=这里需要输入符合CRON表达式的参数
+Soul_CRONEXP = input,"50 9 * * *",tag=Soul定时参数,desc=这里需要输入符合CRON表达式的参数
 WechatPay_CRONEXP = input,"0 10 * * *",tag=支付有优惠定时参数,desc=这里需要输入符合CRON表达式的参数
 
 [Script]
