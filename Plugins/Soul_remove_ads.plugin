@@ -92,7 +92,7 @@ http-response ^https:\/\/api-user\.soulapp\.cn\/user\/homepage\/metrics script-p
 http-response ^https:\/\/post\.soulapp\.cn\/homepage\/tabs\/v2 script-path = https://klraw.pages.dev/kelv1n1n/script/refs/heads/main/js/soul.js?token=209863, requires-body=true, tag=个人主页tab
 http-response ^https:\/\/chat-live\.soulapp\.cn\/chatroom\/getRoomTagInfo script-path = https://klraw.pages.dev/kelv1n1n/script/refs/heads/main/js/soul.js?token=209863, requires-body=true, tag=派对频道列表, argument=[{hot}, {all}, {emotion}, {personal}, {play}, {interest} , {argue}, {story}, {chat}, {heart}]
 
-http-response ^https:\/\/api-chat\.soulapp\.cn\/snapchat\/url script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/Soul/soul.js, requires-body=true, timeout=60, tag=阅后即焚
+http-response ^https:\/\/api-chat\.soulapp\.cn\/snapchat\/url script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/Soul/Soul_remove_ads.js, requires-body=true, timeout=60, tag=阅后即焚
 
 [MitM]
 hostname = ssp.soulapp.cn, increase-openapi.soulapp.cn, data-collector.soulapp.cn, post.soulapp.cn, api-account.soulapp.cn, api-a.soulapp.cn, gateway-mobile-gray.soulapp.cn, api-user.soulapp.cn, chat-live.soulapp.cn, api-chat.soulapp.cn, 47.110.187.87
