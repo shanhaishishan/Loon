@@ -10,6 +10,8 @@
 #!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/App_icon/120px/Soul.png
 #!date = 2025-05-04 11:55:00
 
+# https://klraw.pages.dev/kelv1n1n/script/refs/heads/main/Loon/plugin/soul.plugin?token=209863
+
 [Argument]
 soulMatch = switch,true,tag=灵魂匹配,desc=显示/隐藏按钮
 voiceMatch = switch,true,tag=语音匹配,desc=显示/隐藏按钮
