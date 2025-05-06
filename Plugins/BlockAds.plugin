@@ -1,14 +1,14 @@
 #!name = BlockAds
 #!desc = 移除一些小广告，优化一些小功能。
 #!openUrl = 
-#!author = RuCu6[https://github.com/RuCu6],fishdown[https://github.com/fishdown],wish[https://github.com/mist-whisper],Repcz[https://github.com/Repcz]
+#!author = RuCu6[https://github.com/RuCu6],fishdown[https://github.com/fishdown],wish[https://github.com/mist-whisper],Repcz[https://github.com/Repcz],kelv1n1n[https://github.com/kelv1n1n]
 #!tag = 去广告增强
 #!system = iOS iPadOS
 #!system_version = 15
 #!loon_version = 3.2.9(837)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/MyIcon/BlockAds.png
-#!date = 2025-05-06 14:39:00
+#!date = 2025-05-06 20:09:00
 
 [Argument]
 on-off = switch,true,tag=Dsenrp55跳转外部播放器,desc=默认开启
@@ -106,7 +106,19 @@ DOMAIN-SUFFIX,creative.myavlive.com,REJECT
 DOMAIN-SUFFIX,trackwilltrk.com,REJECT
 DOMAIN-SUFFIX,tsyndicate.com,REJECT
 
+# 韩剧TV
+DOMAIN,mi.gdt.qq.com,REJECT
+DOMAIN,adsmind.ugdtimg.com,REJECT
+DOMAIN,pgdt.ugdtimg.com,REJECT
+DOMAIN,v2mi.gdt.qq.com,REJECT
+DOMAIN,da.bridgeturbo.com,REJECT
+DOMAIN,adx-os.bridgeturbo.com,REJECT
+DOMAIN,adx-bj.anythinktech.com,REJECT
+
 [Rewrite]
+# 韩剧TV
+^https:\/\/mobads\.baidu\.com\/cpro\/ui\/mads\.php reject-dict
+
 # 小宇宙开屏
 ^https:\/\/api\.xiaoyuzhoufm\.com\/v1\/flash-screen\/list reject-dict
 # kelee
@@ -262,4 +274,4 @@ http-response ^https:\/\/missav\.(?:ai|ws)\/(?!(build|fonts|img|js|api|cdn-cgi)\
 http-request ^https:\/\/ghfgnm\.com\/mmapi\/m3u8\/p\/.+\.m3u8 script-path = https://raw.githubusercontent.com/mist-whisper/Script/master/BlockAds/Dsenrp55.js, requires-body=true, timeout=60, enable={on-off}, tag=移除Dsenrp55广告
 
 [MITM]
-hostname = ad.12306.cn, mobile.12306.cn, list-app-m.i4.cn, *api.alipan.com, member.alipan.com, acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com, pan.baidu.com, 2023.redircdn.com, www.washpayer.com, api.douban.com, img3.doubanio.com, qnmob3.doubanio.com, img*.douban.com, frodo.douban.com, erebor.douban.com, image.mybank.icbc.com.cn, hfapp-service.qweather.net, acs-m.freshippo.com, gab.122.gov.cn, api.coolapk.com, adserviceretry.kglink.cn, p0.pipi.cn, flowplus.meituan.net, img.meituan.net, s3plus.meituan.net, osg-service.sgcc.com.cn, api.m.mi.com, home.mi.com, shop-api.retail.mi.com, wallet.95516.com, mobilepaas.abchina.com.cn, ad.mcloud.139.com, jzts.cmpassport.com, boxer.baidu.com, m.baidu.com, www.baidu.com, zhidao.baidu.com, asserts.avple.tv, javdb.com, *.pornhub.com, 18hlw.com,lneuk.rslsilne.cc,7054s.rbcmpeu.org,d2bkn61acaxm61.cloudfront.net,missav.ai,missav.ws,dsenrp55.com,ghfgnm.com,*.kelee.one,kelee.one,api.xiaoyuzhoufm.com
+hostname = ad.12306.cn, mobile.12306.cn, list-app-m.i4.cn, *api.alipan.com, member.alipan.com, acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com, pan.baidu.com, 2023.redircdn.com, www.washpayer.com, api.douban.com, img3.doubanio.com, qnmob3.doubanio.com, img*.douban.com, frodo.douban.com, erebor.douban.com, image.mybank.icbc.com.cn, hfapp-service.qweather.net, acs-m.freshippo.com, gab.122.gov.cn, api.coolapk.com, adserviceretry.kglink.cn, p0.pipi.cn, flowplus.meituan.net, img.meituan.net, s3plus.meituan.net, osg-service.sgcc.com.cn, api.m.mi.com, home.mi.com, shop-api.retail.mi.com, wallet.95516.com, mobilepaas.abchina.com.cn, ad.mcloud.139.com, jzts.cmpassport.com, boxer.baidu.com, m.baidu.com, www.baidu.com, zhidao.baidu.com, asserts.avple.tv, javdb.com, *.pornhub.com, 18hlw.com,lneuk.rslsilne.cc,7054s.rbcmpeu.org,d2bkn61acaxm61.cloudfront.net,missav.ai,missav.ws,dsenrp55.com,ghfgnm.com,*.kelee.one,kelee.one,api.xiaoyuzhoufm.com, mobads.baidu.com
