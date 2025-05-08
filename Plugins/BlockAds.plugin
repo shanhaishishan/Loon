@@ -8,7 +8,7 @@
 #!loon_version = 3.2.9(837)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/MyIcon/BlockAds.png
-#!date = 2025-05-08 12:32:00
+#!date = 2025-05-08 18:20:00
 
 [Argument]
 on-off = switch,true,tag=Dsenrp55跳转外部播放器,desc=默认开启
@@ -101,7 +101,7 @@ DOMAIN,adx-bj.anythinktech.com,REJECT
 
 # 小宇宙
 # 移除开屏广告
-^https:\/\/api\.xiaoyuzhoufm\.com\/v1\/flash-screen\/list reject-dict
+^https:\/\/api\.xiaoyuzhoufm\.com\/v\d\/flash reject-dict
 # 移除单集总结和ai总结
 ^https:\/\/api\.xiaoyuzhoufm\.com\/v1\/ai-summary reject-dict
 # 移除小宇宙搜索框内容
