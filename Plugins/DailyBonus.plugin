@@ -1,5 +1,5 @@
 #!name = 定时任务
-#!desc = 每天自动完成相关任务，根据需求进入插件打开相应开关即可。\n首次安装插件需打开对应 APP 或 小程序 获取Cookie。
+#!desc = 每天自动完成相关任务，根据需求进入插件打开相应开关即可。\nB站扫码获取cookie时，保持相关脚本开启，打开APP根据推送提示操作，使用后需关闭脚本，失效后再次打开即可。B站两种获取方式不可兼用。\n首次安装插件需打开对应 APP 或 小程序 获取Cookie。
 #!openUrl = 
 #!author = FoKit[https://github.com/FoKit], Sliverkiss[https://github.com/Sliverkiss], ClydeTime[https://github.com/ClydeTime], wish[https://github.com/mist-whisper], ZenmoFeiShi[https://github.com/ZenmoFeiShi]
 #!tag = 功能增强
@@ -8,11 +8,11 @@
 #!loon_version = 3.2.9(837)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/MyIcon/DailyBonus.png
-#!date = 2025-05-05 13:38:00
+#!date = 2025-05-09 10:58:00
 
 [Argument]
 BiliBili_Cookie_APP = switch,"false","true",tag=B站客户端账号捕获,desc=获取客户端Cookie
-BiliBili_Cookie_WEB = switch,"false","true",tag=B站网页版账号捕获,desc=获取网页版Cookie
+BiliBili_Cookie_QR = switch,"false","true",tag=B站扫码账号捕获,desc=使用扫码方式获取Cookie
 MXBC_Cookie = switch,"false","true",tag=蜜雪冰城账号捕获,desc=获取Cookie
 # Soul_Cookie = switch,"false","true",tag=Soul账号捕获,desc=获取Cookie
 WechatPay_Cookie = switch,"false","true",tag=支付有优惠账号捕获,desc=获取Cookie
@@ -27,8 +27,8 @@ WechatPay_CRONEXP = input,"0 10 * * *",tag=支付有优惠定时参数,desc=这�
 
 [Script]
 # B站
-http-request ^https?:\/\/cm\.bilibili\.com\/cm\/api\/fees\/wise$ script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(APP),enable={BiliBili_Cookie_APP}
-http-request ^https?:\/\/m.bilibili.com/$ script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(网页),enable={BiliBili_Cookie_WEB}
+http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(APP),enable={BiliBili_Cookie_APP}
+http-reponse ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(扫码),enable={BiliBili_Cookie_QR}
 cron {BiliBili_CRONEXP} script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站每日等级任务,enable={BiliBili_DailyBonus}
 
 # 蜜雪冰城
@@ -44,4 +44,4 @@ http-response https:\/\/payapp\.weixin\.qq\.com\/(coupon-center-user\/home\/logi
 cron {WechatPay_CRONEXP} script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/wechat_pay_coupon.js,tag=支付有优惠金币获取,enable={WechatPay_DailyBonus}
 
 [MITM]
-hostname = cm.bilibili.com, m.bilibili.com, mxsa.mxbc.net, payapp.weixin.qq.com, increase-openapi.soulapp.cn
+hostname = app.bilibili.com, mxsa.mxbc.net, payapp.weixin.qq.com, increase-openapi.soulapp.cn
