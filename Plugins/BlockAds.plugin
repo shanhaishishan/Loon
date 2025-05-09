@@ -8,7 +8,7 @@
 #!loon_version = 3.2.9(837)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/MyIcon/BlockAds.png
-#!date = 2025-05-09 13:02:00
+#!date = 2025-05-09 20:22:00
 
 [Argument]
 on-off = switch,true,tag=Dsenrp55跳转外部播放器,desc=默认开启
@@ -95,10 +95,14 @@ DOMAIN,da.bridgeturbo.com,REJECT
 DOMAIN,adx-os.bridgeturbo.com,REJECT
 DOMAIN,adx-bj.anythinktech.com,REJECT
 
-# 全家 开屏广告
-^https:\/\/fmapp\.chinafamilymart\.com\.cn\/api\/app\/market\/start\/ad
+# 叮咚买菜 开屏广告
+DOMAIN,ddfs-public.ddimg.mobi,REJECT
+DOMAIN,trackercollect.ddxq.mobi,REJECT
 
 [Rewrite]
+# 全家 开屏广告
+^https:\/\/fmapp\.chinafamilymart\.com\.cn\/api\/app\/market\/start\/ad reject-dict
+
 # 韩剧TV
 ^https:\/\/mobads\.baidu\.com\/cpro\/ui\/mads\.php reject-dict
 
