@@ -1,0 +1,17 @@
+#!name = Pillow
+#!desc = 解锁订阅
+#!openUrl = 
+#!author = xlzs001[https://github.com/xlzs001]
+#!tag = 会员解锁
+#!system = iOS iPadOS
+#!system_version = 15
+#!loon_version = 3.2.9(837)
+#!homepage = https://github.com/xlzs001
+#!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/MyIcon/Pillow.png
+#!date = 2025-05-09 15:00
+
+[Script]
+http-response ^https:\/\/(api\.rc-backup\.com|api\.revenuecat\.com)\/v1\/(receipts|subscribers) requires-body=1,script-path=https://raw.githubusercontent.com/xlzs001/cs/main/revcat2099.js,timeout=60
+
+[MITM]
+hostname = api.rc-backup.com, revenuecat.com, api.revenuecat.com
