@@ -32,7 +32,7 @@ WechatPay_CRONEXP = input,"0 12 * * *",tag=支付有优惠定时参数,desc=这�
 
 [Script]
 # B站
-http-response ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, timeout=30, tag={B站Cookie(扫码)},enable={BiliBili_Cookie_QR}
+http-response ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, timeout=30,tag=B站Cookie(扫码),enable={BiliBili_Cookie_QR}
 http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js,tag=B站Cookie(APP),enable={BiliBili_Cookie_APP}
 cron {BiliBili_CRONEXP} script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js,tag=B站每日等级任务,enable={BiliBili_DailyBonus}
 
