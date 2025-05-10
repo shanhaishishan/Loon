@@ -11,7 +11,7 @@
 #!date = 2025-05-09 19:22:00
 
 [Argument]
-BiliBili_Cookie_QR = switch,"false","true",tag=B站扫码账号捕获,desc=使用扫码方式获取Cookie
+# BiliBili_Cookie_QR = switch,"false","true",tag=B站扫码账号捕获,desc=使用扫码方式获取Cookie
 # BiliBili_Cookie_APP = switch,"false","true",tag=B站客户端账号捕获,desc=获取客户端Cookie
 # Dingdong_Cookie = switch,"false","true",tag=叮咚买菜账号捕获,desc=获取Cookie
 Mixue_Cookie = switch,"false","true",tag=蜜雪冰城账号捕获,desc=获取Cookie
@@ -32,7 +32,7 @@ WechatPay_CRONEXP = input,"0 12 * * *",tag=支付有优惠定时参数,desc=这�
 
 [Script]
 # B站
-http-reponse ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js,timeout=30,tag=B站Cookie(QR),enable={BiliBili_Cookie_QR}
+http-reponse ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js,timeout=30,tag=B站Cookie(QR)
 # http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js,tag=B站Cookie(APP),enable={BiliBili_Cookie_APP}
 cron {BiliBili_CRONEXP} script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js,tag=B站每日等级任务,enable={BiliBili_DailyBonus}
 
