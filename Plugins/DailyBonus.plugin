@@ -37,8 +37,8 @@ http-reponse ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-p
 cron {BiliBili_CRONEXP} script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js,tag=B站每日等级任务,enable={BiliBili_DailyBonus}
 
 # 叮咚买菜
-http-request ^https:\/\/maicai.api.ddxq.mobi\/point\/home script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/DailyBonus/Dingdong.js,tag=叮咚买菜Cookie,enable={Dingdong_Cookie}
-cron {Dingdong_CRONEXP} script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/DailyBonus/dingdong.js,tag=叮咚买菜每日签到,enable={Dingdong_DailyBonus}
+http-request ^https?:\/\/maicai\.api\.ddxq\.mobi\/point\/home\?api_version requires-body=1,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/dingdong/dingdong_checkin.js,tag=叮咚买菜Cookie,enable={Dingdong_Cookie}
+cron {Dingdong_CRONEXP} script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/dingdong/dingdong_checkin.js,tag=叮咚买菜每日签到,enable={Dingdong_DailyBonus}
 
 # 蜜雪冰城
 http-response ^https:\/\/mxsa\.mxbc\.net\/api\/v1\/customer\/info script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/DailyBonus/Mixue.js,requires-body=true, timeout=60,  tag=蜜雪冰城Cookie,enable={Mixue_Cookie}
