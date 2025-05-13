@@ -8,7 +8,7 @@
 #!loon_version = 3.2.9(837)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/App_icon/120px/WeChat.png
-#!date = 2025-05-08 15:13:00
+#!date = 2025-05-13 15:17:08
 
 [Rule]
 # 微信公众号广告过滤
@@ -21,6 +21,8 @@ DOMAIN,wxsnsdythumb.wxs.qq.com,REJECT
 DOMAIN,ads-shopping.shouqianba.com,REJECT
 # 猫眼电影
 DOMAIN,ad.maoyan.com,REJECT
+
+DOMAIN, e.jparking.cn, REJECT
 
 # WeChatpay
 DOMAIN-KEYWORD,wechatpay,DIRECT
