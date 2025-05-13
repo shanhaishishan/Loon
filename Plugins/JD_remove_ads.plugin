@@ -8,25 +8,24 @@
 #!loon_version = 3.2.9(837)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/App_icon/120px/JD.png
-#!date = 2025-04-24 14:03:00
+#!date = 2025-05-13 15:17:08
 
 [Argument]
 manmanbuy_enable = switch,true,false,tag=账号捕获,desc=慢慢买 CK 脚本启停
 manmanbuy_key = input,"",tag=[测试功能]账号信息,desc=填写慢慢买CK
 
 [Rule]
-DOMAIN,dns.jd.com,REJECT
-URL-REGEX,"^http:\/\/\w{32}\.jddebug\.com\/diagnose\?",REJECT
-IP-CIDR,101.124.19.122/32,REJECT,no-resolve
-IP-CIDR6,2402:db40:5100:1011::5/128,REJECT,no-resolve
+URL-REGEX, "^http:\/\/\w{32}\.jddebug\.com\/diagnose\?", REJECT
 
 [Rewrite]
 ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(searchBoxWord|stationPullService|uniformRecommend[06]) reject-dict
 
+^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=basicConfig response-body-json-replace data.JDMessage.socketmonitor.isSocketEstablishedAhead 0 data.JDMessage.socketmonitor.isSocketReport 0 data.JDHttpToolKit.httpdns.httpdns 0
+
 ^https?:\/\/m\.360buyimg\.com\/mobilecms\/s1125x2436_jfs reject-200
 
 [Script]
-http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome) script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/JD/JD_remove_ads.js,requires-body=true,tag=移除京东广告
+http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome) script-path = https://kelee.one/Resource/Script/JD/JD_remove_ads.js, requires-body = true, tag = 移除京东广告
 
 http-request ^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com/baoliao\/center\/menu script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/JD/JD_Price.js,requires-body=true,timeout=60,enable={manmanbuy_enable},argument={manmanbuy_key},tag=账号捕获
 
