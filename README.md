@@ -38,7 +38,7 @@
 > [!note]
 > 点击下方链接导入插件
 
-* [拦截HTTPDNS](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Block_HTTPDNS.plugin)
+* [HTTPDNS拦截器](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Block_HTTPDNS.plugin)
 * [广告平台拦截器](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/BlockAdvertisters.plugin)
 * [可莉广告过滤器](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Remove_ads_by_keli.plugin)
 * [BlockAds](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/BlockAds.plugin)
