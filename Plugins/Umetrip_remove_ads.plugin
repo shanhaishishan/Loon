@@ -8,13 +8,13 @@
 #!loon_version = 3.2.9(837)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/App_icon/120px/Umetrip.png
-#!date = 2024-11-28 00:00:00
+#!date = 2025-05-13 15:17:08
 
 [Rule]
-URL-REGEX,"^http?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/native",REJECT
+URL-REGEX, "^http?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/native", REJECT
 
 [Script]
-http-response ^http?:\/\/(114\.115\.217\.129)|(home\.umetrip\.com)\/gateway\/api\/umetrip\/native$ script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/Umetrip/Umetrip_remove_ads.js,tag=移除首页广告
+http-response ^http?:\/\/(114\.115\.217\.129)|(home\.umetrip\.com)\/gateway\/api\/umetrip\/native$ script-path = https://kelee.one/Resource/Script/Umetrip/Umetrip_remove_ads.js, tag = 移除首页广告
 
 [MitM]
-hostname=114.115.217.129,home.umetrip.com
+hostname = 114.115.217.129, home.umetrip.com
