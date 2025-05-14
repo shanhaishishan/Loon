@@ -13,7 +13,7 @@
 [Argument]
 Music163_VIP_Shared=switch,"false","true",tag=[功能解锁]共享会员,desc=
 Cookie=input,"",tag=Cookie,desc=
-MConfigInfo=input,"",tag MConfigInfo,desc=
+MConfigInfo=input,"",tag=MConfigInfo,desc=
 UserAgent=input,"",tag=UserAgent,desc=
 MY=switch,"false","true",tag=[隐藏底栏]漫游标签,desc=
 DT=switch,"false","true",tag=[隐藏底部]笔记标签,desc=
