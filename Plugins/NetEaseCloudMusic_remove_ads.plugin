@@ -1,5 +1,5 @@
 #!name = 网易云音乐去广告
-#!desc = 解锁网易云音乐黑胶会员，并解锁播放权限，非会员用户进入插件详情页自行开启。\n过滤网易云音乐广告，并允许自定义界面。
+#!desc = 过滤网易云音乐广告，并允许自定义界面。\n解锁网易云音乐会员，非会员用户进入插件详情页自行开启。
 #!openUrl = 
 #!author = Keywos[https://github.com/Keywos], RuCu6[https://github.com/RuCu6], wish[https://github.com/mist-whisper], anyehttp[https://raw.githubusercontent.com/anyehttp]
 #!tag = 解锁去广告
@@ -8,19 +8,15 @@
 #!loon_version = 3.2.9(837)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/App_icon/120px/NeteaseCloudMusic.png
-#!date = 2025-05-11 16:21:00
+#!date = 2025-05-14 12:21:00
 
+[Argument]
+# music_vip=switch,"false","true",tag=[解锁]黑胶会员,desc=
+SharedVIP=switch,"false","true",tag =[功能解锁]共享会员,desc=
+#Music163_VIP_Shared=switch,"false","true",tag =[测试功能]共享会员,desc=
 # #!input = Music163_Cookie
 # #!input = Music163_MConfigInfo
 # #!input = Music163_UserAgent
-
-[Argument]
-music_vip=switch,"false","true",tag=[解锁]黑胶会员,desc=
-#SharedVIP=switch,"false","true",tag =[功能解锁]共享会员,desc=
-#Music163_VIP_Shared=switch,"false","true",tag =[测试功能]共享会员,desc=
-#Music163_Cookie=input,"",tag=[测试功能]会员信息,desc=
-#Music163_MConfigInfo=input,"",tag=[测试功能]音质选择,desc=
-#Music163_UserAgent=input,"",tag=[测试功能]用户设备,desc=
 MY=switch,"false","true",tag=[隐藏底栏]漫游标签,desc=
 DT=switch,"false","true",tag=[隐藏底部]笔记标签,desc=
 FX=switch,"false","true",tag=[隐藏底部]发现标签,desc=
@@ -61,7 +57,7 @@ DOMAIN,ipv6.music.163.com,REJECT
 ^https:\/\/interface\d\.music\.163\.com\/eapi\/my\/podcast\/tab\/recommend reject-dict
 
 # 解锁网易云音乐黑胶会员并解锁播放权限
-^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/e?api\/(mine\/(collect|rn)\/header\/info|v\d\/user\/detail\/\d+|vipnewcenter\/app\/resource\/newaccountpage|music-vip-membership\/(client|front)\/vip\/info|batch|playlist\/privilege|search\/complex\/page|v\d\/(discovery\/recommend\/songs|playlist\/detail)) header-replace x-aeapi false
+# ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/e?api\/(mine\/(collect|rn)\/header\/info|v\d\/user\/detail\/\d+|vipnewcenter\/app\/resource\/newaccountpage|music-vip-membership\/(client|front)\/vip\/info|batch|playlist\/privilege|search\/complex\/page|v\d\/(discovery\/recommend\/songs|playlist\/detail)) header-replace x-aeapi false
 ^https?:\/\/interface\d?\.music\.163\.com\/e?api\/vip\/cashier\/tspopup\/get - reject-200
 
 [Script]
@@ -87,20 +83,20 @@ DOMAIN,ipv6.music.163.com,REJECT
 # http-request ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/vipauth\/app\/auth\/(soundquality\/)?query script-path = https://raw.githubusercontent.com/mist-whisper/Script/master/NeteaseCloudMusic/header.js, requires-body = false, binary-body-mode = false, timeout = 20, tag = 会员认证, enable={Music163_VIP_Shared}
 
 # 会员解锁
-http-response ^https?:\/\/interface\d?\.music\.163\.com\/e?api\/(mine\/(collect|rn)\/header\/info|v\d\/user\/detail\/\d+|vipnewcenter\/app\/resource\/newaccountpage|music-vip-membership\/(client|front)\/vip\/info|batch|playlist\/privilege|search\/complex\/page|v\d\/(discovery\/recommend\/songs|playlist\/detail)) script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/NeteaseCloudMusic/netease.js, requires-body=true, binary-body-mode=true, timeout=60, tag=解锁黑胶会员,enable={music_vip}
-http-request ^https?:\/\/interface\d?\.music\.163\.com\/e?api\/(song\/enhance\/player\/url\/v\d|vipauth\/app\/auth\/query) script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/NeteaseCloudMusic/netease.js, requires-body=true, timeout=60, tag=解锁黑胶会员,enable={music_vip}
+# http-response ^https?:\/\/interface\d?\.music\.163\.com\/e?api\/(mine\/(collect|rn)\/header\/info|v\d\/user\/detail\/\d+|vipnewcenter\/app\/resource\/newaccountpage|music-vip-membership\/(client|front)\/vip\/info|batch|playlist\/privilege|search\/complex\/page|v\d\/(discovery\/recommend\/songs|playlist\/detail)) script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/NeteaseCloudMusic/netease.js, requires-body=true, binary-body-mode=true, timeout=60, tag=解锁黑胶会员,enable={music_vip}
+# http-request ^https?:\/\/interface\d?\.music\.163\.com\/e?api\/(song\/enhance\/player\/url\/v\d|vipauth\/app\/auth\/query) script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/NeteaseCloudMusic/netease.js, requires-body=true, timeout=60, tag=解锁黑胶会员,enable={music_vip}
 
 # 黑胶会员
 # http-request ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/.*(player\/url|entrance|\/eapi\/search\/) script-path = https://raw.githubusercontent.com/mist-whisper/Script/master/NeteaseCloudMusic/ShareVIP.js, timeout = 60, tag = 黑胶会员, enable = {SharedVIP}
 
-# http-request ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/eapi\/vipauth\/app\/auth\/(soundquality\/)?query script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/NeteaseCloudMusic/ShareVIP.js, requires-body = false, binary-body-mode = false, timeout = 20, tag=会员认证, enable = {SharedVIP}
-# http-request ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/eapi\/vipnewcenter\/app\/resource\/newaccountpage script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/NeteaseCloudMusic/ShareVIP.js, requires-body = false, binary-body-mode = false, timeout = 20, tag=侧边栏会员等级, enable = {SharedVIP}
-# http-request ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/eapi\/playermode\/ script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/NeteaseCloudMusic/ShareVIP.js, requires-body = false, binary-body-mode = false, timeout = 20, tag=播放器会员皮肤, enable = {SharedVIP}
-# http-request ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/eapi\/search\/(?:complex\/page|complex\/rec\/song\/get|song\/list\/page) script-path = https://raw.githubusercontent.com/mist-whisper/Script/master/NeteaseCloudMusic/ShareVIP.js, requires-body = false, binary-body-mode = false, timeout = 20, tag=搜索会员音乐, enable = {SharedVIP}
-# http-request ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/w?e?api\/(?:homepage\/|v6\/)?playlist\/(?!(?:delete|subscribe|unsubscribe)) script-path = https://raw.githubusercontent.com/mist-whisper/Script/master/NeteaseCloudMusic/ShareVIP.js, requires-body = false, binary-body-mode = false, timeout = 20, tag=歌单会员认证, enable = {SharedVIP}
-# http-request ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/eapi\/(?:v1\/artist\/top\/song|v3\/discovery\/recommend\/songs) script-path = https://raw.githubusercontent.com/mist-whisper/Script/master/NeteaseCloudMusic/ShareVIP.js, requires-body = false, binary-body-mode = false, timeout = 20, tag=播放权限, enable = {SharedVIP}
-# http-request ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/eapi\/v3\/song\/detail script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/NeteaseCloudMusic/ShareVIP.js, requires-body = false, binary-body-mode = false, timeout = 20, tag=播放权限, enable = {SharedVIP}
-# http-request ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/eapi\/song\/(?:chorus|enhance\/|play\/|type\/detail\/get) script-path = https://raw.githubusercontent.com/mist-whisper/Script/master/NeteaseCloudMusic/ShareVIP.js, requires-body = false, binary-body-mode = false, timeout = 20, tag=播放权限, enable = {SharedVIP}
+http-request ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/eapi\/vipauth\/app\/auth\/(soundquality\/)?query script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/NeteaseCloudMusic/ShareVIP.js, requires-body = false, binary-body-mode = false, timeout = 20, tag=会员认证, enable = {SharedVIP}
+http-request ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/eapi\/vipnewcenter\/app\/resource\/newaccountpage script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/NeteaseCloudMusic/ShareVIP.js, requires-body = false, binary-body-mode = false, timeout = 20, tag=侧边栏会员等级, enable = {SharedVIP}
+http-request ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/eapi\/playermode\/ script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/NeteaseCloudMusic/ShareVIP.js, requires-body = false, binary-body-mode = false, timeout = 20, tag=播放器会员皮肤, enable = {SharedVIP}
+http-request ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/eapi\/search\/(?:complex\/page|complex\/rec\/song\/get|song\/list\/page) script-path = https://raw.githubusercontent.com/mist-whisper/Script/master/NeteaseCloudMusic/ShareVIP.js, requires-body = false, binary-body-mode = false, timeout = 20, tag=搜索会员音乐, enable = {SharedVIP}
+http-request ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/w?e?api\/(?:homepage\/|v6\/)?playlist\/(?!(?:delete|subscribe|unsubscribe)) script-path = https://raw.githubusercontent.com/mist-whisper/Script/master/NeteaseCloudMusic/ShareVIP.js, requires-body = false, binary-body-mode = false, timeout = 20, tag=歌单会员认证, enable = {SharedVIP}
+http-request ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/eapi\/(?:v1\/artist\/top\/song|v3\/discovery\/recommend\/songs) script-path = https://raw.githubusercontent.com/mist-whisper/Script/master/NeteaseCloudMusic/ShareVIP.js, requires-body = false, binary-body-mode = false, timeout = 20, tag=播放权限, enable = {SharedVIP}
+http-request ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/eapi\/v3\/song\/detail script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/NeteaseCloudMusic/ShareVIP.js, requires-body = false, binary-body-mode = false, timeout = 20, tag=播放权限, enable = {SharedVIP}
+http-request ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/eapi\/song\/(?:chorus|enhance\/|play\/|type\/detail\/get) script-path = https://raw.githubusercontent.com/mist-whisper/Script/master/NeteaseCloudMusic/ShareVIP.js, requires-body = false, binary-body-mode = false, timeout = 20, tag=播放权限, enable = {SharedVIP}
 
 # 以下为非会员部分
 http-response ^https?:\/\/interface\d?\.music\.163\.com\/eapi\/(?:batch|v2\/resource\/comment\/floor\/get) script-path=https://kelee.one/Resource/Script/NeteaseCloudMusic/NeteaseCloudMusic_remove_ads.js,requires-body=true,binary-body-mode=true,timeout=20,tag=评论区、热推、有话想说、分享一下、歌曲下的祝福等小提示
