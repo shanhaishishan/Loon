@@ -16,7 +16,7 @@
 #!input = Music163_UserAgent
 Music163_VIP_Shared=switch,"false","true",tag=[功能解锁]共享会员,desc=
 Music163_Cookie=input,"",tag=Cookie,desc=
-Music163_MConfigInfo,"",tag=MConfigInfo,desc=
+Music163_MConfigInfo=input,"",tag=MConfigInfo,desc=
 Music163_UserAgent=input,"",tag=UserAgent,desc=
 MY=switch,"false","true",tag=[隐藏底栏]漫游标签,desc=
 DT=switch,"false","true",tag=[隐藏底部]笔记标签,desc=
