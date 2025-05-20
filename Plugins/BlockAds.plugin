@@ -142,9 +142,9 @@ DOMAIN,adx-bj.anythinktech.com,REJECT
 ^https:\/\/pan\.baidu\.com\/(?:act\/|aipic\/|aisearch\/|api\/getsyscfg\?|rest\/) reject-dict
 
 # 豆瓣
-# ^https:\/\/api\.douban\.com\/v2\/app_ads\/splash\w+ reject-dict
+^https:\/\/api\.douban\.com\/v2\/app_ads\/splash\w+ reject-dict
 ^https:\/\/(?:img|qnmob)3\.doubanio\.com\/view\/dale-online\/dale_ad\/public\/\w+ reject-dict
-^https?:\/\/api\.douban\.com\/v\d\/app_ads\/ reject-dict
+# ^https?:\/\/api\.douban\.com\/v\d\/app_ads\/ reject-dict
 ^https?:\/\/api\.douban\.com\/b.*\/common_ads\?.* reject-dict
 ^https?:\/\/img\d\.doubanio\.com\/view\/dale-online\/dale_ad\/ reject
 ^https?:\/\/frodo\.douban\.com\/api\/v2\/movie\/banner reject
