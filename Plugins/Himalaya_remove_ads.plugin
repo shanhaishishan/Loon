@@ -21,6 +21,7 @@ DOMAIN, adbehavior.ximalaya.com, REJECT
 DOMAIN, adbehavior.wsa.ximalaya.com, REJECT
 
 [Rewrite]
+^https:\/\/searchwsa\.ximalaya\.com\/hub\/hotWordBillboard  reject-dict
 ^https:\/\/(search|searchwsa)\.ximalaya\.com\/hub\/(guideWord|hotWord)V\d\/ reject-dict
 
 ^https:\/\/(mobile|mobilehera|mobwsa)\.ximalaya\.com\/discovery-feed\/v\d\/mix\/ response-body-json-jq '.heData |= map(select(.item.list[].bizType != "SceneListenCard"))'
