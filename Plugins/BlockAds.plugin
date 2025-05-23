@@ -8,7 +8,7 @@
 #!loon_version = 3.2.9(837)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/MyIcon/BlockAds.png
-#!date = 2025-05-23 12:13:00
+#!date = 2025-05-23 14:00:00
 
 [Argument]
 on-off = switch,true,tag=Dsenrp55跳转外部播放器,desc=默认开启
@@ -138,7 +138,7 @@ DOMAIN-SUFFIX,appiersig.com,REJECT
 ^https:\/\/api\.xiaoyuzhoufm\.com\/v\d\/search\/get reject-dict
 ^https?:\/\/api\.xiaoyuzhoufm\.com\/v\d\/category reject-dict
 # 会员横幅设为不可点击
-^https:\/\/api\.xiaoyuzhoufm\.com\/v1\/membership\/platform reject-dict
+# ^https:\/\/api\.xiaoyuzhoufm\.com\/v1\/membership\/platform reject-dict
 
 # 可莉资源预览
 ^https:\/\/(.*\.)?kelee\.one(\/.*)? header-replace User-Agent Surge\x20iOS/9527
