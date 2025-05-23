@@ -11,9 +11,9 @@
 #!date = 2025-05-23 12:57:00
 
 [Rule]
-AND,((DOMAIN-SUFFIX,jd.com,extended-matching), (USER-AGENT,*QQLiveBrowser*)),REJECT
-AND,((DOMAIN-SUFFIX,360buyimg.com,extended-matching), (USER-AGENT,*QQLiveBrowser*)),REJECT
-AND,((DOMAIN,jstatic.3.cn,extended-matching), (USER-AGENT,*QQLiveBrowser*)),REJECT
+# AND,((DOMAIN-SUFFIX,jd.com,extended-matching), (USER-AGENT,*QQLiveBrowser*)),REJECT
+# AND,((DOMAIN-SUFFIX,360buyimg.com,extended-matching), (USER-# AGENT,*QQLiveBrowser*)),REJECT
+# AND,((DOMAIN,jstatic.3.cn,extended-matching), (USER-AGENT,*QQLiveBrowser*)),REJECT
 
 DOMAIN,ugchsy.gtimg.com,REJECT
 DOMAIN,adsmind.gdtimg.com,REJECT
