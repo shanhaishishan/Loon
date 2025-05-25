@@ -8,7 +8,7 @@
 #!loon_version = 3.2.9(837)
 #!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/MyIcon/BlockAds.png
-#!date = 2025-05-23 14:00:00
+#!date = 2025-05-25 12:00:00
 
 [Argument]
 on-off = switch,true,tag=Dsenrp55跳转外部播放器,desc=默认开启
@@ -120,6 +120,9 @@ DOMAIN-SUFFIX,appier.net,REJECT
 DOMAIN-SUFFIX,appiersig.com,REJECT
 
 [Rewrite]
+# 百词斩 开屏广告
+^http:\/\/advertise\.baicizhan\.com\/rpc\/advertise\/get_startup_ad reject-dict
+
 # 小熊拦截 移除更新弹窗
 ^https:\/\/spamblocker-api\.zeekstudio\.com\/profile reject-dict
 ^https:\/\/spamblocker-api\.zeekstudio\.com\/checkVersion reject-dict
