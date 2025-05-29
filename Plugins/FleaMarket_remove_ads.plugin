@@ -14,7 +14,7 @@
 AND, ((URL-REGEX, "^http:\/\/.+\/amdc\/mobileDispatch"), (USER-AGENT, "%E9%97%B2%E9%B1%BC*")), REJECT
 
 [Rewrite]
-^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/ response-body-json-jq ' walk(if type == "object" and ((.data.bizKey == "fish_treasure_outlets" or .data.bizKey == "fish_ylyl" or .data.bizKey == "fish_new_user_module") or(.cardType | test("(?i)banner|ad|mamaAD")) or(.template.name | test("(?i)banner|ad|ads")))then emptyelse .end)'
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/ response-body-json-jq 'walk(if type == "object" and (.clickParam.args.idleAdsNamespace? != null)then empty else .end)'
 
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlecommerce\.splash\.ads\/ reject-dict
 
