@@ -14,7 +14,7 @@
 AND, ((URL-REGEX, "^http:\/\/.+\/amdc\/mobileDispatch"), (USER-AGENT, "%E9%97%B2%E9%B1%BC*")), REJECT
 
 [Rewrite]
-^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/ response-body-json-jq 'walk(if type == "object" and (.clickParam.args.idleAdsNamespace? != null)then empty else .end)'
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/ response-body-json-jq 'walk(if type == "object" and ((.clickParam.args.idleAdsNamespace? == "idle-home") or (.title == "闲鱼奥莱") or (.title == "鱼鲤鱼鲤"))then empty else . end)'
 
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlecommerce\.splash\.ads\/ reject-dict
 
