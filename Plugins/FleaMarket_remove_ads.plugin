@@ -14,7 +14,7 @@
 AND, ((URL-REGEX, "^http:\/\/.+\/amdc\/mobileDispatch"), (USER-AGENT, "%E9%97%B2%E9%B1%BC*")), REJECT
 
 [Rewrite]
-^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/ response-body-json-jq '.data.sections |= map(select((.cardType | test("(?i)banner|ad|mamaAD") | not) and(.template.name | test("(?i)banner|ad|ads") | not)))'
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/ response-body-json-jq '.data.sections |= map(select(((.cardType | test("(?i)banner|ad|mamaAD") | not) and(.template.name | test("(?i)banner|ad|ads") | not) and(.data.bizKey as $key | $key != "fish_treasure_outlets" and $key != "fish_new_user_module" and $key != "fish_ylyl"))))'
 
 # ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/ response-body-json-jq 'walk(if type == "object" and has("template") then if .template.name | contains("ad") or contains("banner") then empty else . end else . end)'
 
