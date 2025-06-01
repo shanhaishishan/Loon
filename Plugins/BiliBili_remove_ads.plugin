@@ -52,7 +52,7 @@ URL-REGEX, "^http:\/\/[\d\.]+:8000\/v1\/resource\/\w{32}-1-SPLASH", REJECT-DICT
 ^https:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\? response-body-json-jq '.data.vip |= if . != null and .status == 0 then . + { status: 1, type: 2, due_date: 9005270400000, role: 15 } else . end'
 
 [Script]
-http-request ^https:\/\/(?:grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.playerunite\.v1\.Player\/PlayViewUnite$ script-path = https://raw.githubusercontent.com/kokoryh/Sparkle/master/dist/bilibili.airborne.js, requires-body = true, binary-body-mode = true, enable = {enableAirborne}, tag = 空降助手自动版
+http-request ^https:\/\/(?:grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.playerunite\.v1\.Player\/PlayViewUnite$ script-path = https://raw.githubusercontent.com/mist-whisper/Script/master/BiliBili/BiliBili_airborne_kokoryh.js, requires-body = true, binary-body-mode = true, enable = {enableAirborne}, tag = 空降助手自动版
 
 http-request ^https:\/\/(?:grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.community\.service\.dm\.v1\.DM\/DmSegMobile$ script-path = https://raw.githubusercontent.com/kokoryh/Sparkle/master/dist/bilibili.airborne.js, requires-body = true, binary-body-mode = true, enable = {enableAirborneDm}, tag = 空降助手弹幕版
 
