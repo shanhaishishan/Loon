@@ -1,14 +1,13 @@
-#!name = 小红书去广告
-#!desc = 过滤信息流推广，移除笔记和评论区图片视频以及live图水印，移除评论区表情包水印和下载限制，如有异常，请先清除缓存再尝试。
-#!openUrl = 
-#!author = RuCu6[https://github.com/RuCu6], fmz200[https://github.com/fmz200], wish[https://github.com/mist-whisper]
-#!tag = 去广告
-#!system = iOS iPadOS
-#!system_version = 15
-#!loon_version = 3.2.9(837)
-#!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
-#!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/App_icon/120px/REDnote.png
-#!date = 2025-03-22 21:30:00
+#!name=小红书去广告
+#!desc=过滤信息流推广，移除笔记和评论区图片视频以及live图水印。\n移除评论区表情包水印和下载限制，如有异常，请先清除缓存再尝试。
+#!author=RuCu6[https://github.com/RuCu6], fmz200[https://github.com/fmz200], wish[https://github.com/mist-whisper]
+#!tag=去广告
+#!system=iOS iPadOS
+#!system_version=15
+#!loon_version=3.2.9(837)
+#!homepage=https://github.com/mist-whisper/Loon/blob/master/README.md
+#!icon=https://raw.githubusercontent.com/mist-whisper/Icon/master/App_icon/120px/REDnote.png
+#!date=2025-06-01 19:00:00
 
 [Rule]
 AND, ((PROTOCOL, QUIC), (DOMAIN-SUFFIX, xiaohongshu.com)), REJECT
@@ -26,14 +25,15 @@ AND, ((PROTOCOL, QUIC), (DOMAIN-SUFFIX, xiaohongshu.com)), REJECT
 
 [Script]
 # 搜索页
-http-response ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/(banner|hot)_list script-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js, requires-body=true, timeout=60, tag=移除搜索页广告
-http-response ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/(hint|trending)\? script-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js, requires-body=true, timeout=60, tag=移除搜索页广告
-http-response ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/notes\? script-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js, requires-body=true, timeout=60, tag=移除搜索页广告
+http-response ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/(banner|hot)_list script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/REDnote/REDnote.js, requires-body=true, timeout=60, tag=移除搜索页广告
+http-response ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/(hint|trending)\? script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/REDnote/REDnote.js, requires-body=true, timeout=60, tag=移除搜索页广告
+http-response ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/notes\? script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/REDnote/REDnote.js, requires-body=true, timeout=60, tag=移除搜索页广告
 # 开屏广告
-http-response ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/config\? script-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js, requires-body=true, timeout=60, tag=移除开屏广告
-http-response ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/splash_config script-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js, requires-body=true, timeout=60, tag=移除开屏广告
+http-response ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/config\? script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/REDnote/REDnote.js, requires-body=true, timeout=60, tag=移除开屏广告
+http-response ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/splash_config script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/REDnote/REDnote.js, requires-body=true, timeout=60, tag=移除开屏广告
 # 详情页,小部件
-http-response ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/widgets script-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js, requires-body=true, timeout=60, tag=移除详情页感兴趣的人
+http-response ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/widgets script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/REDnote/REDnote.js, requires-body=true, timeout=60, tag=移除详情页感兴趣的人
+
 # 图片水印,视频水印
 http-response ^https?:\/\/(edith|rec|www)\.xiaohongshu\.com\/api\/sns\/v\d\/note\/(imagefeed|live_photo\/save) script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/REDnote/REDnote.js, requires-body=true, timeout=60, tag=移除图片视频水印
 http-response ^https?:\/\/(edith|rec|www)\.xiaohongshu\.com\/api\/sns\/v\d\/(followfeed|homefeed)\? script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/REDnote/REDnote.js, requires-body=true, timeout=60, tag=移除图片视频水印
