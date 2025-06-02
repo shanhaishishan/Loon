@@ -1,14 +1,13 @@
-#!name = AdGuard Premium
-#!desc = 解锁AdGuard Premium
-#!openUrl = 
-#!author = chxm1023[https://github.com/chxm1023]
-#!tag = 会员解锁
-#!system = iOS iPadOS
-#!system_version = 15
-#!loon_version = 3.2.9(837)
-#!homepage = https://github.com/mist-whisper/Loon/blob/master/README.md
-#!icon = https://raw.githubusercontent.com/mist-whisper/Icon/master/MyIcon/AdGuard.png
-#!date = 2024-08-19 14:30
+#!name=AdGuard Premium
+#!desc=解锁AdGuard Premium
+#!author=chxm1023[https://github.com/chxm1023]
+#!tag=会员解锁
+#!system=iOS iPadOS
+#!system_version=15
+#!loon_version=3.2.9(837)
+#!homepage=https://github.com/mist-whisper/Loon/blob/master/README.md
+#!icon=https://raw.githubusercontent.com/mist-whisper/Icon/master/MyIcon/AdGuard.png
+#!date=2024-08-19 14:30
 
 [Script]
 # >AdGuard Premium
