@@ -7,11 +7,11 @@
 #!loon_version=3.2.9(837)
 #!homepage=https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon=https://raw.githubusercontent.com/mist-whisper/Icon/master/App_icon/120px/Spotify.png
-#!date=2025-05-31 23:59:50
+#!date=2025-06-02 18:49:50
 
 [Argument]
-tab=switch, "true", "false", tag=底栏创建按钮, desc=此开关控制底栏创建按钮
-useractivity=switch, "false", "true", tag=接力功能, desc=此开关控制接力功能
+tab=switch, "true", "false", tag=移除底栏创建按钮, desc=此开关控制是否移除底栏创建按钮
+useractivity=switch, "false", "true", tag=接力功能, desc=此开关控制是否使用Apple设备接力
 
 [Script]
 http-response ^https:\/\/spclient\.wg\.spotify\.com\/(?:bootstrap|user-customization-service) script-path=https://raw.githubusercontent.com/001ProMax/Surge/main/Script/Spotify.Crack.js, requires-body=true, binary-body-mode=true, timeout=10, argument=[{tab},{useractivity}], tag=Protobuf处理
