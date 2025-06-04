@@ -14,6 +14,8 @@ showUpList=select, "auto", "true", "false", tag=[动态]中[最常访问]的显�
 filterTopReplies=switch, "false", "true", tag=移除评论区置顶广告, desc=移除评论区置顶广告
 airborne=switch, "false", "true", tag=空降助手, desc=空降助手
 airborneDm=switch, "false", "true", tag=空降助手iPad版, desc=仅限iPad版开启
+Authorization=switch, "false", "true", tag=[测试功能]大会员, desc=是否开启共享会员
+Authorization=input, "", tag=[测试功能]鉴权字段, desc=填写会员数据
 
 [Rule]
 DOMAIN, api.biliapi.com, REJECT
@@ -54,6 +56,8 @@ DOMAIN, app.biliapi.net, REJECT
 ^https:\/\/(?:grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.view\.v1\.View\/TFInfo$ mock-response-body data-type=base64 data="AAAAAAIIAQ==" mock-data-is-base64=true
 
 [Script]
+http-request ^https:\/\/(?:grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.(?:playerunite\.v1\.Player\/PlayViewUnite|pgc\.gateway\.player\.v2\.PlayURL\/PlayView)$ header-replace authorization argument={Authorization},enable={Authorization}
+
 http-request ^https:\/\/(?:grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.playerunite\.v1\.Player\/PlayViewUnite$ script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/BiliBili/BiliBili_airborne_kokoryh.js, requires-body=true, binary-body-mode=true, enable={airborne}, tag=空降助手
 http-request ^https:\/\/(?:grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.community\.service\.dm\.v1\.DM\/DmSegMobile$ script-path=https://raw.githubusercontent.com/kokoryh/Sparkle/master/dist/bilibili.airborne.js, requires-body=true, binary-body-mode=true, enable={airborneDm}, tag=空降助手iPad版
 
