@@ -24,6 +24,8 @@ DOMAIN, app.biliapi.com, REJECT
 DOMAIN, app.biliapi.net, REJECT
 
 [Rewrite]
+^https:\/\/(?:grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.(?:playerunite\.v1\.Player\/PlayViewUnite|pgc\.gateway\.player\.v2\.PlayURL\/PlayView)$ header-replace authorization ttp-request,argument={Authorization},enable={Authorization}
+
 ^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/(?:list|show|event\/list2)\? response-body-json-jq '.data |= with_entries(if .key | IN("show", "event_list") then .value=[] else . end)'
 
 ^https:\/\/app\.bilibili\.com\/x\/resource\/show\/tab\/v2\? response-body-json-jq jq-path="https://raw.githubusercontent.com/mist-whisper/JQLang/master/Bilibili/tab_Bilibili_remove_ads.jq"
@@ -56,8 +58,6 @@ DOMAIN, app.biliapi.net, REJECT
 ^https:\/\/(?:grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.view\.v1\.View\/TFInfo$ mock-response-body data-type=base64 data="AAAAAAIIAQ==" mock-data-is-base64=true
 
 [Script]
-http-request ^https:\/\/(?:grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.(?:playerunite\.v1\.Player\/PlayViewUnite|pgc\.gateway\.player\.v2\.PlayURL\/PlayView)$ header-replace authorization argument={Authorization},enable={Authorization}
-
 http-request ^https:\/\/(?:grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.playerunite\.v1\.Player\/PlayViewUnite$ script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/BiliBili/BiliBili_airborne_kokoryh.js, requires-body=true, binary-body-mode=true, enable={airborne}, tag=空降助手
 http-request ^https:\/\/(?:grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.community\.service\.dm\.v1\.DM\/DmSegMobile$ script-path=https://raw.githubusercontent.com/kokoryh/Sparkle/master/dist/bilibili.airborne.js, requires-body=true, binary-body-mode=true, enable={airborneDm}, tag=空降助手iPad版
 
