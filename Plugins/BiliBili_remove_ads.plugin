@@ -7,15 +7,13 @@
 #!loon_version=3.2.9(837)
 #!homepage=https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon=https://raw.githubusercontent.com/mist-whisper/Icon/master/App_icon/120px/Bilibili.png
-#!date=2025-06-02 20:36:00
+#!date=2025-06-08 11:01:00
 
 [Argument]
 showUpList=select, "auto", "true", "false", tag=[动态]中[最常访问]的显示方式, desc=auto：仅当列表中存在直播状态时显示；true：始终显示；false：始终隐藏。
 filterTopReplies=switch, "false", "true", tag=移除评论区置顶广告, desc=移除评论区置顶广告
 airborne=switch, "false", "true", tag=空降助手, desc=空降助手
 airborneDm=switch, "false", "true", tag=空降助手iPad版, desc=仅限iPad版开启
-Authorization=switch, "false", "true", tag=[测试功能]大会员, desc=是否开启共享会员
-Authorization=input, "", tag=[测试功能]鉴权字段, desc=填写会员数据
 
 [Rule]
 DOMAIN, api.biliapi.com, REJECT
@@ -24,8 +22,6 @@ DOMAIN, app.biliapi.com, REJECT
 DOMAIN, app.biliapi.net, REJECT
 
 [Rewrite]
-^https:\/\/(?:grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.(?:playerunite\.v1\.Player\/PlayViewUnite|pgc\.gateway\.player\.v2\.PlayURL\/PlayView)$ header-replace authorization ttp-request,argument={Authorization},enable={Authorization}
-
 ^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/(?:list|show|event\/list2)\? response-body-json-jq '.data |= with_entries(if .key | IN("show", "event_list") then .value=[] else . end)'
 
 ^https:\/\/app\.bilibili\.com\/x\/resource\/show\/tab\/v2\? response-body-json-jq jq-path="https://raw.githubusercontent.com/mist-whisper/JQLang/master/Bilibili/tab_Bilibili_remove_ads.jq"
