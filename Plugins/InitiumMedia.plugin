@@ -1,0 +1,16 @@
+#!name=端传媒会员
+#!desc=解锁端传媒会员
+#!author=wish[https://github.com/mist-whisper]
+#!tag=会员解锁
+#!system=iOS iPadOS
+#!system_version=15
+#!loon_version=3.2.9(837)
+#!homepage=https://github.com/mist-whisper/Loon/blob/master/README.md
+#!icon=https://raw.githubusercontent.com/mist-whisper/Icon/master/MyIcon/InitiumMedia.png
+#!date=2025-06-13 22:41:00
+
+[Script]
+http-response ^https?:\/\/app\.theinitium\.com\/subs\/initiummedia_subs\/verify_subscription script-path=https://raw.githubusercontent.com/mist-whisper/Script/master/InitiumMedia/InitiumMedia.js, requires-body=true, timeout=60, tag=端传媒会员
+
+[MITM]
+hostname=app.theinitium.com
