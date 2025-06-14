@@ -1,10 +1,7 @@
 # NAME: EmbyGlobal
 # AUTHOR: wish
-# HOMEPAGE: https://github.com/mist-whisper/Loon/blob/master/Rules/Emby/EmbyGlobal.list
-# UPDATED: 2025-04-16
+# UPDATED: 2025-06-13
 
-
-DOMAIN,yhemby.top
 DOMAIN,pub1.emby.wtf
 DOMAIN,pub1.term.wtf
 DOMAIN,pub2.emby.wtf

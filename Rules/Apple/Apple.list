@@ -277,6 +277,7 @@ DOMAIN,guzzoni.apple.com
 DOMAIN,beta.apple.com
 DOMAIN,testflight.apple.com
 DOMAIN,www-cdn.icloud.com.akadns.net
+
 DOMAIN-SUFFIX,100beatscheap.com
 DOMAIN-SUFFIX,1monsterbeatsbydreus.com
 DOMAIN-SUFFIX,1to1computing.com.au
@@ -360,7 +361,7 @@ DOMAIN-SUFFIX,apple.co.mz
 DOMAIN-SUFFIX,apple.co.nz
 DOMAIN-SUFFIX,apple.co.th
 DOMAIN-SUFFIX,apple.co.uk
-DOMAIN-SUFFIX,apple.com
+# DOMAIN-SUFFIX,apple.com
 DOMAIN-SUFFIX,apple.com.af
 DOMAIN-SUFFIX,apple.com.au
 DOMAIN-SUFFIX,apple.com.bo
