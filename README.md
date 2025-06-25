@@ -57,6 +57,7 @@
 * [苹果定位增强](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Location.plugin)
 * [苹果地图增强](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Maps.plugin)
 * [网易云音乐去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/NetEaseCloudMusic_remove_ads.plugin)
+* [新闻会员解锁](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/NewsPaper.plugin)
 * [节点检测](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/Node_detection_tool.plugin)
 * [拼多多去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/PinDuoDuo_remove_ads.plugin)
 * [朴朴超市去广告](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/mist-whisper/Loon/master/Plugins/PuPuMall_remove_ads.plugin)
