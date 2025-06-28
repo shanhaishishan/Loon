@@ -7,7 +7,7 @@
 #!loon_version=3.2.9(837)
 #!homepage=https://github.com/mist-whisper/Loon/blob/master/README.md
 #!icon=https://raw.githubusercontent.com/mist-whisper/Icon/master/MyIcon/BlockAds.png
-#!date=2025-06-29 03:48:00
+#!date=2025-06-29 05:04:00
 
 [Argument]
 on-off=switch,"false","true",tag=Dsenrp55跳转外部播放器,desc=
@@ -119,8 +119,10 @@ DOMAIN-SUFFIX,appier.net,REJECT
 DOMAIN-SUFFIX,appiersig.com,REJECT
 
 [Rewrite]
-# 万达电影小程序
-# 弹窗广告
+# 万达电影
+# APP弹窗
+^https:\/\/misc-api-prd-mx\.wandafilm\.com\/commend\/common_banner_batch\.api response-body-json-jq '.data.objects["OpenAPP-&-FlashAD"] = [] | .data.objects["InTheaters-&-BoxAD"] = []'
+# 小程序弹窗广告
 ^https?:\/\/misc-api-prd-mx\.wandafilm\.com\/commend\/common_banner_batch\.api\?bannerInfos=%5B%7B%22cinemaI response-body-replace-regex "WX_index_mp-&-boxAD" "fmz200"
 
 # 百词斩 开屏广告
